@@ -1,0 +1,5 @@
+2024-10-09 16:07:31.932 [info] Extension host with pid 1367 started
+2024-10-09 16:07:31.961 [info] Lock '/home/jojomaverik/.vscode-server/data/User/workspaceStorage/90f7e0bfdb3cd12690ea1b3540823c1b/vscode.lock': Lock acquired.
+2024-10-09 16:08:14.294 [info] Extension host terminating: received terminate message from renderer
+2024-10-09 16:08:14.294 [info] Lock '/home/jojomaverik/.vscode-server/data/User/workspaceStorage/90f7e0bfdb3cd12690ea1b3540823c1b/vscode.lock': Marking the lockfile as scheduled to be released in 6000 ms.
+2024-10-09 16:08:14.296 [info] Extension host with pid 1367 exiting with code 0

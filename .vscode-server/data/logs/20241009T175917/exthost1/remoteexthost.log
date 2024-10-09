@@ -1,0 +1,184 @@
+2024-10-09 17:59:18.869 [info] Extension host with pid 1962 started
+2024-10-09 17:59:18.905 [info] ExtensionService#_doActivateExtension eamodio.gitlens, startup: false, activationEvent: 'onWebviewPanel:gitlens.welcome'
+2024-10-09 17:59:19.110 [info] ExtensionService#_doActivateExtension ms-vsliveshare.vsliveshare, startup: false, activationEvent: 'api', root cause: eamodio.gitlens
+2024-10-09 17:59:19.466 [info] ExtensionService#_doActivateExtension vscode.git-base, startup: true, activationEvent: '*', root cause: vscode.git
+2024-10-09 17:59:19.467 [info] ExtensionService#_doActivateExtension howardzuo.vscode-git-tags, startup: true, activationEvent: '*'
+2024-10-09 17:59:19.467 [info] ExtensionService#_doActivateExtension mhutchie.git-graph, startup: true, activationEvent: '*'
+2024-10-09 17:59:19.581 [error] Activating extension howardzuo.vscode-git-tags failed due to an error:
+2024-10-09 17:59:19.581 [error] TypeError: Cannot read properties of undefined (reading '0')
+	at new GitTagsViewProvider (/home/jojomaverik/.vscode-server/extensions/howardzuo.vscode-git-tags-1.4.4/out/gitTagsViewProvider.js:37:78)
+	at activate (/home/jojomaverik/.vscode-server/extensions/howardzuo.vscode-git-tags-1.4.4/out/index.js:43:22)
+	at Y0.kb (file:///home/jojomaverik/.vscode-server/bin/e10f2369d0d9614a452462f2e01cdc4aa9486296/out/vs/workbench/api/node/extensionHostProcess.js:118:15217)
+	at Y0.jb (file:///home/jojomaverik/.vscode-server/bin/e10f2369d0d9614a452462f2e01cdc4aa9486296/out/vs/workbench/api/node/extensionHostProcess.js:118:14924)
+	at file:///home/jojomaverik/.vscode-server/bin/e10f2369d0d9614a452462f2e01cdc4aa9486296/out/vs/workbench/api/node/extensionHostProcess.js:118:13082
+	at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+	at async x0.n (file:///home/jojomaverik/.vscode-server/bin/e10f2369d0d9614a452462f2e01cdc4aa9486296/out/vs/workbench/api/node/extensionHostProcess.js:114:4450)
+	at async x0.m (file:///home/jojomaverik/.vscode-server/bin/e10f2369d0d9614a452462f2e01cdc4aa9486296/out/vs/workbench/api/node/extensionHostProcess.js:114:4413)
+	at async x0.l (file:///home/jojomaverik/.vscode-server/bin/e10f2369d0d9614a452462f2e01cdc4aa9486296/out/vs/workbench/api/node/extensionHostProcess.js:114:3869)
+2024-10-09 17:59:19.581 [info] ExtensionService#_doActivateExtension vscode.git, startup: true, activationEvent: '*'
+2024-10-09 17:59:19.582 [info] ExtensionService#_doActivateExtension vscode.github, startup: true, activationEvent: '*'
+2024-10-09 17:59:19.771 [info] Eager extensions activated
+2024-10-09 17:59:19.771 [info] ExtensionService#_doActivateExtension vscode.debug-auto-launch, startup: false, activationEvent: 'onStartupFinished'
+2024-10-09 17:59:19.772 [info] ExtensionService#_doActivateExtension vscode.merge-conflict, startup: false, activationEvent: 'onStartupFinished'
+2024-10-09 17:59:20.021 [info] ExtensionService#_doActivateExtension GitHub.vscode-pull-request-github, startup: false, activationEvent: 'onStartupFinished'
+2024-10-09 18:06:51.310 [info] Extension host terminating: received terminate message from renderer
+2024-10-09 18:06:51.376 [error] Canceled: Canceled
+	at new eA (file:///home/jojomaverik/.vscode-server/bin/e10f2369d0d9614a452462f2e01cdc4aa9486296/out/vs/workbench/api/node/extensionHostProcess.js:31:151177)
+	at Zb.U (file:///home/jojomaverik/.vscode-server/bin/e10f2369d0d9614a452462f2e01cdc4aa9486296/out/vs/workbench/api/node/extensionHostProcess.js:31:155789)
+	at s.<computed>.n.charCodeAt.s.<computed> (file:///home/jojomaverik/.vscode-server/bin/e10f2369d0d9614a452462f2e01cdc4aa9486296/out/vs/workbench/api/node/extensionHostProcess.js:31:153283)
+	at T0.g (file:///home/jojomaverik/.vscode-server/bin/e10f2369d0d9614a452462f2e01cdc4aa9486296/out/vs/workbench/api/node/extensionHostProcess.js:114:32325)
+	at T0.executeCommand (file:///home/jojomaverik/.vscode-server/bin/e10f2369d0d9614a452462f2e01cdc4aa9486296/out/vs/workbench/api/node/extensionHostProcess.js:114:31826)
+	at r.registerCommand.description (file:///home/jojomaverik/.vscode-server/bin/e10f2369d0d9614a452462f2e01cdc4aa9486296/out/vs/workbench/api/node/extensionHostProcess.js:114:31156)
+	at T0.h (file:///home/jojomaverik/.vscode-server/bin/e10f2369d0d9614a452462f2e01cdc4aa9486296/out/vs/workbench/api/node/extensionHostProcess.js:114:32845)
+	at T0.g (file:///home/jojomaverik/.vscode-server/bin/e10f2369d0d9614a452462f2e01cdc4aa9486296/out/vs/workbench/api/node/extensionHostProcess.js:114:31919)
+	at T0.executeCommand (file:///home/jojomaverik/.vscode-server/bin/e10f2369d0d9614a452462f2e01cdc4aa9486296/out/vs/workbench/api/node/extensionHostProcess.js:114:31826)
+	at Object.executeCommand (file:///home/jojomaverik/.vscode-server/bin/e10f2369d0d9614a452462f2e01cdc4aa9486296/out/vs/workbench/api/node/extensionHostProcess.js:156:37049)
+	at f (/home/jojomaverik/.vscode-server/extensions/eamodio.gitlens-15.6.0/dist/gitlens.js:1492:14481)
+	at c (/home/jojomaverik/.vscode-server/extensions/eamodio.gitlens-15.6.0/dist/gitlens.js:1492:19040)
+	at ActionRunners._updateContextKeys (/home/jojomaverik/.vscode-server/extensions/eamodio.gitlens-15.6.0/dist/gitlens.js:1107:65658)
+	at s (/home/jojomaverik/.vscode-server/extensions/eamodio.gitlens-15.6.0/dist/gitlens.js:1107:64102)
+	at RegisteredActionRunner.unregister (/home/jojomaverik/.vscode-server/extensions/eamodio.gitlens-15.6.0/dist/gitlens.js:1107:64245)
+	at RegisteredActionRunner.dispose (/home/jojomaverik/.vscode-server/extensions/eamodio.gitlens-15.6.0/dist/gitlens.js:1107:62899)
+	at ActionRunners.dispose (/home/jojomaverik/.vscode-server/extensions/eamodio.gitlens-15.6.0/dist/gitlens.js:1107:63685)
+	at /home/jojomaverik/.vscode-server/extensions/eamodio.gitlens-15.6.0/dist/gitlens.js:1448:19218
+	at Array.forEach (<anonymous>)
+	at Object.dispose (/home/jojomaverik/.vscode-server/extensions/eamodio.gitlens-15.6.0/dist/gitlens.js:1448:19200)
+	at Si (file:///home/jojomaverik/.vscode-server/bin/e10f2369d0d9614a452462f2e01cdc4aa9486296/out/vs/workbench/api/node/extensionHostProcess.js:24:701)
+	at file:///home/jojomaverik/.vscode-server/bin/e10f2369d0d9614a452462f2e01cdc4aa9486296/out/vs/workbench/api/node/extensionHostProcess.js:118:14995
+	at file:///home/jojomaverik/.vscode-server/bin/e10f2369d0d9614a452462f2e01cdc4aa9486296/out/vs/workbench/api/node/extensionHostProcess.js:24:1011
+	at Object.dispose (file:///home/jojomaverik/.vscode-server/bin/e10f2369d0d9614a452462f2e01cdc4aa9486296/out/vs/workbench/api/node/extensionHostProcess.js:7:2146)
+	at hB.eb (file:///home/jojomaverik/.vscode-server/bin/e10f2369d0d9614a452462f2e01cdc4aa9486296/out/vs/workbench/api/node/extensionHostProcess.js:118:11922)
+	at file:///home/jojomaverik/.vscode-server/bin/e10f2369d0d9614a452462f2e01cdc4aa9486296/out/vs/workbench/api/node/extensionHostProcess.js:118:9877
+	at Array.map (<anonymous>)
+	at hB.$ (file:///home/jojomaverik/.vscode-server/bin/e10f2369d0d9614a452462f2e01cdc4aa9486296/out/vs/workbench/api/node/extensionHostProcess.js:118:9865)
+	at hB.terminate (file:///home/jojomaverik/.vscode-server/bin/e10f2369d0d9614a452462f2e01cdc4aa9486296/out/vs/workbench/api/node/extensionHostProcess.js:118:10108)
+	at M3.terminate (file:///home/jojomaverik/.vscode-server/bin/e10f2369d0d9614a452462f2e01cdc4aa9486296/out/vs/workbench/api/node/extensionHostProcess.js:119:1424)
+	at ps (file:///home/jojomaverik/.vscode-server/bin/e10f2369d0d9614a452462f2e01cdc4aa9486296/out/vs/workbench/api/node/extensionHostProcess.js:174:15058)
+	at gh.value (file:///home/jojomaverik/.vscode-server/bin/e10f2369d0d9614a452462f2e01cdc4aa9486296/out/vs/workbench/api/node/extensionHostProcess.js:174:13218)
+	at T.B (file:///home/jojomaverik/.vscode-server/bin/e10f2369d0d9614a452462f2e01cdc4aa9486296/out/vs/workbench/api/node/extensionHostProcess.js:29:732)
+	at T.fire (file:///home/jojomaverik/.vscode-server/bin/e10f2369d0d9614a452462f2e01cdc4aa9486296/out/vs/workbench/api/node/extensionHostProcess.js:29:950)
+	at no.fire (file:///home/jojomaverik/.vscode-server/bin/e10f2369d0d9614a452462f2e01cdc4aa9486296/out/vs/workbench/api/node/extensionHostProcess.js:31:9399)
+	at Im.A (file:///home/jojomaverik/.vscode-server/bin/e10f2369d0d9614a452462f2e01cdc4aa9486296/out/vs/workbench/api/node/extensionHostProcess.js:31:12515)
+	at gh.value (file:///home/jojomaverik/.vscode-server/bin/e10f2369d0d9614a452462f2e01cdc4aa9486296/out/vs/workbench/api/node/extensionHostProcess.js:31:10935)
+	at T.B (file:///home/jojomaverik/.vscode-server/bin/e10f2369d0d9614a452462f2e01cdc4aa9486296/out/vs/workbench/api/node/extensionHostProcess.js:29:732)
+	at T.fire (file:///home/jojomaverik/.vscode-server/bin/e10f2369d0d9614a452462f2e01cdc4aa9486296/out/vs/workbench/api/node/extensionHostProcess.js:29:950)
+	at m5.acceptChunk (file:///home/jojomaverik/.vscode-server/bin/e10f2369d0d9614a452462f2e01cdc4aa9486296/out/vs/workbench/api/node/extensionHostProcess.js:31:7880)
+	at gh.value (file:///home/jojomaverik/.vscode-server/bin/e10f2369d0d9614a452462f2e01cdc4aa9486296/out/vs/workbench/api/node/extensionHostProcess.js:31:7166)
+	at T.B (file:///home/jojomaverik/.vscode-server/bin/e10f2369d0d9614a452462f2e01cdc4aa9486296/out/vs/workbench/api/node/extensionHostProcess.js:29:732)
+	at T.fire (file:///home/jojomaverik/.vscode-server/bin/e10f2369d0d9614a452462f2e01cdc4aa9486296/out/vs/workbench/api/node/extensionHostProcess.js:29:950)
+	at _2.z (file:///home/jojomaverik/.vscode-server/bin/e10f2369d0d9614a452462f2e01cdc4aa9486296/out/vs/workbench/api/node/extensionHostProcess.js:31:21892)
+	at _2.acceptFrame (file:///home/jojomaverik/.vscode-server/bin/e10f2369d0d9614a452462f2e01cdc4aa9486296/out/vs/workbench/api/node/extensionHostProcess.js:31:21698)
+	at z2.n (file:///home/jojomaverik/.vscode-server/bin/e10f2369d0d9614a452462f2e01cdc4aa9486296/out/vs/workbench/api/node/extensionHostProcess.js:31:20224)
+	at file:///home/jojomaverik/.vscode-server/bin/e10f2369d0d9614a452462f2e01cdc4aa9486296/out/vs/workbench/api/node/extensionHostProcess.js:31:17454
+	at Socket.t (file:///home/jojomaverik/.vscode-server/bin/e10f2369d0d9614a452462f2e01cdc4aa9486296/out/vs/workbench/api/node/extensionHostProcess.js:31:15393)
+	at Socket.emit (node:events:519:28)
+	at addChunk (node:internal/streams/readable:559:12)
+	at readableAddChunkPushByteMode (node:internal/streams/readable:510:3)
+	at Readable.push (node:internal/streams/readable:390:5)
+	at TCP.onStreamRead (node:internal/stream_base_commons:191:23) setContext undefined
+2024-10-09 18:06:51.377 [error] Canceled: Canceled
+	at new eA (file:///home/jojomaverik/.vscode-server/bin/e10f2369d0d9614a452462f2e01cdc4aa9486296/out/vs/workbench/api/node/extensionHostProcess.js:31:151177)
+	at Zb.U (file:///home/jojomaverik/.vscode-server/bin/e10f2369d0d9614a452462f2e01cdc4aa9486296/out/vs/workbench/api/node/extensionHostProcess.js:31:155789)
+	at s.<computed>.n.charCodeAt.s.<computed> (file:///home/jojomaverik/.vscode-server/bin/e10f2369d0d9614a452462f2e01cdc4aa9486296/out/vs/workbench/api/node/extensionHostProcess.js:31:153283)
+	at T0.g (file:///home/jojomaverik/.vscode-server/bin/e10f2369d0d9614a452462f2e01cdc4aa9486296/out/vs/workbench/api/node/extensionHostProcess.js:114:32325)
+	at T0.executeCommand (file:///home/jojomaverik/.vscode-server/bin/e10f2369d0d9614a452462f2e01cdc4aa9486296/out/vs/workbench/api/node/extensionHostProcess.js:114:31826)
+	at r.registerCommand.description (file:///home/jojomaverik/.vscode-server/bin/e10f2369d0d9614a452462f2e01cdc4aa9486296/out/vs/workbench/api/node/extensionHostProcess.js:114:31156)
+	at T0.h (file:///home/jojomaverik/.vscode-server/bin/e10f2369d0d9614a452462f2e01cdc4aa9486296/out/vs/workbench/api/node/extensionHostProcess.js:114:32845)
+	at T0.g (file:///home/jojomaverik/.vscode-server/bin/e10f2369d0d9614a452462f2e01cdc4aa9486296/out/vs/workbench/api/node/extensionHostProcess.js:114:31919)
+	at T0.executeCommand (file:///home/jojomaverik/.vscode-server/bin/e10f2369d0d9614a452462f2e01cdc4aa9486296/out/vs/workbench/api/node/extensionHostProcess.js:114:31826)
+	at Object.executeCommand (file:///home/jojomaverik/.vscode-server/bin/e10f2369d0d9614a452462f2e01cdc4aa9486296/out/vs/workbench/api/node/extensionHostProcess.js:156:37049)
+	at f (/home/jojomaverik/.vscode-server/extensions/eamodio.gitlens-15.6.0/dist/gitlens.js:1492:14481)
+	at c (/home/jojomaverik/.vscode-server/extensions/eamodio.gitlens-15.6.0/dist/gitlens.js:1492:19040)
+	at ActionRunners._updateContextKeys (/home/jojomaverik/.vscode-server/extensions/eamodio.gitlens-15.6.0/dist/gitlens.js:1107:65658)
+	at s (/home/jojomaverik/.vscode-server/extensions/eamodio.gitlens-15.6.0/dist/gitlens.js:1107:64102)
+	at RegisteredActionRunner.unregister (/home/jojomaverik/.vscode-server/extensions/eamodio.gitlens-15.6.0/dist/gitlens.js:1107:64245)
+	at RegisteredActionRunner.dispose (/home/jojomaverik/.vscode-server/extensions/eamodio.gitlens-15.6.0/dist/gitlens.js:1107:62899)
+	at ActionRunners.dispose (/home/jojomaverik/.vscode-server/extensions/eamodio.gitlens-15.6.0/dist/gitlens.js:1107:63685)
+	at /home/jojomaverik/.vscode-server/extensions/eamodio.gitlens-15.6.0/dist/gitlens.js:1448:19218
+	at Array.forEach (<anonymous>)
+	at Object.dispose (/home/jojomaverik/.vscode-server/extensions/eamodio.gitlens-15.6.0/dist/gitlens.js:1448:19200)
+	at Si (file:///home/jojomaverik/.vscode-server/bin/e10f2369d0d9614a452462f2e01cdc4aa9486296/out/vs/workbench/api/node/extensionHostProcess.js:24:701)
+	at file:///home/jojomaverik/.vscode-server/bin/e10f2369d0d9614a452462f2e01cdc4aa9486296/out/vs/workbench/api/node/extensionHostProcess.js:118:14995
+	at file:///home/jojomaverik/.vscode-server/bin/e10f2369d0d9614a452462f2e01cdc4aa9486296/out/vs/workbench/api/node/extensionHostProcess.js:24:1011
+	at Object.dispose (file:///home/jojomaverik/.vscode-server/bin/e10f2369d0d9614a452462f2e01cdc4aa9486296/out/vs/workbench/api/node/extensionHostProcess.js:7:2146)
+	at hB.eb (file:///home/jojomaverik/.vscode-server/bin/e10f2369d0d9614a452462f2e01cdc4aa9486296/out/vs/workbench/api/node/extensionHostProcess.js:118:11922)
+	at file:///home/jojomaverik/.vscode-server/bin/e10f2369d0d9614a452462f2e01cdc4aa9486296/out/vs/workbench/api/node/extensionHostProcess.js:118:9877
+	at Array.map (<anonymous>)
+	at hB.$ (file:///home/jojomaverik/.vscode-server/bin/e10f2369d0d9614a452462f2e01cdc4aa9486296/out/vs/workbench/api/node/extensionHostProcess.js:118:9865)
+	at hB.terminate (file:///home/jojomaverik/.vscode-server/bin/e10f2369d0d9614a452462f2e01cdc4aa9486296/out/vs/workbench/api/node/extensionHostProcess.js:118:10108)
+	at M3.terminate (file:///home/jojomaverik/.vscode-server/bin/e10f2369d0d9614a452462f2e01cdc4aa9486296/out/vs/workbench/api/node/extensionHostProcess.js:119:1424)
+	at ps (file:///home/jojomaverik/.vscode-server/bin/e10f2369d0d9614a452462f2e01cdc4aa9486296/out/vs/workbench/api/node/extensionHostProcess.js:174:15058)
+	at gh.value (file:///home/jojomaverik/.vscode-server/bin/e10f2369d0d9614a452462f2e01cdc4aa9486296/out/vs/workbench/api/node/extensionHostProcess.js:174:13218)
+	at T.B (file:///home/jojomaverik/.vscode-server/bin/e10f2369d0d9614a452462f2e01cdc4aa9486296/out/vs/workbench/api/node/extensionHostProcess.js:29:732)
+	at T.fire (file:///home/jojomaverik/.vscode-server/bin/e10f2369d0d9614a452462f2e01cdc4aa9486296/out/vs/workbench/api/node/extensionHostProcess.js:29:950)
+	at no.fire (file:///home/jojomaverik/.vscode-server/bin/e10f2369d0d9614a452462f2e01cdc4aa9486296/out/vs/workbench/api/node/extensionHostProcess.js:31:9399)
+	at Im.A (file:///home/jojomaverik/.vscode-server/bin/e10f2369d0d9614a452462f2e01cdc4aa9486296/out/vs/workbench/api/node/extensionHostProcess.js:31:12515)
+	at gh.value (file:///home/jojomaverik/.vscode-server/bin/e10f2369d0d9614a452462f2e01cdc4aa9486296/out/vs/workbench/api/node/extensionHostProcess.js:31:10935)
+	at T.B (file:///home/jojomaverik/.vscode-server/bin/e10f2369d0d9614a452462f2e01cdc4aa9486296/out/vs/workbench/api/node/extensionHostProcess.js:29:732)
+	at T.fire (file:///home/jojomaverik/.vscode-server/bin/e10f2369d0d9614a452462f2e01cdc4aa9486296/out/vs/workbench/api/node/extensionHostProcess.js:29:950)
+	at m5.acceptChunk (file:///home/jojomaverik/.vscode-server/bin/e10f2369d0d9614a452462f2e01cdc4aa9486296/out/vs/workbench/api/node/extensionHostProcess.js:31:7880)
+	at gh.value (file:///home/jojomaverik/.vscode-server/bin/e10f2369d0d9614a452462f2e01cdc4aa9486296/out/vs/workbench/api/node/extensionHostProcess.js:31:7166)
+	at T.B (file:///home/jojomaverik/.vscode-server/bin/e10f2369d0d9614a452462f2e01cdc4aa9486296/out/vs/workbench/api/node/extensionHostProcess.js:29:732)
+	at T.fire (file:///home/jojomaverik/.vscode-server/bin/e10f2369d0d9614a452462f2e01cdc4aa9486296/out/vs/workbench/api/node/extensionHostProcess.js:29:950)
+	at _2.z (file:///home/jojomaverik/.vscode-server/bin/e10f2369d0d9614a452462f2e01cdc4aa9486296/out/vs/workbench/api/node/extensionHostProcess.js:31:21892)
+	at _2.acceptFrame (file:///home/jojomaverik/.vscode-server/bin/e10f2369d0d9614a452462f2e01cdc4aa9486296/out/vs/workbench/api/node/extensionHostProcess.js:31:21698)
+	at z2.n (file:///home/jojomaverik/.vscode-server/bin/e10f2369d0d9614a452462f2e01cdc4aa9486296/out/vs/workbench/api/node/extensionHostProcess.js:31:20224)
+	at file:///home/jojomaverik/.vscode-server/bin/e10f2369d0d9614a452462f2e01cdc4aa9486296/out/vs/workbench/api/node/extensionHostProcess.js:31:17454
+	at Socket.t (file:///home/jojomaverik/.vscode-server/bin/e10f2369d0d9614a452462f2e01cdc4aa9486296/out/vs/workbench/api/node/extensionHostProcess.js:31:15393)
+	at Socket.emit (node:events:519:28)
+	at addChunk (node:internal/streams/readable:559:12)
+	at readableAddChunkPushByteMode (node:internal/streams/readable:510:3)
+	at Readable.push (node:internal/streams/readable:390:5)
+	at TCP.onStreamRead (node:internal/stream_base_commons:191:23) setContext undefined
+2024-10-09 18:06:51.377 [error] Canceled: Canceled
+	at new eA (file:///home/jojomaverik/.vscode-server/bin/e10f2369d0d9614a452462f2e01cdc4aa9486296/out/vs/workbench/api/node/extensionHostProcess.js:31:151177)
+	at Zb.U (file:///home/jojomaverik/.vscode-server/bin/e10f2369d0d9614a452462f2e01cdc4aa9486296/out/vs/workbench/api/node/extensionHostProcess.js:31:155789)
+	at s.<computed>.n.charCodeAt.s.<computed> (file:///home/jojomaverik/.vscode-server/bin/e10f2369d0d9614a452462f2e01cdc4aa9486296/out/vs/workbench/api/node/extensionHostProcess.js:31:153283)
+	at T0.g (file:///home/jojomaverik/.vscode-server/bin/e10f2369d0d9614a452462f2e01cdc4aa9486296/out/vs/workbench/api/node/extensionHostProcess.js:114:32325)
+	at T0.executeCommand (file:///home/jojomaverik/.vscode-server/bin/e10f2369d0d9614a452462f2e01cdc4aa9486296/out/vs/workbench/api/node/extensionHostProcess.js:114:31826)
+	at r.registerCommand.description (file:///home/jojomaverik/.vscode-server/bin/e10f2369d0d9614a452462f2e01cdc4aa9486296/out/vs/workbench/api/node/extensionHostProcess.js:114:31156)
+	at T0.h (file:///home/jojomaverik/.vscode-server/bin/e10f2369d0d9614a452462f2e01cdc4aa9486296/out/vs/workbench/api/node/extensionHostProcess.js:114:32845)
+	at T0.g (file:///home/jojomaverik/.vscode-server/bin/e10f2369d0d9614a452462f2e01cdc4aa9486296/out/vs/workbench/api/node/extensionHostProcess.js:114:31919)
+	at T0.executeCommand (file:///home/jojomaverik/.vscode-server/bin/e10f2369d0d9614a452462f2e01cdc4aa9486296/out/vs/workbench/api/node/extensionHostProcess.js:114:31826)
+	at Object.executeCommand (file:///home/jojomaverik/.vscode-server/bin/e10f2369d0d9614a452462f2e01cdc4aa9486296/out/vs/workbench/api/node/extensionHostProcess.js:156:37049)
+	at f (/home/jojomaverik/.vscode-server/extensions/eamodio.gitlens-15.6.0/dist/gitlens.js:1492:14481)
+	at c (/home/jojomaverik/.vscode-server/extensions/eamodio.gitlens-15.6.0/dist/gitlens.js:1492:19040)
+	at ActionRunners._updateContextKeys (/home/jojomaverik/.vscode-server/extensions/eamodio.gitlens-15.6.0/dist/gitlens.js:1107:65658)
+	at s (/home/jojomaverik/.vscode-server/extensions/eamodio.gitlens-15.6.0/dist/gitlens.js:1107:64102)
+	at RegisteredActionRunner.unregister (/home/jojomaverik/.vscode-server/extensions/eamodio.gitlens-15.6.0/dist/gitlens.js:1107:64245)
+	at RegisteredActionRunner.dispose (/home/jojomaverik/.vscode-server/extensions/eamodio.gitlens-15.6.0/dist/gitlens.js:1107:62899)
+	at Object.dispose (/home/jojomaverik/.vscode-server/extensions/eamodio.gitlens-15.6.0/dist/gitlens.js:1107:64339)
+	at Si (file:///home/jojomaverik/.vscode-server/bin/e10f2369d0d9614a452462f2e01cdc4aa9486296/out/vs/workbench/api/node/extensionHostProcess.js:24:701)
+	at file:///home/jojomaverik/.vscode-server/bin/e10f2369d0d9614a452462f2e01cdc4aa9486296/out/vs/workbench/api/node/extensionHostProcess.js:118:14995
+	at file:///home/jojomaverik/.vscode-server/bin/e10f2369d0d9614a452462f2e01cdc4aa9486296/out/vs/workbench/api/node/extensionHostProcess.js:24:1011
+	at Object.dispose (file:///home/jojomaverik/.vscode-server/bin/e10f2369d0d9614a452462f2e01cdc4aa9486296/out/vs/workbench/api/node/extensionHostProcess.js:7:2146)
+	at hB.eb (file:///home/jojomaverik/.vscode-server/bin/e10f2369d0d9614a452462f2e01cdc4aa9486296/out/vs/workbench/api/node/extensionHostProcess.js:118:11922)
+	at file:///home/jojomaverik/.vscode-server/bin/e10f2369d0d9614a452462f2e01cdc4aa9486296/out/vs/workbench/api/node/extensionHostProcess.js:118:9877
+	at Array.map (<anonymous>)
+	at hB.$ (file:///home/jojomaverik/.vscode-server/bin/e10f2369d0d9614a452462f2e01cdc4aa9486296/out/vs/workbench/api/node/extensionHostProcess.js:118:9865)
+	at hB.terminate (file:///home/jojomaverik/.vscode-server/bin/e10f2369d0d9614a452462f2e01cdc4aa9486296/out/vs/workbench/api/node/extensionHostProcess.js:118:10108)
+	at M3.terminate (file:///home/jojomaverik/.vscode-server/bin/e10f2369d0d9614a452462f2e01cdc4aa9486296/out/vs/workbench/api/node/extensionHostProcess.js:119:1424)
+	at ps (file:///home/jojomaverik/.vscode-server/bin/e10f2369d0d9614a452462f2e01cdc4aa9486296/out/vs/workbench/api/node/extensionHostProcess.js:174:15058)
+	at gh.value (file:///home/jojomaverik/.vscode-server/bin/e10f2369d0d9614a452462f2e01cdc4aa9486296/out/vs/workbench/api/node/extensionHostProcess.js:174:13218)
+	at T.B (file:///home/jojomaverik/.vscode-server/bin/e10f2369d0d9614a452462f2e01cdc4aa9486296/out/vs/workbench/api/node/extensionHostProcess.js:29:732)
+	at T.fire (file:///home/jojomaverik/.vscode-server/bin/e10f2369d0d9614a452462f2e01cdc4aa9486296/out/vs/workbench/api/node/extensionHostProcess.js:29:950)
+	at no.fire (file:///home/jojomaverik/.vscode-server/bin/e10f2369d0d9614a452462f2e01cdc4aa9486296/out/vs/workbench/api/node/extensionHostProcess.js:31:9399)
+	at Im.A (file:///home/jojomaverik/.vscode-server/bin/e10f2369d0d9614a452462f2e01cdc4aa9486296/out/vs/workbench/api/node/extensionHostProcess.js:31:12515)
+	at gh.value (file:///home/jojomaverik/.vscode-server/bin/e10f2369d0d9614a452462f2e01cdc4aa9486296/out/vs/workbench/api/node/extensionHostProcess.js:31:10935)
+	at T.B (file:///home/jojomaverik/.vscode-server/bin/e10f2369d0d9614a452462f2e01cdc4aa9486296/out/vs/workbench/api/node/extensionHostProcess.js:29:732)
+	at T.fire (file:///home/jojomaverik/.vscode-server/bin/e10f2369d0d9614a452462f2e01cdc4aa9486296/out/vs/workbench/api/node/extensionHostProcess.js:29:950)
+	at m5.acceptChunk (file:///home/jojomaverik/.vscode-server/bin/e10f2369d0d9614a452462f2e01cdc4aa9486296/out/vs/workbench/api/node/extensionHostProcess.js:31:7880)
+	at gh.value (file:///home/jojomaverik/.vscode-server/bin/e10f2369d0d9614a452462f2e01cdc4aa9486296/out/vs/workbench/api/node/extensionHostProcess.js:31:7166)
+	at T.B (file:///home/jojomaverik/.vscode-server/bin/e10f2369d0d9614a452462f2e01cdc4aa9486296/out/vs/workbench/api/node/extensionHostProcess.js:29:732)
+	at T.fire (file:///home/jojomaverik/.vscode-server/bin/e10f2369d0d9614a452462f2e01cdc4aa9486296/out/vs/workbench/api/node/extensionHostProcess.js:29:950)
+	at _2.z (file:///home/jojomaverik/.vscode-server/bin/e10f2369d0d9614a452462f2e01cdc4aa9486296/out/vs/workbench/api/node/extensionHostProcess.js:31:21892)
+	at _2.acceptFrame (file:///home/jojomaverik/.vscode-server/bin/e10f2369d0d9614a452462f2e01cdc4aa9486296/out/vs/workbench/api/node/extensionHostProcess.js:31:21698)
+	at z2.n (file:///home/jojomaverik/.vscode-server/bin/e10f2369d0d9614a452462f2e01cdc4aa9486296/out/vs/workbench/api/node/extensionHostProcess.js:31:20224)
+	at file:///home/jojomaverik/.vscode-server/bin/e10f2369d0d9614a452462f2e01cdc4aa9486296/out/vs/workbench/api/node/extensionHostProcess.js:31:17454
+	at Socket.t (file:///home/jojomaverik/.vscode-server/bin/e10f2369d0d9614a452462f2e01cdc4aa9486296/out/vs/workbench/api/node/extensionHostProcess.js:31:15393)
+	at Socket.emit (node:events:519:28)
+	at addChunk (node:internal/streams/readable:559:12)
+	at readableAddChunkPushByteMode (node:internal/streams/readable:510:3)
+	at Readable.push (node:internal/streams/readable:390:5)
+	at TCP.onStreamRead (node:internal/stream_base_commons:191:23) setContext undefined
+2024-10-09 18:06:51.424 [info] Extension host with pid 1962 exiting with code 0

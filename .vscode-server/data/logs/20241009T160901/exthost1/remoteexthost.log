@@ -1,0 +1,50 @@
+2024-10-09 16:09:02.763 [info] Extension host with pid 1743 started
+2024-10-09 16:09:02.763 [error] Error: EEXIST: file already exists, open '/home/jojomaverik/.vscode-server/data/User/workspaceStorage/90f7e0bfdb3cd12690ea1b3540823c1b/vscode.lock'
+2024-10-09 16:09:02.767 [info] Lock '/home/jojomaverik/.vscode-server/data/User/workspaceStorage/90f7e0bfdb3cd12690ea1b3540823c1b/vscode.lock': Could not acquire lock, checking if the file is stale.
+2024-10-09 16:09:02.771 [info] Lock '/home/jojomaverik/.vscode-server/data/User/workspaceStorage/90f7e0bfdb3cd12690ea1b3540823c1b/vscode.lock': The lock does not look stale, elapsed: 616 ms, giving up.
+2024-10-09 16:09:02.781 [info] Lock '/home/jojomaverik/.vscode-server/data/User/workspaceStorage/90f7e0bfdb3cd12690ea1b3540823c1b-1/vscode.lock': Lock acquired.
+2024-10-09 16:09:02.804 [info] ExtensionService#_doActivateExtension ms-vsliveshare.vsliveshare, startup: false, activationEvent: 'onFileSystem:vsls'
+2024-10-09 16:09:03.563 [info] ExtensionService#_doActivateExtension vscode.git-base, startup: true, activationEvent: '*', root cause: vscode.git
+2024-10-09 16:09:03.567 [info] Extension host terminating: received terminate message from renderer
+2024-10-09 16:09:03.567 [info] Lock '/home/jojomaverik/.vscode-server/data/User/workspaceStorage/90f7e0bfdb3cd12690ea1b3540823c1b-1/vscode.lock': Marking the lockfile as scheduled to be released in 6000 ms.
+2024-10-09 16:09:03.593 [error] ProxyResolver#resolveProxy undefined Canceled: Canceled
+	at Ac (file:///home/jojomaverik/.vscode-server/bin/e10f2369d0d9614a452462f2e01cdc4aa9486296/out/vs/workbench/api/node/extensionHostProcess.js:7:1122)
+	at file:///home/jojomaverik/.vscode-server/bin/e10f2369d0d9614a452462f2e01cdc4aa9486296/out/vs/workbench/api/node/extensionHostProcess.js:31:152630
+	at Array.forEach (<anonymous>)
+	at Zb.dispose (file:///home/jojomaverik/.vscode-server/bin/e10f2369d0d9614a452462f2e01cdc4aa9486296/out/vs/workbench/api/node/extensionHostProcess.js:31:152570)
+	at hB.terminate (file:///home/jojomaverik/.vscode-server/bin/e10f2369d0d9614a452462f2e01cdc4aa9486296/out/vs/workbench/api/node/extensionHostProcess.js:118:10085)
+	at M3.terminate (file:///home/jojomaverik/.vscode-server/bin/e10f2369d0d9614a452462f2e01cdc4aa9486296/out/vs/workbench/api/node/extensionHostProcess.js:119:1424)
+	at ps (file:///home/jojomaverik/.vscode-server/bin/e10f2369d0d9614a452462f2e01cdc4aa9486296/out/vs/workbench/api/node/extensionHostProcess.js:174:15058)
+	at gh.value (file:///home/jojomaverik/.vscode-server/bin/e10f2369d0d9614a452462f2e01cdc4aa9486296/out/vs/workbench/api/node/extensionHostProcess.js:174:13218)
+	at T.B (file:///home/jojomaverik/.vscode-server/bin/e10f2369d0d9614a452462f2e01cdc4aa9486296/out/vs/workbench/api/node/extensionHostProcess.js:29:732)
+	at T.fire (file:///home/jojomaverik/.vscode-server/bin/e10f2369d0d9614a452462f2e01cdc4aa9486296/out/vs/workbench/api/node/extensionHostProcess.js:29:950)
+	at no.fire (file:///home/jojomaverik/.vscode-server/bin/e10f2369d0d9614a452462f2e01cdc4aa9486296/out/vs/workbench/api/node/extensionHostProcess.js:31:9399)
+	at Im.A (file:///home/jojomaverik/.vscode-server/bin/e10f2369d0d9614a452462f2e01cdc4aa9486296/out/vs/workbench/api/node/extensionHostProcess.js:31:12515)
+	at gh.value (file:///home/jojomaverik/.vscode-server/bin/e10f2369d0d9614a452462f2e01cdc4aa9486296/out/vs/workbench/api/node/extensionHostProcess.js:31:10935)
+	at T.B (file:///home/jojomaverik/.vscode-server/bin/e10f2369d0d9614a452462f2e01cdc4aa9486296/out/vs/workbench/api/node/extensionHostProcess.js:29:732)
+	at T.fire (file:///home/jojomaverik/.vscode-server/bin/e10f2369d0d9614a452462f2e01cdc4aa9486296/out/vs/workbench/api/node/extensionHostProcess.js:29:950)
+	at m5.acceptChunk (file:///home/jojomaverik/.vscode-server/bin/e10f2369d0d9614a452462f2e01cdc4aa9486296/out/vs/workbench/api/node/extensionHostProcess.js:31:7880)
+	at gh.value (file:///home/jojomaverik/.vscode-server/bin/e10f2369d0d9614a452462f2e01cdc4aa9486296/out/vs/workbench/api/node/extensionHostProcess.js:31:7166)
+	at T.B (file:///home/jojomaverik/.vscode-server/bin/e10f2369d0d9614a452462f2e01cdc4aa9486296/out/vs/workbench/api/node/extensionHostProcess.js:29:732)
+	at T.fire (file:///home/jojomaverik/.vscode-server/bin/e10f2369d0d9614a452462f2e01cdc4aa9486296/out/vs/workbench/api/node/extensionHostProcess.js:29:950)
+	at _2.z (file:///home/jojomaverik/.vscode-server/bin/e10f2369d0d9614a452462f2e01cdc4aa9486296/out/vs/workbench/api/node/extensionHostProcess.js:31:21892)
+	at _2.acceptFrame (file:///home/jojomaverik/.vscode-server/bin/e10f2369d0d9614a452462f2e01cdc4aa9486296/out/vs/workbench/api/node/extensionHostProcess.js:31:21698)
+	at z2.n (file:///home/jojomaverik/.vscode-server/bin/e10f2369d0d9614a452462f2e01cdc4aa9486296/out/vs/workbench/api/node/extensionHostProcess.js:31:20224)
+	at file:///home/jojomaverik/.vscode-server/bin/e10f2369d0d9614a452462f2e01cdc4aa9486296/out/vs/workbench/api/node/extensionHostProcess.js:31:17454
+	at Socket.t (file:///home/jojomaverik/.vscode-server/bin/e10f2369d0d9614a452462f2e01cdc4aa9486296/out/vs/workbench/api/node/extensionHostProcess.js:31:15393)
+	at Socket.emit (node:events:519:28)
+	at addChunk (node:internal/streams/readable:559:12)
+	at readableAddChunkPushByteMode (node:internal/streams/readable:510:3)
+	at Readable.push (node:internal/streams/readable:390:5)
+	at TCP.onStreamRead (node:internal/stream_base_commons:191:23) 
+2024-10-09 16:09:03.668 [error] ProxyResolver#resolveProxy undefined Canceled: Canceled
+	at new eA (file:///home/jojomaverik/.vscode-server/bin/e10f2369d0d9614a452462f2e01cdc4aa9486296/out/vs/workbench/api/node/extensionHostProcess.js:31:151177)
+	at Zb.U (file:///home/jojomaverik/.vscode-server/bin/e10f2369d0d9614a452462f2e01cdc4aa9486296/out/vs/workbench/api/node/extensionHostProcess.js:31:155789)
+	at s.<computed>.n.charCodeAt.s.<computed> (file:///home/jojomaverik/.vscode-server/bin/e10f2369d0d9614a452462f2e01cdc4aa9486296/out/vs/workbench/api/node/extensionHostProcess.js:31:153283)
+	at p0.resolveProxy (file:///home/jojomaverik/.vscode-server/bin/e10f2369d0d9614a452462f2e01cdc4aa9486296/out/vs/workbench/api/node/extensionHostProcess.js:109:52540)
+	at Object.resolveProxy (file:///home/jojomaverik/.vscode-server/bin/e10f2369d0d9614a452462f2e01cdc4aa9486296/out/vs/workbench/api/node/extensionHostProcess.js:158:1188)
+	at useProxySettings (/home/jojomaverik/.vscode-server/bin/e10f2369d0d9614a452462f2e01cdc4aa9486296/node_modules/@vscode/proxy-agent/out/index.js:179:16)
+	at /home/jojomaverik/.vscode-server/bin/e10f2369d0d9614a452462f2e01cdc4aa9486296/node_modules/@vscode/proxy-agent/out/index.js:114:13
+	at /home/jojomaverik/.vscode-server/bin/e10f2369d0d9614a452462f2e01cdc4aa9486296/node_modules/@vscode/proxy-agent/out/index.js:483:13
+	at process.processTicksAndRejections (node:internal/process/task_queues:95:5) 
+2024-10-09 16:09:03.706 [info] Extension host with pid 1743 exiting with code 0

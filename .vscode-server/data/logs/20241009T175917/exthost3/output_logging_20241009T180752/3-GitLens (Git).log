@@ -1,0 +1,312 @@
+[2024-10-09 16:07:54.437] [          3ms] [/home/jojomaverik] git rev-parse --show-toplevel • FAILED
+
+Error: Command failed: /usr/bin/git -c core.quotepath=false -c color.ui=false rev-parse --show-toplevel
+fatal: not a git repository (or any of the parent directories): .git
+
+
+[2024-10-09 16:07:54.581] [          2ms] [/home/jojomaverik] git rev-parse --show-toplevel • FAILED
+
+Error: Command failed: /usr/bin/git -c core.quotepath=false -c color.ui=false rev-parse --show-toplevel
+fatal: not a git repository (or any of the parent directories): .git
+
+
+[2024-10-09 16:26:25.872] [          4ms] [/home/jojomaverik/.vscode-server/bin/e10f2369d0d9614a452462f2e01cdc4aa9486296] git rev-parse --show-toplevel • FAILED
+
+Error: Command failed: /usr/bin/git -c core.quotepath=false -c color.ui=false rev-parse --show-toplevel
+fatal: not a git repository (or any of the parent directories): .git
+
+
+[2024-10-09 16:26:25.921] [          2ms] [/home/jojomaverik/.vscode-server/bin/e10f2369d0d9614a452462f2e01cdc4aa9486296/extensions/ms-vscode.js-debug-companion] git rev-parse --show-toplevel • FAILED
+
+Error: Command failed: /usr/bin/git -c core.quotepath=false -c color.ui=false rev-parse --show-toplevel
+fatal: not a git repository (or any of the parent directories): .git
+
+
+[2024-10-09 16:26:25.975] [          4ms] [/home/jojomaverik/.vscode-server/bin/e10f2369d0d9614a452462f2e01cdc4aa9486296/extensions/git-base] git rev-parse --show-toplevel • FAILED
+
+Error: Command failed: /usr/bin/git -c core.quotepath=false -c color.ui=false rev-parse --show-toplevel
+fatal: not a git repository (or any of the parent directories): .git
+
+
+[2024-10-09 16:26:25.991] [          2ms] [/home/jojomaverik/.vscode-server/bin/e10f2369d0d9614a452462f2e01cdc4aa9486296/extensions/configuration-editing] git rev-parse --show-toplevel • FAILED
+
+Error: Command failed: /usr/bin/git -c core.quotepath=false -c color.ui=false rev-parse --show-toplevel
+fatal: not a git repository (or any of the parent directories): .git
+
+
+[2024-10-09 16:26:26.045] [          3ms] [/home/jojomaverik/.vscode-server/bin/e10f2369d0d9614a452462f2e01cdc4aa9486296/extensions/tunnel-forwarding] git rev-parse --show-toplevel • FAILED
+
+Error: Command failed: /usr/bin/git -c core.quotepath=false -c color.ui=false rev-parse --show-toplevel
+fatal: not a git repository (or any of the parent directories): .git
+
+
+[2024-10-09 16:26:26.110] [          3ms] [/home/jojomaverik/.vscode-server/bin/e10f2369d0d9614a452462f2e01cdc4aa9486296/extensions/microsoft-authentication] git rev-parse --show-toplevel • FAILED
+
+Error: Command failed: /usr/bin/git -c core.quotepath=false -c color.ui=false rev-parse --show-toplevel
+fatal: not a git repository (or any of the parent directories): .git
+
+
+[2024-10-09 16:26:26.132] [          2ms] [/home/jojomaverik/.vscode-server/bin/e10f2369d0d9614a452462f2e01cdc4aa9486296/extensions/gulp] git rev-parse --show-toplevel • FAILED
+
+Error: Command failed: /usr/bin/git -c core.quotepath=false -c color.ui=false rev-parse --show-toplevel
+fatal: not a git repository (or any of the parent directories): .git
+
+
+[2024-10-09 16:26:26.185] [          2ms] [/home/jojomaverik/.vscode-server/bin/e10f2369d0d9614a452462f2e01cdc4aa9486296/extensions/typescript-language-features] git rev-parse --show-toplevel • FAILED
+
+Error: Command failed: /usr/bin/git -c core.quotepath=false -c color.ui=false rev-parse --show-toplevel
+fatal: not a git repository (or any of the parent directories): .git
+
+
+[2024-10-09 16:26:26.240] [          4ms] [/home/jojomaverik/.vscode-server/bin/e10f2369d0d9614a452462f2e01cdc4aa9486296/extensions/html-language-features/server] git rev-parse --show-toplevel • FAILED
+
+Error: Command failed: /usr/bin/git -c core.quotepath=false -c color.ui=false rev-parse --show-toplevel
+fatal: not a git repository (or any of the parent directories): .git
+
+
+[2024-10-09 16:26:26.339] [          5ms] [/home/jojomaverik/.vscode-server/bin/e10f2369d0d9614a452462f2e01cdc4aa9486296/extensions/html-language-features] git rev-parse --show-toplevel • FAILED
+
+Error: Command failed: /usr/bin/git -c core.quotepath=false -c color.ui=false rev-parse --show-toplevel
+fatal: not a git repository (or any of the parent directories): .git
+
+
+[2024-10-09 16:26:26.359] [          5ms] [/home/jojomaverik/.vscode-server/bin/e10f2369d0d9614a452462f2e01cdc4aa9486296/extensions/jake] git rev-parse --show-toplevel • FAILED
+
+Error: Command failed: /usr/bin/git -c core.quotepath=false -c color.ui=false rev-parse --show-toplevel
+fatal: not a git repository (or any of the parent directories): .git
+
+
+[2024-10-09 16:26:26.379] [          4ms] [/home/jojomaverik/.vscode-server/bin/e10f2369d0d9614a452462f2e01cdc4aa9486296/extensions/debug-server-ready] git rev-parse --show-toplevel • FAILED
+
+Error: Command failed: /usr/bin/git -c core.quotepath=false -c color.ui=false rev-parse --show-toplevel
+fatal: not a git repository (or any of the parent directories): .git
+
+
+[2024-10-09 16:26:26.442] [          4ms] [/home/jojomaverik/.vscode-server/bin/e10f2369d0d9614a452462f2e01cdc4aa9486296/extensions/emmet] git rev-parse --show-toplevel • FAILED
+
+Error: Command failed: /usr/bin/git -c core.quotepath=false -c color.ui=false rev-parse --show-toplevel
+fatal: not a git repository (or any of the parent directories): .git
+
+
+[2024-10-09 16:26:26.459] [          3ms] [/home/jojomaverik/.vscode-server/bin/e10f2369d0d9614a452462f2e01cdc4aa9486296/extensions/github-authentication] git rev-parse --show-toplevel • FAILED
+
+Error: Command failed: /usr/bin/git -c core.quotepath=false -c color.ui=false rev-parse --show-toplevel
+fatal: not a git repository (or any of the parent directories): .git
+
+
+[2024-10-09 16:26:26.475] [          3ms] [/home/jojomaverik/.vscode-server/bin/e10f2369d0d9614a452462f2e01cdc4aa9486296/extensions/extension-editing] git rev-parse --show-toplevel • FAILED
+
+Error: Command failed: /usr/bin/git -c core.quotepath=false -c color.ui=false rev-parse --show-toplevel
+fatal: not a git repository (or any of the parent directories): .git
+
+
+[2024-10-09 16:26:26.535] [          4ms] [/home/jojomaverik/.vscode-server/bin/e10f2369d0d9614a452462f2e01cdc4aa9486296/extensions/markdown-math] git rev-parse --show-toplevel • FAILED
+
+Error: Command failed: /usr/bin/git -c core.quotepath=false -c color.ui=false rev-parse --show-toplevel
+fatal: not a git repository (or any of the parent directories): .git
+
+
+[2024-10-09 16:26:26.588] [          5ms] [/home/jojomaverik/.vscode-server/bin/e10f2369d0d9614a452462f2e01cdc4aa9486296/extensions/php-language-features] git rev-parse --show-toplevel • FAILED
+
+Error: Command failed: /usr/bin/git -c core.quotepath=false -c color.ui=false rev-parse --show-toplevel
+fatal: not a git repository (or any of the parent directories): .git
+
+
+[2024-10-09 16:26:26.611] [          4ms] [/home/jojomaverik/.vscode-server/bin/e10f2369d0d9614a452462f2e01cdc4aa9486296/extensions/search-result] git rev-parse --show-toplevel • FAILED
+
+Error: Command failed: /usr/bin/git -c core.quotepath=false -c color.ui=false rev-parse --show-toplevel
+fatal: not a git repository (or any of the parent directories): .git
+
+
+[2024-10-09 16:26:26.663] [          2ms] [/home/jojomaverik/.vscode-server/bin/e10f2369d0d9614a452462f2e01cdc4aa9486296/extensions/ms-vscode.js-debug] git rev-parse --show-toplevel • FAILED
+
+Error: Command failed: /usr/bin/git -c core.quotepath=false -c color.ui=false rev-parse --show-toplevel
+fatal: not a git repository (or any of the parent directories): .git
+
+
+[2024-10-09 16:26:26.719] [          4ms] [/home/jojomaverik/.vscode-server/bin/e10f2369d0d9614a452462f2e01cdc4aa9486296/extensions/ms-vscode.vscode-js-profile-table] git rev-parse --show-toplevel • FAILED
+
+Error: Command failed: /usr/bin/git -c core.quotepath=false -c color.ui=false rev-parse --show-toplevel
+fatal: not a git repository (or any of the parent directories): .git
+
+
+[2024-10-09 16:26:26.741] [          4ms] [/home/jojomaverik/.vscode-server/bin/e10f2369d0d9614a452462f2e01cdc4aa9486296/extensions/references-view] git rev-parse --show-toplevel • FAILED
+
+Error: Command failed: /usr/bin/git -c core.quotepath=false -c color.ui=false rev-parse --show-toplevel
+fatal: not a git repository (or any of the parent directories): .git
+
+
+[2024-10-09 16:26:26.757] [          4ms] [/home/jojomaverik/.vscode-server/bin/e10f2369d0d9614a452462f2e01cdc4aa9486296/extensions/simple-browser] git rev-parse --show-toplevel • FAILED
+
+Error: Command failed: /usr/bin/git -c core.quotepath=false -c color.ui=false rev-parse --show-toplevel
+fatal: not a git repository (or any of the parent directories): .git
+
+
+[2024-10-09 16:26:26.809] [          5ms] [/home/jojomaverik/.vscode-server/bin/e10f2369d0d9614a452462f2e01cdc4aa9486296/extensions/markdown-language-features] git rev-parse --show-toplevel • FAILED
+
+Error: Command failed: /usr/bin/git -c core.quotepath=false -c color.ui=false rev-parse --show-toplevel
+fatal: not a git repository (or any of the parent directories): .git
+
+
+[2024-10-09 16:26:26.828] [          5ms] [/home/jojomaverik/.vscode-server/bin/e10f2369d0d9614a452462f2e01cdc4aa9486296/extensions/ipynb] git rev-parse --show-toplevel • FAILED
+
+Error: Command failed: /usr/bin/git -c core.quotepath=false -c color.ui=false rev-parse --show-toplevel
+fatal: not a git repository (or any of the parent directories): .git
+
+
+[2024-10-09 16:26:26.842] [          3ms] [/home/jojomaverik/.vscode-server/bin/e10f2369d0d9614a452462f2e01cdc4aa9486296/extensions/grunt] git rev-parse --show-toplevel • FAILED
+
+Error: Command failed: /usr/bin/git -c core.quotepath=false -c color.ui=false rev-parse --show-toplevel
+fatal: not a git repository (or any of the parent directories): .git
+
+
+[2024-10-09 16:26:26.900] [          6ms] [/home/jojomaverik/.vscode-server/bin/e10f2369d0d9614a452462f2e01cdc4aa9486296/extensions/merge-conflict] git rev-parse --show-toplevel • FAILED
+
+Error: Command failed: /usr/bin/git -c core.quotepath=false -c color.ui=false rev-parse --show-toplevel
+fatal: not a git repository (or any of the parent directories): .git
+
+
+[2024-10-09 16:26:26.929] [          4ms] [/home/jojomaverik/.vscode-server/bin/e10f2369d0d9614a452462f2e01cdc4aa9486296/extensions/css-language-features/server] git rev-parse --show-toplevel • FAILED
+
+Error: Command failed: /usr/bin/git -c core.quotepath=false -c color.ui=false rev-parse --show-toplevel
+fatal: not a git repository (or any of the parent directories): .git
+
+
+[2024-10-09 16:26:27.039] [          4ms] [/home/jojomaverik/.vscode-server/bin/e10f2369d0d9614a452462f2e01cdc4aa9486296/extensions/css-language-features] git rev-parse --show-toplevel • FAILED
+
+Error: Command failed: /usr/bin/git -c core.quotepath=false -c color.ui=false rev-parse --show-toplevel
+fatal: not a git repository (or any of the parent directories): .git
+
+
+[2024-10-09 16:26:27.057] [          4ms] [/home/jojomaverik/.vscode-server/bin/e10f2369d0d9614a452462f2e01cdc4aa9486296/extensions/debug-auto-launch] git rev-parse --show-toplevel • FAILED
+
+Error: Command failed: /usr/bin/git -c core.quotepath=false -c color.ui=false rev-parse --show-toplevel
+fatal: not a git repository (or any of the parent directories): .git
+
+
+[2024-10-09 16:26:27.073] [          3ms] [/home/jojomaverik/.vscode-server/bin/e10f2369d0d9614a452462f2e01cdc4aa9486296/extensions/npm] git rev-parse --show-toplevel • FAILED
+
+Error: Command failed: /usr/bin/git -c core.quotepath=false -c color.ui=false rev-parse --show-toplevel
+fatal: not a git repository (or any of the parent directories): .git
+
+
+[2024-10-09 16:26:27.138] [          5ms] [/home/jojomaverik/.vscode-server/bin/e10f2369d0d9614a452462f2e01cdc4aa9486296/extensions/git] git rev-parse --show-toplevel • FAILED
+
+Error: Command failed: /usr/bin/git -c core.quotepath=false -c color.ui=false rev-parse --show-toplevel
+fatal: not a git repository (or any of the parent directories): .git
+
+
+[2024-10-09 16:26:27.152] [          3ms] [/home/jojomaverik/.vscode-server/bin/e10f2369d0d9614a452462f2e01cdc4aa9486296/extensions/media-preview] git rev-parse --show-toplevel • FAILED
+
+Error: Command failed: /usr/bin/git -c core.quotepath=false -c color.ui=false rev-parse --show-toplevel
+fatal: not a git repository (or any of the parent directories): .git
+
+
+[2024-10-09 16:26:27.164] [          2ms] [/home/jojomaverik/.vscode-server/bin/e10f2369d0d9614a452462f2e01cdc4aa9486296/extensions/json-language-features/server] git rev-parse --show-toplevel • FAILED
+
+Error: Command failed: /usr/bin/git -c core.quotepath=false -c color.ui=false rev-parse --show-toplevel
+fatal: not a git repository (or any of the parent directories): .git
+
+
+[2024-10-09 16:26:27.249] [          5ms] [/home/jojomaverik/.vscode-server/bin/e10f2369d0d9614a452462f2e01cdc4aa9486296/extensions/json-language-features] git rev-parse --show-toplevel • FAILED
+
+Error: Command failed: /usr/bin/git -c core.quotepath=false -c color.ui=false rev-parse --show-toplevel
+fatal: not a git repository (or any of the parent directories): .git
+
+
+[2024-10-09 16:26:27.275] [          5ms] [/home/jojomaverik/.vscode-server/bin/e10f2369d0d9614a452462f2e01cdc4aa9486296/extensions/github] git rev-parse --show-toplevel • FAILED
+
+Error: Command failed: /usr/bin/git -c core.quotepath=false -c color.ui=false rev-parse --show-toplevel
+fatal: not a git repository (or any of the parent directories): .git
+
+
+[2024-10-09 16:26:27.299] [          5ms] [/home/jojomaverik/.vscode-server/extensions/ms-vscode.azure-repos-0.40.0] git rev-parse --show-toplevel • FAILED
+
+Error: Command failed: /usr/bin/git -c core.quotepath=false -c color.ui=false rev-parse --show-toplevel
+fatal: not a git repository (or any of the parent directories): .git
+
+
+[2024-10-09 16:26:27.447] [          3ms] [/home/jojomaverik/.vscode-server/extensions/eamodio.gitlens-15.6.0] git rev-parse --show-toplevel • FAILED
+
+Error: Command failed: /usr/bin/git -c core.quotepath=false -c color.ui=false rev-parse --show-toplevel
+fatal: not a git repository (or any of the parent directories): .git
+
+
+[2024-10-09 16:26:27.511] [          3ms] [/home/jojomaverik/.vscode-server/extensions/github.vscode-pull-request-github-0.98.0] git rev-parse --show-toplevel • FAILED
+
+Error: Command failed: /usr/bin/git -c core.quotepath=false -c color.ui=false rev-parse --show-toplevel
+fatal: not a git repository (or any of the parent directories): .git
+
+
+[2024-10-09 16:26:27.589] [          5ms] [/home/jojomaverik/.vscode-server/extensions/github.codespaces-1.17.3] git rev-parse --show-toplevel • FAILED
+
+Error: Command failed: /usr/bin/git -c core.quotepath=false -c color.ui=false rev-parse --show-toplevel
+fatal: not a git repository (or any of the parent directories): .git
+
+
+[2024-10-09 16:26:27.635] [          3ms] [/home/jojomaverik/.vscode-server/extensions/dsvictor94.promela-0.4.0] git rev-parse --show-toplevel • FAILED
+
+Error: Command failed: /usr/bin/git -c core.quotepath=false -c color.ui=false rev-parse --show-toplevel
+fatal: not a git repository (or any of the parent directories): .git
+
+
+[2024-10-09 16:26:27.716] [          3ms] [/home/jojomaverik/.vscode-server/extensions/donjayamanne.githistory-0.6.20] git rev-parse --show-toplevel • FAILED
+
+Error: Command failed: /usr/bin/git -c core.quotepath=false -c color.ui=false rev-parse --show-toplevel
+fatal: not a git repository (or any of the parent directories): .git
+
+
+[2024-10-09 16:26:27.771] [          4ms] [/home/jojomaverik/.vscode-server/extensions/github.remotehub-0.64.0] git rev-parse --show-toplevel • FAILED
+
+Error: Command failed: /usr/bin/git -c core.quotepath=false -c color.ui=false rev-parse --show-toplevel
+fatal: not a git repository (or any of the parent directories): .git
+
+
+[2024-10-09 16:26:27.824] [          2ms] [/home/jojomaverik/.vscode-server/extensions/mhutchie.git-graph-1.30.0] git rev-parse --show-toplevel • FAILED
+
+Error: Command failed: /usr/bin/git -c core.quotepath=false -c color.ui=false rev-parse --show-toplevel
+fatal: not a git repository (or any of the parent directories): .git
+
+
+[2024-10-09 16:26:27.930] [          4ms] [/home/jojomaverik/.vscode-server/extensions/ms-vsliveshare.vsliveshare-1.0.5941] git rev-parse --show-toplevel • FAILED
+
+Error: Command failed: /usr/bin/git -c core.quotepath=false -c color.ui=false rev-parse --show-toplevel
+fatal: not a git repository (or any of the parent directories): .git
+
+
+[2024-10-09 16:26:28.016] [          3ms] [/home/jojomaverik/.vscode-server/extensions/ms-vscode.remote-repositories-0.42.0] git rev-parse --show-toplevel • FAILED
+
+Error: Command failed: /usr/bin/git -c core.quotepath=false -c color.ui=false rev-parse --show-toplevel
+fatal: not a git repository (or any of the parent directories): .git
+
+
+[2024-10-09 16:26:28.058] [          4ms] [/home/jojomaverik/.vscode-server/extensions/ziyasal.vscode-open-in-github-1.3.6] git rev-parse --show-toplevel • FAILED
+
+Error: Command failed: /usr/bin/git -c core.quotepath=false -c color.ui=false rev-parse --show-toplevel
+fatal: not a git repository (or any of the parent directories): .git
+
+
+[2024-10-09 16:26:28.135] [          3ms] [/home/jojomaverik/.vscode-server/extensions/howardzuo.vscode-git-tags-1.4.4] git rev-parse --show-toplevel • FAILED
+
+Error: Command failed: /usr/bin/git -c core.quotepath=false -c color.ui=false rev-parse --show-toplevel
+fatal: not a git repository (or any of the parent directories): .git
+
+
+[2024-10-09 16:26:28.226] [          4ms] [/home/jojomaverik/.vscode-server/extensions/vinirossa.vscode-gitandgithub-pack-2.0.1] git rev-parse --show-toplevel • FAILED
+
+Error: Command failed: /usr/bin/git -c core.quotepath=false -c color.ui=false rev-parse --show-toplevel
+fatal: not a git repository (or any of the parent directories): .git
+
+
+[2024-10-09 16:26:28.244] [          3ms] [/home/jojomaverik/.vscode-server/extensions/adam-bender.commit-message-editor-0.25.0] git rev-parse --show-toplevel • FAILED
+
+Error: Command failed: /usr/bin/git -c core.quotepath=false -c color.ui=false rev-parse --show-toplevel
+fatal: not a git repository (or any of the parent directories): .git
+
+
+[2024-10-09 16:27:58.023] [          3ms] [/home/jojomaverik] git rev-parse --abbrev-ref --symbolic-full-name @ @{u} -- • FAILED
+
+Error: Command failed: /usr/bin/git -c core.quotepath=false -c color.ui=false rev-parse --abbrev-ref --symbolic-full-name @ @{u} --
+fatal: bad revision '@'
+
+

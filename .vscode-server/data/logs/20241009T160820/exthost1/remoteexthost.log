@@ -1,0 +1,12 @@
+2024-10-09 16:08:21.115 [info] Extension host with pid 1512 started
+2024-10-09 16:08:21.126 [info] Lock '/home/jojomaverik/.vscode-server/data/User/workspaceStorage/90f7e0bfdb3cd12690ea1b3540823c1b/vscode.lock': Lock acquired.
+2024-10-09 16:08:21.143 [info] ExtensionService#_doActivateExtension ms-vsliveshare.vsliveshare, startup: false, activationEvent: 'onFileSystem:vsls'
+2024-10-09 16:08:21.834 [info] ExtensionService#_doActivateExtension vscode.git-base, startup: true, activationEvent: '*'
+2024-10-09 16:08:21.853 [info] Eager extensions activated
+2024-10-09 16:08:21.854 [info] ExtensionService#_doActivateExtension vscode.merge-conflict, startup: false, activationEvent: 'onStartupFinished'
+2024-10-09 16:08:28.756 [info] ExtensionService#_doActivateExtension vscode.emmet, startup: false, activationEvent: 'onLanguage'
+2024-10-09 16:08:29.539 [info] ExtensionService#_doActivateExtension vscode.configuration-editing, startup: false, activationEvent: 'onLanguage:jsonc'
+2024-10-09 16:08:29.539 [info] ExtensionService#_doActivateExtension vscode.json-language-features, startup: false, activationEvent: 'onLanguage:jsonc'
+2024-10-09 16:08:29.539 [info] ExtensionService#_doActivateExtension vscode.typescript-language-features, startup: false, activationEvent: 'onLanguage:jsonc'
+2024-10-09 16:08:38.743 [info] ExtensionService#_doActivateExtension vscode.git, startup: false, activationEvent: '*'
+2024-10-09 16:08:38.743 [info] ExtensionService#_doActivateExtension dsvictor94.promela, startup: false, activationEvent: 'onLanguage:promela'

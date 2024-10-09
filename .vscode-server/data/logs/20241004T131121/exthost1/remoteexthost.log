@@ -1,0 +1,124 @@
+2024-10-04 13:11:23.289 [info] Extension host with pid 5943 started
+2024-10-04 13:11:23.303 [info] Lock '/home/jojomaverik/.vscode-server/data/User/workspaceStorage/212baf6bcdd3d4ef4cd378ae34bae817/vscode.lock': Lock acquired.
+2024-10-04 13:11:23.626 [info] ExtensionService#_doActivateExtension vscode.emmet, startup: false, activationEvent: 'onLanguage'
+2024-10-04 13:11:23.631 [info] ExtensionService#_doActivateExtension dsvictor94.promela, startup: false, activationEvent: 'onLanguage:promela'
+2024-10-04 13:11:23.721 [info] ExtensionService#_doActivateExtension vscode.git-base, startup: true, activationEvent: '*', root cause: vscode.git
+2024-10-04 13:11:23.747 [info] ExtensionService#_doActivateExtension vscode.git, startup: true, activationEvent: '*'
+2024-10-04 13:11:23.747 [info] ExtensionService#_doActivateExtension vscode.github, startup: true, activationEvent: '*'
+2024-10-04 13:11:24.015 [info] Eager extensions activated
+2024-10-04 13:11:24.015 [info] ExtensionService#_doActivateExtension vscode.debug-auto-launch, startup: false, activationEvent: 'onStartupFinished'
+2024-10-04 13:11:24.016 [info] ExtensionService#_doActivateExtension vscode.merge-conflict, startup: false, activationEvent: 'onStartupFinished'
+2024-10-04 13:11:30.137 [info] ExtensionService#_doActivateExtension ms-vsliveshare.vsliveshare, startup: false, activationEvent: 'onView:liveshare.session'
+2024-10-04 13:14:10.022 [info] Extension host terminating: received terminate message from renderer
+2024-10-04 13:14:10.024 [info] Lock '/home/jojomaverik/.vscode-server/data/User/workspaceStorage/212baf6bcdd3d4ef4cd378ae34bae817/vscode.lock': Marking the lockfile as scheduled to be released in 6000 ms.
+2024-10-04 13:14:10.163 [error] Canceled: Canceled
+	at new eA (file:///home/jojomaverik/.vscode-server/bin/d78a74bcdfad14d5d3b1b782f87255d802b57511/out/vs/workbench/api/node/extensionHostProcess.js:31:151177)
+	at Zb.U (file:///home/jojomaverik/.vscode-server/bin/d78a74bcdfad14d5d3b1b782f87255d802b57511/out/vs/workbench/api/node/extensionHostProcess.js:31:155789)
+	at s.<computed>.n.charCodeAt.s.<computed> (file:///home/jojomaverik/.vscode-server/bin/d78a74bcdfad14d5d3b1b782f87255d802b57511/out/vs/workbench/api/node/extensionHostProcess.js:31:153283)
+	at T0.g (file:///home/jojomaverik/.vscode-server/bin/d78a74bcdfad14d5d3b1b782f87255d802b57511/out/vs/workbench/api/node/extensionHostProcess.js:114:32325)
+	at T0.executeCommand (file:///home/jojomaverik/.vscode-server/bin/d78a74bcdfad14d5d3b1b782f87255d802b57511/out/vs/workbench/api/node/extensionHostProcess.js:114:31826)
+	at r.registerCommand.description (file:///home/jojomaverik/.vscode-server/bin/d78a74bcdfad14d5d3b1b782f87255d802b57511/out/vs/workbench/api/node/extensionHostProcess.js:114:31156)
+	at T0.h (file:///home/jojomaverik/.vscode-server/bin/d78a74bcdfad14d5d3b1b782f87255d802b57511/out/vs/workbench/api/node/extensionHostProcess.js:114:32845)
+	at T0.g (file:///home/jojomaverik/.vscode-server/bin/d78a74bcdfad14d5d3b1b782f87255d802b57511/out/vs/workbench/api/node/extensionHostProcess.js:114:31919)
+	at T0.executeCommand (file:///home/jojomaverik/.vscode-server/bin/d78a74bcdfad14d5d3b1b782f87255d802b57511/out/vs/workbench/api/node/extensionHostProcess.js:114:31826)
+	at Object.executeCommand (file:///home/jojomaverik/.vscode-server/bin/d78a74bcdfad14d5d3b1b782f87255d802b57511/out/vs/workbench/api/node/extensionHostProcess.js:156:37049)
+	at ExtensionUtil.<anonymous> (/home/jojomaverik/.vscode-server/extensions/ms-vsliveshare.vsliveshare-1.0.5941/extension.js:1:665766)
+	at Generator.next (<anonymous>)
+	at /home/jojomaverik/.vscode-server/extensions/ms-vsliveshare.vsliveshare-1.0.5941/extension.js:1:664481
+	at new Promise (<anonymous>)
+	at r (/home/jojomaverik/.vscode-server/extensions/ms-vsliveshare.vsliveshare-1.0.5941/extension.js:1:664167)
+	at ExtensionUtil.setCommandContext (/home/jojomaverik/.vscode-server/extensions/ms-vsliveshare.vsliveshare-1.0.5941/extension.js:1:665682)
+	at SessionContext.onSessionStateChanged (/home/jojomaverik/.vscode-server/extensions/ms-vsliveshare.vsliveshare-1.0.5941/extension.js:1:162595)
+	at T.B (file:///home/jojomaverik/.vscode-server/bin/d78a74bcdfad14d5d3b1b782f87255d802b57511/out/vs/workbench/api/node/extensionHostProcess.js:29:732)
+	at T.C (file:///home/jojomaverik/.vscode-server/bin/d78a74bcdfad14d5d3b1b782f87255d802b57511/out/vs/workbench/api/node/extensionHostProcess.js:29:802)
+	at T.fire (file:///home/jojomaverik/.vscode-server/bin/d78a74bcdfad14d5d3b1b782f87255d802b57511/out/vs/workbench/api/node/extensionHostProcess.js:29:1019)
+	at SessionStateTracker.setState (/home/jojomaverik/.vscode-server/extensions/ms-vsliveshare.vsliveshare-1.0.5941/extension.js:1:167078)
+	at SessionStateTracker.transition (/home/jojomaverik/.vscode-server/extensions/ms-vsliveshare.vsliveshare-1.0.5941/extension.js:1:166787)
+	at SessionStateTransitionsCommandDecorator.<anonymous> (/home/jojomaverik/.vscode-server/extensions/ms-vsliveshare.vsliveshare-1.0.5941/extension.js:1:461102)
+	at Generator.throw (<anonymous>)
+	at rejected (/home/jojomaverik/.vscode-server/extensions/ms-vsliveshare.vsliveshare-1.0.5941/extension.js:1:459491)
+	at process.processTicksAndRejections (node:internal/process/task_queues:95:5) setContext undefined
+2024-10-04 13:14:10.163 [error] Canceled: Canceled
+	at new eA (file:///home/jojomaverik/.vscode-server/bin/d78a74bcdfad14d5d3b1b782f87255d802b57511/out/vs/workbench/api/node/extensionHostProcess.js:31:151177)
+	at Zb.U (file:///home/jojomaverik/.vscode-server/bin/d78a74bcdfad14d5d3b1b782f87255d802b57511/out/vs/workbench/api/node/extensionHostProcess.js:31:155789)
+	at s.<computed>.n.charCodeAt.s.<computed> (file:///home/jojomaverik/.vscode-server/bin/d78a74bcdfad14d5d3b1b782f87255d802b57511/out/vs/workbench/api/node/extensionHostProcess.js:31:153283)
+	at T0.g (file:///home/jojomaverik/.vscode-server/bin/d78a74bcdfad14d5d3b1b782f87255d802b57511/out/vs/workbench/api/node/extensionHostProcess.js:114:32325)
+	at T0.executeCommand (file:///home/jojomaverik/.vscode-server/bin/d78a74bcdfad14d5d3b1b782f87255d802b57511/out/vs/workbench/api/node/extensionHostProcess.js:114:31826)
+	at r.registerCommand.description (file:///home/jojomaverik/.vscode-server/bin/d78a74bcdfad14d5d3b1b782f87255d802b57511/out/vs/workbench/api/node/extensionHostProcess.js:114:31156)
+	at T0.h (file:///home/jojomaverik/.vscode-server/bin/d78a74bcdfad14d5d3b1b782f87255d802b57511/out/vs/workbench/api/node/extensionHostProcess.js:114:32845)
+	at T0.g (file:///home/jojomaverik/.vscode-server/bin/d78a74bcdfad14d5d3b1b782f87255d802b57511/out/vs/workbench/api/node/extensionHostProcess.js:114:31919)
+	at T0.executeCommand (file:///home/jojomaverik/.vscode-server/bin/d78a74bcdfad14d5d3b1b782f87255d802b57511/out/vs/workbench/api/node/extensionHostProcess.js:114:31826)
+	at Object.executeCommand (file:///home/jojomaverik/.vscode-server/bin/d78a74bcdfad14d5d3b1b782f87255d802b57511/out/vs/workbench/api/node/extensionHostProcess.js:156:37049)
+	at ExtensionUtil.<anonymous> (/home/jojomaverik/.vscode-server/extensions/ms-vsliveshare.vsliveshare-1.0.5941/extension.js:1:665766)
+	at Generator.next (<anonymous>)
+	at /home/jojomaverik/.vscode-server/extensions/ms-vsliveshare.vsliveshare-1.0.5941/extension.js:1:664481
+	at new Promise (<anonymous>)
+	at r (/home/jojomaverik/.vscode-server/extensions/ms-vsliveshare.vsliveshare-1.0.5941/extension.js:1:664167)
+	at ExtensionUtil.setCommandContext (/home/jojomaverik/.vscode-server/extensions/ms-vsliveshare.vsliveshare-1.0.5941/extension.js:1:665682)
+	at SessionContext.onSessionStateChanged (/home/jojomaverik/.vscode-server/extensions/ms-vsliveshare.vsliveshare-1.0.5941/extension.js:1:162666)
+	at T.B (file:///home/jojomaverik/.vscode-server/bin/d78a74bcdfad14d5d3b1b782f87255d802b57511/out/vs/workbench/api/node/extensionHostProcess.js:29:732)
+	at T.C (file:///home/jojomaverik/.vscode-server/bin/d78a74bcdfad14d5d3b1b782f87255d802b57511/out/vs/workbench/api/node/extensionHostProcess.js:29:802)
+	at T.fire (file:///home/jojomaverik/.vscode-server/bin/d78a74bcdfad14d5d3b1b782f87255d802b57511/out/vs/workbench/api/node/extensionHostProcess.js:29:1019)
+	at SessionStateTracker.setState (/home/jojomaverik/.vscode-server/extensions/ms-vsliveshare.vsliveshare-1.0.5941/extension.js:1:167078)
+	at SessionStateTracker.transition (/home/jojomaverik/.vscode-server/extensions/ms-vsliveshare.vsliveshare-1.0.5941/extension.js:1:166787)
+	at SessionStateTransitionsCommandDecorator.<anonymous> (/home/jojomaverik/.vscode-server/extensions/ms-vsliveshare.vsliveshare-1.0.5941/extension.js:1:461102)
+	at Generator.throw (<anonymous>)
+	at rejected (/home/jojomaverik/.vscode-server/extensions/ms-vsliveshare.vsliveshare-1.0.5941/extension.js:1:459491)
+	at process.processTicksAndRejections (node:internal/process/task_queues:95:5) setContext undefined
+2024-10-04 13:14:10.164 [error] Canceled: Canceled
+	at new eA (file:///home/jojomaverik/.vscode-server/bin/d78a74bcdfad14d5d3b1b782f87255d802b57511/out/vs/workbench/api/node/extensionHostProcess.js:31:151177)
+	at Zb.U (file:///home/jojomaverik/.vscode-server/bin/d78a74bcdfad14d5d3b1b782f87255d802b57511/out/vs/workbench/api/node/extensionHostProcess.js:31:155789)
+	at s.<computed>.n.charCodeAt.s.<computed> (file:///home/jojomaverik/.vscode-server/bin/d78a74bcdfad14d5d3b1b782f87255d802b57511/out/vs/workbench/api/node/extensionHostProcess.js:31:153283)
+	at T0.g (file:///home/jojomaverik/.vscode-server/bin/d78a74bcdfad14d5d3b1b782f87255d802b57511/out/vs/workbench/api/node/extensionHostProcess.js:114:32325)
+	at T0.executeCommand (file:///home/jojomaverik/.vscode-server/bin/d78a74bcdfad14d5d3b1b782f87255d802b57511/out/vs/workbench/api/node/extensionHostProcess.js:114:31826)
+	at r.registerCommand.description (file:///home/jojomaverik/.vscode-server/bin/d78a74bcdfad14d5d3b1b782f87255d802b57511/out/vs/workbench/api/node/extensionHostProcess.js:114:31156)
+	at T0.h (file:///home/jojomaverik/.vscode-server/bin/d78a74bcdfad14d5d3b1b782f87255d802b57511/out/vs/workbench/api/node/extensionHostProcess.js:114:32845)
+	at T0.g (file:///home/jojomaverik/.vscode-server/bin/d78a74bcdfad14d5d3b1b782f87255d802b57511/out/vs/workbench/api/node/extensionHostProcess.js:114:31919)
+	at T0.executeCommand (file:///home/jojomaverik/.vscode-server/bin/d78a74bcdfad14d5d3b1b782f87255d802b57511/out/vs/workbench/api/node/extensionHostProcess.js:114:31826)
+	at Object.executeCommand (file:///home/jojomaverik/.vscode-server/bin/d78a74bcdfad14d5d3b1b782f87255d802b57511/out/vs/workbench/api/node/extensionHostProcess.js:156:37049)
+	at ExtensionUtil.<anonymous> (/home/jojomaverik/.vscode-server/extensions/ms-vsliveshare.vsliveshare-1.0.5941/extension.js:1:665766)
+	at Generator.next (<anonymous>)
+	at /home/jojomaverik/.vscode-server/extensions/ms-vsliveshare.vsliveshare-1.0.5941/extension.js:1:664481
+	at new Promise (<anonymous>)
+	at r (/home/jojomaverik/.vscode-server/extensions/ms-vsliveshare.vsliveshare-1.0.5941/extension.js:1:664167)
+	at ExtensionUtil.setCommandContext (/home/jojomaverik/.vscode-server/extensions/ms-vsliveshare.vsliveshare-1.0.5941/extension.js:1:665682)
+	at set hasServersShared [as hasServersShared] (/home/jojomaverik/.vscode-server/extensions/ms-vsliveshare.vsliveshare-1.0.5941/extension.js:1:161897)
+	at SessionContext.onSessionStateChanged (/home/jojomaverik/.vscode-server/extensions/ms-vsliveshare.vsliveshare-1.0.5941/extension.js:1:162873)
+	at T.B (file:///home/jojomaverik/.vscode-server/bin/d78a74bcdfad14d5d3b1b782f87255d802b57511/out/vs/workbench/api/node/extensionHostProcess.js:29:732)
+	at T.C (file:///home/jojomaverik/.vscode-server/bin/d78a74bcdfad14d5d3b1b782f87255d802b57511/out/vs/workbench/api/node/extensionHostProcess.js:29:802)
+	at T.fire (file:///home/jojomaverik/.vscode-server/bin/d78a74bcdfad14d5d3b1b782f87255d802b57511/out/vs/workbench/api/node/extensionHostProcess.js:29:1019)
+	at SessionStateTracker.setState (/home/jojomaverik/.vscode-server/extensions/ms-vsliveshare.vsliveshare-1.0.5941/extension.js:1:167078)
+	at SessionStateTracker.transition (/home/jojomaverik/.vscode-server/extensions/ms-vsliveshare.vsliveshare-1.0.5941/extension.js:1:166787)
+	at SessionStateTransitionsCommandDecorator.<anonymous> (/home/jojomaverik/.vscode-server/extensions/ms-vsliveshare.vsliveshare-1.0.5941/extension.js:1:461102)
+	at Generator.throw (<anonymous>)
+	at rejected (/home/jojomaverik/.vscode-server/extensions/ms-vsliveshare.vsliveshare-1.0.5941/extension.js:1:459491)
+	at process.processTicksAndRejections (node:internal/process/task_queues:95:5) setContext undefined
+2024-10-04 13:14:10.164 [error] Canceled: Canceled
+	at new eA (file:///home/jojomaverik/.vscode-server/bin/d78a74bcdfad14d5d3b1b782f87255d802b57511/out/vs/workbench/api/node/extensionHostProcess.js:31:151177)
+	at Zb.U (file:///home/jojomaverik/.vscode-server/bin/d78a74bcdfad14d5d3b1b782f87255d802b57511/out/vs/workbench/api/node/extensionHostProcess.js:31:155789)
+	at s.<computed>.n.charCodeAt.s.<computed> (file:///home/jojomaverik/.vscode-server/bin/d78a74bcdfad14d5d3b1b782f87255d802b57511/out/vs/workbench/api/node/extensionHostProcess.js:31:153283)
+	at T0.g (file:///home/jojomaverik/.vscode-server/bin/d78a74bcdfad14d5d3b1b782f87255d802b57511/out/vs/workbench/api/node/extensionHostProcess.js:114:32325)
+	at T0.executeCommand (file:///home/jojomaverik/.vscode-server/bin/d78a74bcdfad14d5d3b1b782f87255d802b57511/out/vs/workbench/api/node/extensionHostProcess.js:114:31826)
+	at r.registerCommand.description (file:///home/jojomaverik/.vscode-server/bin/d78a74bcdfad14d5d3b1b782f87255d802b57511/out/vs/workbench/api/node/extensionHostProcess.js:114:31156)
+	at T0.h (file:///home/jojomaverik/.vscode-server/bin/d78a74bcdfad14d5d3b1b782f87255d802b57511/out/vs/workbench/api/node/extensionHostProcess.js:114:32845)
+	at T0.g (file:///home/jojomaverik/.vscode-server/bin/d78a74bcdfad14d5d3b1b782f87255d802b57511/out/vs/workbench/api/node/extensionHostProcess.js:114:31919)
+	at T0.executeCommand (file:///home/jojomaverik/.vscode-server/bin/d78a74bcdfad14d5d3b1b782f87255d802b57511/out/vs/workbench/api/node/extensionHostProcess.js:114:31826)
+	at Object.executeCommand (file:///home/jojomaverik/.vscode-server/bin/d78a74bcdfad14d5d3b1b782f87255d802b57511/out/vs/workbench/api/node/extensionHostProcess.js:156:37049)
+	at ExtensionUtil.<anonymous> (/home/jojomaverik/.vscode-server/extensions/ms-vsliveshare.vsliveshare-1.0.5941/extension.js:1:665766)
+	at Generator.next (<anonymous>)
+	at /home/jojomaverik/.vscode-server/extensions/ms-vsliveshare.vsliveshare-1.0.5941/extension.js:1:664481
+	at new Promise (<anonymous>)
+	at r (/home/jojomaverik/.vscode-server/extensions/ms-vsliveshare.vsliveshare-1.0.5941/extension.js:1:664167)
+	at ExtensionUtil.setCommandContext (/home/jojomaverik/.vscode-server/extensions/ms-vsliveshare.vsliveshare-1.0.5941/extension.js:1:665682)
+	at set hasSharedTerminals [as hasSharedTerminals] (/home/jojomaverik/.vscode-server/extensions/ms-vsliveshare.vsliveshare-1.0.5941/extension.js:1:162077)
+	at SessionContext.onSessionStateChanged (/home/jojomaverik/.vscode-server/extensions/ms-vsliveshare.vsliveshare-1.0.5941/extension.js:1:162900)
+	at T.B (file:///home/jojomaverik/.vscode-server/bin/d78a74bcdfad14d5d3b1b782f87255d802b57511/out/vs/workbench/api/node/extensionHostProcess.js:29:732)
+	at T.C (file:///home/jojomaverik/.vscode-server/bin/d78a74bcdfad14d5d3b1b782f87255d802b57511/out/vs/workbench/api/node/extensionHostProcess.js:29:802)
+	at T.fire (file:///home/jojomaverik/.vscode-server/bin/d78a74bcdfad14d5d3b1b782f87255d802b57511/out/vs/workbench/api/node/extensionHostProcess.js:29:1019)
+	at SessionStateTracker.setState (/home/jojomaverik/.vscode-server/extensions/ms-vsliveshare.vsliveshare-1.0.5941/extension.js:1:167078)
+	at SessionStateTracker.transition (/home/jojomaverik/.vscode-server/extensions/ms-vsliveshare.vsliveshare-1.0.5941/extension.js:1:166787)
+	at SessionStateTransitionsCommandDecorator.<anonymous> (/home/jojomaverik/.vscode-server/extensions/ms-vsliveshare.vsliveshare-1.0.5941/extension.js:1:461102)
+	at Generator.throw (<anonymous>)
+	at rejected (/home/jojomaverik/.vscode-server/extensions/ms-vsliveshare.vsliveshare-1.0.5941/extension.js:1:459491)
+	at process.processTicksAndRejections (node:internal/process/task_queues:95:5) setContext undefined
+2024-10-04 13:14:10.167 [info] Extension host with pid 5943 exiting with code 0

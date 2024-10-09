@@ -1,0 +1,34 @@
+2024-10-09 17:43:30.130 [info] Extension host with pid 71 started
+2024-10-09 17:43:30.130 [error] Error: EEXIST: file already exists, open '/home/jojomaverik/.vscode-server/data/User/workspaceStorage/90f7e0bfdb3cd12690ea1b3540823c1b/vscode.lock'
+2024-10-09 17:43:30.136 [info] Lock '/home/jojomaverik/.vscode-server/data/User/workspaceStorage/90f7e0bfdb3cd12690ea1b3540823c1b/vscode.lock': Could not acquire lock, checking if the file is stale.
+2024-10-09 17:43:30.144 [info] Lock '/home/jojomaverik/.vscode-server/data/User/workspaceStorage/90f7e0bfdb3cd12690ea1b3540823c1b/vscode.lock': The pid 1512 appears to be gone.
+2024-10-09 17:43:30.144 [info] Lock '/home/jojomaverik/.vscode-server/data/User/workspaceStorage/90f7e0bfdb3cd12690ea1b3540823c1b/vscode.lock': Deleting a stale lock.
+2024-10-09 17:43:30.154 [info] Lock '/home/jojomaverik/.vscode-server/data/User/workspaceStorage/90f7e0bfdb3cd12690ea1b3540823c1b/vscode.lock': Lock acquired.
+2024-10-09 17:43:30.264 [info] ExtensionService#_doActivateExtension ms-vsliveshare.vsliveshare, startup: false, activationEvent: 'onFileSystem:vsls'
+2024-10-09 17:43:31.343 [info] ExtensionService#_doActivateExtension vscode.git-base, startup: true, activationEvent: '*', root cause: vscode.git
+2024-10-09 17:43:31.402 [info] ExtensionService#_doActivateExtension vscode.git, startup: true, activationEvent: '*'
+2024-10-09 17:43:31.565 [info] Eager extensions activated
+2024-10-09 17:43:31.565 [info] ExtensionService#_doActivateExtension vscode.merge-conflict, startup: false, activationEvent: 'onStartupFinished'
+2024-10-09 17:43:32.000 [info] Extension host terminating: received terminate message from renderer
+2024-10-09 17:43:32.001 [info] Lock '/home/jojomaverik/.vscode-server/data/User/workspaceStorage/90f7e0bfdb3cd12690ea1b3540823c1b/vscode.lock': Marking the lockfile as scheduled to be released in 6000 ms.
+2024-10-09 17:43:32.045 [error] ProxyResolver#resolveProxy DIRECT Canceled: Canceled
+	at new eA (file:///home/jojomaverik/.vscode-server/bin/e10f2369d0d9614a452462f2e01cdc4aa9486296/out/vs/workbench/api/node/extensionHostProcess.js:31:151177)
+	at Zb.U (file:///home/jojomaverik/.vscode-server/bin/e10f2369d0d9614a452462f2e01cdc4aa9486296/out/vs/workbench/api/node/extensionHostProcess.js:31:155789)
+	at s.<computed>.n.charCodeAt.s.<computed> (file:///home/jojomaverik/.vscode-server/bin/e10f2369d0d9614a452462f2e01cdc4aa9486296/out/vs/workbench/api/node/extensionHostProcess.js:31:153283)
+	at p0.resolveProxy (file:///home/jojomaverik/.vscode-server/bin/e10f2369d0d9614a452462f2e01cdc4aa9486296/out/vs/workbench/api/node/extensionHostProcess.js:109:52540)
+	at Object.resolveProxy (file:///home/jojomaverik/.vscode-server/bin/e10f2369d0d9614a452462f2e01cdc4aa9486296/out/vs/workbench/api/node/extensionHostProcess.js:158:1188)
+	at useProxySettings (/home/jojomaverik/.vscode-server/bin/e10f2369d0d9614a452462f2e01cdc4aa9486296/node_modules/@vscode/proxy-agent/out/index.js:179:16)
+	at /home/jojomaverik/.vscode-server/bin/e10f2369d0d9614a452462f2e01cdc4aa9486296/node_modules/@vscode/proxy-agent/out/index.js:114:13
+	at /home/jojomaverik/.vscode-server/bin/e10f2369d0d9614a452462f2e01cdc4aa9486296/node_modules/@vscode/proxy-agent/out/index.js:483:13
+	at process.processTicksAndRejections (node:internal/process/task_queues:95:5) 
+2024-10-09 17:43:32.045 [error] ProxyResolver#resolveProxy DIRECT Canceled: Canceled
+	at new eA (file:///home/jojomaverik/.vscode-server/bin/e10f2369d0d9614a452462f2e01cdc4aa9486296/out/vs/workbench/api/node/extensionHostProcess.js:31:151177)
+	at Zb.U (file:///home/jojomaverik/.vscode-server/bin/e10f2369d0d9614a452462f2e01cdc4aa9486296/out/vs/workbench/api/node/extensionHostProcess.js:31:155789)
+	at s.<computed>.n.charCodeAt.s.<computed> (file:///home/jojomaverik/.vscode-server/bin/e10f2369d0d9614a452462f2e01cdc4aa9486296/out/vs/workbench/api/node/extensionHostProcess.js:31:153283)
+	at p0.resolveProxy (file:///home/jojomaverik/.vscode-server/bin/e10f2369d0d9614a452462f2e01cdc4aa9486296/out/vs/workbench/api/node/extensionHostProcess.js:109:52540)
+	at Object.resolveProxy (file:///home/jojomaverik/.vscode-server/bin/e10f2369d0d9614a452462f2e01cdc4aa9486296/out/vs/workbench/api/node/extensionHostProcess.js:158:1188)
+	at useProxySettings (/home/jojomaverik/.vscode-server/bin/e10f2369d0d9614a452462f2e01cdc4aa9486296/node_modules/@vscode/proxy-agent/out/index.js:179:16)
+	at /home/jojomaverik/.vscode-server/bin/e10f2369d0d9614a452462f2e01cdc4aa9486296/node_modules/@vscode/proxy-agent/out/index.js:114:13
+	at /home/jojomaverik/.vscode-server/bin/e10f2369d0d9614a452462f2e01cdc4aa9486296/node_modules/@vscode/proxy-agent/out/index.js:483:13
+	at process.processTicksAndRejections (node:internal/process/task_queues:95:5) 
+2024-10-09 17:43:32.180 [info] Extension host with pid 71 exiting with code 0

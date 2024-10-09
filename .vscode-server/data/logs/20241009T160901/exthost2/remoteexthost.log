@@ -1,0 +1,21 @@
+2024-10-09 16:09:06.407 [info] Extension host with pid 1794 started
+2024-10-09 16:09:06.434 [info] ExtensionService#_doActivateExtension vscode.git-base, startup: true, activationEvent: '*', root cause: vscode.git
+2024-10-09 16:09:06.483 [info] ExtensionService#_doActivateExtension vscode.git, startup: true, activationEvent: '*'
+2024-10-09 16:09:06.484 [info] ExtensionService#_doActivateExtension vscode.github, startup: true, activationEvent: '*'
+2024-10-09 16:09:06.703 [info] Eager extensions activated
+2024-10-09 16:09:06.703 [info] ExtensionService#_doActivateExtension vscode.debug-auto-launch, startup: false, activationEvent: 'onStartupFinished'
+2024-10-09 16:09:06.704 [info] ExtensionService#_doActivateExtension vscode.merge-conflict, startup: false, activationEvent: 'onStartupFinished'
+2024-10-09 16:09:09.592 [info] ExtensionService#_doActivateExtension ms-vsliveshare.vsliveshare, startup: false, activationEvent: 'onView:liveshare.session'
+2024-10-09 16:09:16.857 [info] Extension host terminating: received terminate message from renderer
+2024-10-09 16:09:16.922 [error] TypeError: Cannot read properties of undefined (reading 'stop')
+	at SessionTelemetry.endSession (/home/jojomaverik/.vscode-server/extensions/ms-vsliveshare.vsliveshare-1.0.5941/extension.js:1:584970)
+	at SessionContext.updateTelemetryContext (/home/jojomaverik/.vscode-server/extensions/ms-vsliveshare.vsliveshare-1.0.5941/extension.js:1:159195)
+	at SessionContext.onSessionStateChanged (/home/jojomaverik/.vscode-server/extensions/ms-vsliveshare.vsliveshare-1.0.5941/extension.js:1:162533)
+	at T.B (file:///home/jojomaverik/.vscode-server/bin/e10f2369d0d9614a452462f2e01cdc4aa9486296/out/vs/workbench/api/node/extensionHostProcess.js:29:732)
+	at T.C (file:///home/jojomaverik/.vscode-server/bin/e10f2369d0d9614a452462f2e01cdc4aa9486296/out/vs/workbench/api/node/extensionHostProcess.js:29:802)
+	at T.fire (file:///home/jojomaverik/.vscode-server/bin/e10f2369d0d9614a452462f2e01cdc4aa9486296/out/vs/workbench/api/node/extensionHostProcess.js:29:1019)
+	at SessionStateTracker.setState (/home/jojomaverik/.vscode-server/extensions/ms-vsliveshare.vsliveshare-1.0.5941/extension.js:1:167078)
+	at SessionStateTracker.transition (/home/jojomaverik/.vscode-server/extensions/ms-vsliveshare.vsliveshare-1.0.5941/extension.js:1:166787)
+	at LeaveCollaborationCommand.invoke (/home/jojomaverik/.vscode-server/extensions/ms-vsliveshare.vsliveshare-1.0.5941/extension.js:1:1655700)
+	at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+2024-10-09 16:09:16.935 [info] Extension host with pid 1794 exiting with code 0

@@ -1,0 +1,12 @@
+2024-10-02 16:11:23.865 [info] Extension host with pid 813 started
+2024-10-02 16:11:23.903 [info] ExtensionService#_doActivateExtension vscode.git-base, startup: true, activationEvent: '*', root cause: vscode.git
+2024-10-02 16:11:23.974 [info] ExtensionService#_doActivateExtension vscode.git, startup: true, activationEvent: '*'
+2024-10-02 16:11:23.974 [info] ExtensionService#_doActivateExtension vscode.github, startup: true, activationEvent: '*'
+2024-10-02 16:11:24.171 [info] Eager extensions activated
+2024-10-02 16:11:24.171 [info] ExtensionService#_doActivateExtension vscode.debug-auto-launch, startup: false, activationEvent: 'onStartupFinished'
+2024-10-02 16:11:24.171 [info] ExtensionService#_doActivateExtension vscode.merge-conflict, startup: false, activationEvent: 'onStartupFinished'
+2024-10-02 16:11:55.247 [info] ExtensionService#_doActivateExtension vscode.emmet, startup: false, activationEvent: 'onLanguage'
+2024-10-02 17:07:47.878 [info] ExtensionService#_doActivateExtension dsvictor94.promela, startup: false, activationEvent: 'onLanguage:promela'
+2024-10-02 17:09:15.195 [info] ExtensionService#_doActivateExtension vscode.npm, startup: false, activationEvent: 'onTerminalQuickFixRequest:ms-vscode.npm-command'
+2024-10-02 17:10:05.389 [info] Extension host terminating: received terminate message from renderer
+2024-10-02 17:10:05.404 [info] Extension host with pid 813 exiting with code 0

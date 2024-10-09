@@ -1,0 +1,15 @@
+2024-10-09 16:09:19.526 [info] Extension host with pid 1882 started
+2024-10-09 16:09:19.526 [error] Error: EEXIST: file already exists, open '/home/jojomaverik/.vscode-server/data/User/workspaceStorage/90f7e0bfdb3cd12690ea1b3540823c1b/vscode.lock'
+2024-10-09 16:09:19.530 [info] Lock '/home/jojomaverik/.vscode-server/data/User/workspaceStorage/90f7e0bfdb3cd12690ea1b3540823c1b/vscode.lock': Could not acquire lock, checking if the file is stale.
+2024-10-09 16:09:19.555 [info] ExtensionService#_doActivateExtension ms-vsliveshare.vsliveshare, startup: false, activationEvent: 'onFileSystem:vsls'
+2024-10-09 16:09:19.966 [info] Lock '/home/jojomaverik/.vscode-server/data/User/workspaceStorage/90f7e0bfdb3cd12690ea1b3540823c1b/vscode.lock': The lock does not look stale, elapsed: 798 ms, giving up.
+2024-10-09 16:09:19.977 [info] Lock '/home/jojomaverik/.vscode-server/data/User/workspaceStorage/90f7e0bfdb3cd12690ea1b3540823c1b-1/vscode.lock': Lock acquired.
+2024-10-09 16:09:20.526 [info] ExtensionService#_doActivateExtension vscode.git-base, startup: true, activationEvent: '*', root cause: vscode.git
+2024-10-09 16:09:20.549 [info] ExtensionService#_doActivateExtension vscode.git, startup: true, activationEvent: '*'
+2024-10-09 16:09:20.712 [info] Eager extensions activated
+2024-10-09 16:09:20.713 [info] ExtensionService#_doActivateExtension vscode.merge-conflict, startup: false, activationEvent: 'onStartupFinished'
+2024-10-09 16:09:27.660 [info] ExtensionService#_doActivateExtension dsvictor94.promela, startup: false, activationEvent: 'onLanguage:promela'
+2024-10-09 16:09:27.660 [info] ExtensionService#_doActivateExtension vscode.emmet, startup: false, activationEvent: 'onLanguage'
+2024-10-09 16:09:28.399 [info] ExtensionService#_doActivateExtension vscode.configuration-editing, startup: false, activationEvent: 'onLanguage:jsonc'
+2024-10-09 16:09:28.400 [info] ExtensionService#_doActivateExtension vscode.json-language-features, startup: false, activationEvent: 'onLanguage:jsonc'
+2024-10-09 16:09:28.400 [info] ExtensionService#_doActivateExtension vscode.typescript-language-features, startup: false, activationEvent: 'onLanguage:jsonc'

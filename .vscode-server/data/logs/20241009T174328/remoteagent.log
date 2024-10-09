@@ -1,0 +1,98 @@
+2024-10-09 17:43:28.749 [info] 
+
+
+
+
+2024-10-09 17:43:28.768 [info] Extension host agent started.
+2024-10-09 17:43:28.932 [info] [127.0.0.1][373c79a0][ManagementConnection] New connection established.
+2024-10-09 17:43:29.168 [info] [127.0.0.1][e6d75013][ExtensionHostConnection] New connection established.
+2024-10-09 17:43:29.176 [info] [127.0.0.1][e6d75013][ExtensionHostConnection] <71> Launched Extension Host Process.
+2024-10-09 17:43:31.998 [info] [127.0.0.1][373c79a0][ManagementConnection] The client has disconnected gracefully, so the connection will be disposed.
+2024-10-09 17:43:35.041 [info] [127.0.0.1][d4bf14e9][ManagementConnection] New connection established.
+2024-10-09 17:43:35.097 [info] [127.0.0.1][7aeeef7b][ExtensionHostConnection] New connection established.
+2024-10-09 17:43:35.103 [info] [127.0.0.1][7aeeef7b][ExtensionHostConnection] <181> Launched Extension Host Process.
+2024-10-09 17:43:36.414 [info] [127.0.0.1][e6d75013][ExtensionHostConnection] <71> Extension Host Process exited with code: 0, signal: null.
+2024-10-09 17:43:50.867 [info] Getting Manifest... vinirossa.vscode-gitandgithub-pack
+2024-10-09 17:43:50.917 [info] Installing extension: vinirossa.vscode-gitandgithub-pack {"isMachineScoped":false,"installPreReleaseVersion":false,"pinned":false,"donotVerifySignature":false,"context":{"clientTargetPlatform":"win32-x64"},"installOnlyNewlyAddedFromExtensionPack":true,"isApplicationScoped":false,"profileLocation":{"$mid":1,"fsPath":"/home/jojomaverik/.vscode-server/extensions/extensions.json","external":"file:///home/jojomaverik/.vscode-server/extensions/extensions.json","path":"/home/jojomaverik/.vscode-server/extensions/extensions.json","scheme":"file"},"productVersion":{"version":"1.94.1","date":"2024-10-05T05:44:32.189Z"}}
+2024-10-09 17:43:51.602 [info] Getting Manifest... eamodio.gitlens
+2024-10-09 17:43:51.734 [info] Getting Manifest... github.vscode-pull-request-github
+2024-10-09 17:43:51.932 [info] Getting Manifest... donjayamanne.githistory
+2024-10-09 17:43:55.014 [info] Getting Manifest... mhutchie.git-graph
+2024-10-09 17:43:58.188 [info] Getting Manifest... github.codespaces
+2024-10-09 17:43:58.235 [info] Getting Manifest... github.remotehub
+2024-10-09 17:43:59.124 [info] Getting Manifest... ms-vscode.remote-repositories
+2024-10-09 17:44:02.314 [info] Getting Manifest... ms-vscode.azure-repos
+2024-10-09 17:44:02.337 [info] Getting Manifest... ziyasal.vscode-open-in-github
+2024-10-09 17:44:05.429 [info] Getting Manifest... adam-bender.commit-message-editor
+2024-10-09 17:44:08.720 [info] Getting Manifest... howardzuo.vscode-git-tags
+2024-10-09 17:44:11.850 [info] Installing extension: eamodio.gitlens {"isMachineScoped":false,"installPreReleaseVersion":false,"pinned":false,"donotVerifySignature":false,"context":{"clientTargetPlatform":"win32-x64","dependecyOrPackExtensionInstall":true},"installOnlyNewlyAddedFromExtensionPack":true,"isApplicationScoped":false,"profileLocation":{"$mid":1,"fsPath":"/home/jojomaverik/.vscode-server/extensions/extensions.json","external":"file:///home/jojomaverik/.vscode-server/extensions/extensions.json","path":"/home/jojomaverik/.vscode-server/extensions/extensions.json","scheme":"file"},"productVersion":{"version":"1.94.1","date":"2024-10-05T05:44:32.189Z"}}
+2024-10-09 17:44:11.851 [info] Installing extension: github.vscode-pull-request-github {"isMachineScoped":false,"installPreReleaseVersion":false,"pinned":false,"donotVerifySignature":false,"context":{"clientTargetPlatform":"win32-x64","dependecyOrPackExtensionInstall":true},"installOnlyNewlyAddedFromExtensionPack":true,"isApplicationScoped":false,"profileLocation":{"$mid":1,"fsPath":"/home/jojomaverik/.vscode-server/extensions/extensions.json","external":"file:///home/jojomaverik/.vscode-server/extensions/extensions.json","path":"/home/jojomaverik/.vscode-server/extensions/extensions.json","scheme":"file"},"productVersion":{"version":"1.94.1","date":"2024-10-05T05:44:32.189Z"}}
+2024-10-09 17:44:11.852 [info] Installing extension: donjayamanne.githistory {"isMachineScoped":false,"installPreReleaseVersion":false,"pinned":false,"donotVerifySignature":false,"context":{"clientTargetPlatform":"win32-x64","dependecyOrPackExtensionInstall":true},"installOnlyNewlyAddedFromExtensionPack":true,"isApplicationScoped":false,"profileLocation":{"$mid":1,"fsPath":"/home/jojomaverik/.vscode-server/extensions/extensions.json","external":"file:///home/jojomaverik/.vscode-server/extensions/extensions.json","path":"/home/jojomaverik/.vscode-server/extensions/extensions.json","scheme":"file"},"productVersion":{"version":"1.94.1","date":"2024-10-05T05:44:32.189Z"}}
+2024-10-09 17:44:11.852 [info] Installing extension: mhutchie.git-graph {"isMachineScoped":false,"installPreReleaseVersion":false,"pinned":false,"donotVerifySignature":false,"context":{"clientTargetPlatform":"win32-x64","dependecyOrPackExtensionInstall":true},"installOnlyNewlyAddedFromExtensionPack":true,"isApplicationScoped":false,"profileLocation":{"$mid":1,"fsPath":"/home/jojomaverik/.vscode-server/extensions/extensions.json","external":"file:///home/jojomaverik/.vscode-server/extensions/extensions.json","path":"/home/jojomaverik/.vscode-server/extensions/extensions.json","scheme":"file"},"productVersion":{"version":"1.94.1","date":"2024-10-05T05:44:32.189Z"}}
+2024-10-09 17:44:11.852 [info] Installing extension: github.codespaces {"isMachineScoped":false,"installPreReleaseVersion":false,"pinned":false,"donotVerifySignature":false,"context":{"clientTargetPlatform":"win32-x64","dependecyOrPackExtensionInstall":true},"installOnlyNewlyAddedFromExtensionPack":true,"isApplicationScoped":false,"profileLocation":{"$mid":1,"fsPath":"/home/jojomaverik/.vscode-server/extensions/extensions.json","external":"file:///home/jojomaverik/.vscode-server/extensions/extensions.json","path":"/home/jojomaverik/.vscode-server/extensions/extensions.json","scheme":"file"},"productVersion":{"version":"1.94.1","date":"2024-10-05T05:44:32.189Z"}}
+2024-10-09 17:44:11.853 [info] Installing extension: github.remotehub {"isMachineScoped":false,"installPreReleaseVersion":false,"pinned":false,"donotVerifySignature":false,"context":{"clientTargetPlatform":"win32-x64","dependecyOrPackExtensionInstall":true},"installOnlyNewlyAddedFromExtensionPack":true,"isApplicationScoped":false,"profileLocation":{"$mid":1,"fsPath":"/home/jojomaverik/.vscode-server/extensions/extensions.json","external":"file:///home/jojomaverik/.vscode-server/extensions/extensions.json","path":"/home/jojomaverik/.vscode-server/extensions/extensions.json","scheme":"file"},"productVersion":{"version":"1.94.1","date":"2024-10-05T05:44:32.189Z"}}
+2024-10-09 17:44:11.854 [info] Installing extension: ms-vscode.remote-repositories {"isMachineScoped":false,"installPreReleaseVersion":false,"pinned":false,"donotVerifySignature":false,"context":{"clientTargetPlatform":"win32-x64","dependecyOrPackExtensionInstall":true},"installOnlyNewlyAddedFromExtensionPack":true,"isApplicationScoped":false,"profileLocation":{"$mid":1,"fsPath":"/home/jojomaverik/.vscode-server/extensions/extensions.json","external":"file:///home/jojomaverik/.vscode-server/extensions/extensions.json","path":"/home/jojomaverik/.vscode-server/extensions/extensions.json","scheme":"file"},"productVersion":{"version":"1.94.1","date":"2024-10-05T05:44:32.189Z"}}
+2024-10-09 17:44:11.855 [info] Installing extension: ms-vscode.azure-repos {"isMachineScoped":false,"installPreReleaseVersion":false,"pinned":false,"donotVerifySignature":false,"context":{"clientTargetPlatform":"win32-x64","dependecyOrPackExtensionInstall":true},"installOnlyNewlyAddedFromExtensionPack":true,"isApplicationScoped":false,"profileLocation":{"$mid":1,"fsPath":"/home/jojomaverik/.vscode-server/extensions/extensions.json","external":"file:///home/jojomaverik/.vscode-server/extensions/extensions.json","path":"/home/jojomaverik/.vscode-server/extensions/extensions.json","scheme":"file"},"productVersion":{"version":"1.94.1","date":"2024-10-05T05:44:32.189Z"}}
+2024-10-09 17:44:11.855 [info] Installing extension: ziyasal.vscode-open-in-github {"isMachineScoped":false,"installPreReleaseVersion":false,"pinned":false,"donotVerifySignature":false,"context":{"clientTargetPlatform":"win32-x64","dependecyOrPackExtensionInstall":true},"installOnlyNewlyAddedFromExtensionPack":true,"isApplicationScoped":false,"profileLocation":{"$mid":1,"fsPath":"/home/jojomaverik/.vscode-server/extensions/extensions.json","external":"file:///home/jojomaverik/.vscode-server/extensions/extensions.json","path":"/home/jojomaverik/.vscode-server/extensions/extensions.json","scheme":"file"},"productVersion":{"version":"1.94.1","date":"2024-10-05T05:44:32.189Z"}}
+2024-10-09 17:44:11.856 [info] Installing extension: adam-bender.commit-message-editor {"isMachineScoped":false,"installPreReleaseVersion":false,"pinned":false,"donotVerifySignature":false,"context":{"clientTargetPlatform":"win32-x64","dependecyOrPackExtensionInstall":true},"installOnlyNewlyAddedFromExtensionPack":true,"isApplicationScoped":false,"profileLocation":{"$mid":1,"fsPath":"/home/jojomaverik/.vscode-server/extensions/extensions.json","external":"file:///home/jojomaverik/.vscode-server/extensions/extensions.json","path":"/home/jojomaverik/.vscode-server/extensions/extensions.json","scheme":"file"},"productVersion":{"version":"1.94.1","date":"2024-10-05T05:44:32.189Z"}}
+2024-10-09 17:44:11.856 [info] Installing extension: howardzuo.vscode-git-tags {"isMachineScoped":false,"installPreReleaseVersion":false,"pinned":false,"donotVerifySignature":false,"context":{"clientTargetPlatform":"win32-x64","dependecyOrPackExtensionInstall":true},"installOnlyNewlyAddedFromExtensionPack":true,"isApplicationScoped":false,"profileLocation":{"$mid":1,"fsPath":"/home/jojomaverik/.vscode-server/extensions/extensions.json","external":"file:///home/jojomaverik/.vscode-server/extensions/extensions.json","path":"/home/jojomaverik/.vscode-server/extensions/extensions.json","scheme":"file"},"productVersion":{"version":"1.94.1","date":"2024-10-05T05:44:32.189Z"}}
+2024-10-09 17:44:13.748 [info] Extension signature verification result for github.vscode-pull-request-github: Success. Executed: true. Duration: 1094ms.
+2024-10-09 17:44:13.750 [info] Extension signature verification result for github.remotehub: Success. Executed: true. Duration: 1195ms.
+2024-10-09 17:44:13.817 [info] Extension signature verification result for github.codespaces: Success. Executed: true. Duration: 932ms.
+2024-10-09 17:44:13.926 [info] Extracted extension to file:///home/jojomaverik/.vscode-server/extensions/github.remotehub-0.64.0: github.remotehub
+2024-10-09 17:44:13.942 [info] Renamed to /home/jojomaverik/.vscode-server/extensions/github.remotehub-0.64.0
+2024-10-09 17:44:14.014 [info] Extracted extension to file:///home/jojomaverik/.vscode-server/extensions/github.vscode-pull-request-github-0.98.0: github.vscode-pull-request-github
+2024-10-09 17:44:14.020 [info] Renamed to /home/jojomaverik/.vscode-server/extensions/github.vscode-pull-request-github-0.98.0
+2024-10-09 17:44:14.306 [info] Extracted extension to file:///home/jojomaverik/.vscode-server/extensions/github.codespaces-1.17.3: github.codespaces
+2024-10-09 17:44:14.312 [info] Renamed to /home/jojomaverik/.vscode-server/extensions/github.codespaces-1.17.3
+2024-10-09 17:44:16.428 [info] Extension signature verification result for howardzuo.vscode-git-tags: Success. Executed: true. Duration: 950ms.
+2024-10-09 17:44:17.320 [info] Extracted extension to file:///home/jojomaverik/.vscode-server/extensions/howardzuo.vscode-git-tags-1.4.4: howardzuo.vscode-git-tags
+2024-10-09 17:44:17.326 [info] Renamed to /home/jojomaverik/.vscode-server/extensions/howardzuo.vscode-git-tags-1.4.4
+2024-10-09 17:44:19.540 [info] Extension signature verification result for vinirossa.vscode-gitandgithub-pack: Success. Executed: true. Duration: 1127ms.
+2024-10-09 17:44:19.557 [info] Extracted extension to file:///home/jojomaverik/.vscode-server/extensions/vinirossa.vscode-gitandgithub-pack-2.0.1: vinirossa.vscode-gitandgithub-pack
+2024-10-09 17:44:19.572 [info] Renamed to /home/jojomaverik/.vscode-server/extensions/vinirossa.vscode-gitandgithub-pack-2.0.1
+2024-10-09 17:44:19.637 [info] Extension signature verification result for mhutchie.git-graph: Success. Executed: true. Duration: 1021ms.
+2024-10-09 17:44:19.643 [info] Extension signature verification result for adam-bender.commit-message-editor: Success. Executed: true. Duration: 1112ms.
+2024-10-09 17:44:19.688 [info] Extension signature verification result for donjayamanne.githistory: Success. Executed: true. Duration: 1078ms.
+2024-10-09 17:44:19.697 [info] Extracted extension to file:///home/jojomaverik/.vscode-server/extensions/adam-bender.commit-message-editor-0.25.0: adam-bender.commit-message-editor
+2024-10-09 17:44:19.706 [info] Renamed to /home/jojomaverik/.vscode-server/extensions/adam-bender.commit-message-editor-0.25.0
+2024-10-09 17:44:19.708 [info] Extension signature verification result for ziyasal.vscode-open-in-github: Success. Executed: true. Duration: 1095ms.
+2024-10-09 17:44:19.821 [info] Extracted extension to file:///home/jojomaverik/.vscode-server/extensions/mhutchie.git-graph-1.30.0: mhutchie.git-graph
+2024-10-09 17:44:19.829 [info] Renamed to /home/jojomaverik/.vscode-server/extensions/mhutchie.git-graph-1.30.0
+2024-10-09 17:44:19.831 [info] Extracted extension to file:///home/jojomaverik/.vscode-server/extensions/donjayamanne.githistory-0.6.20: donjayamanne.githistory
+2024-10-09 17:44:19.837 [info] Renamed to /home/jojomaverik/.vscode-server/extensions/donjayamanne.githistory-0.6.20
+2024-10-09 17:44:19.936 [info] Extracted extension to file:///home/jojomaverik/.vscode-server/extensions/ziyasal.vscode-open-in-github-1.3.6: ziyasal.vscode-open-in-github
+2024-10-09 17:44:19.944 [info] Renamed to /home/jojomaverik/.vscode-server/extensions/ziyasal.vscode-open-in-github-1.3.6
+2024-10-09 17:44:20.460 [info] Extension signature verification result for ms-vscode.remote-repositories: Success. Executed: true. Duration: 1818ms.
+2024-10-09 17:44:20.464 [info] Extension signature verification result for ms-vscode.azure-repos: Success. Executed: true. Duration: 1862ms.
+2024-10-09 17:44:20.571 [info] Extracted extension to file:///home/jojomaverik/.vscode-server/extensions/ms-vscode.azure-repos-0.40.0: ms-vscode.azure-repos
+2024-10-09 17:44:20.586 [info] Renamed to /home/jojomaverik/.vscode-server/extensions/ms-vscode.azure-repos-0.40.0
+2024-10-09 17:44:20.646 [info] Extracted extension to file:///home/jojomaverik/.vscode-server/extensions/ms-vscode.remote-repositories-0.42.0: ms-vscode.remote-repositories
+2024-10-09 17:44:20.655 [info] Renamed to /home/jojomaverik/.vscode-server/extensions/ms-vscode.remote-repositories-0.42.0
+2024-10-09 17:44:21.321 [info] Extension signature verification result for eamodio.gitlens: Success. Executed: true. Duration: 1009ms.
+2024-10-09 17:44:21.932 [info] Extracted extension to file:///home/jojomaverik/.vscode-server/extensions/eamodio.gitlens-15.6.0: eamodio.gitlens
+2024-10-09 17:44:21.957 [info] Renamed to /home/jojomaverik/.vscode-server/extensions/eamodio.gitlens-15.6.0
+2024-10-09 17:44:22.009 [info] Extension installed successfully: github.remotehub file:///home/jojomaverik/.vscode-server/extensions/extensions.json
+2024-10-09 17:44:22.009 [info] Extension installed successfully: github.vscode-pull-request-github file:///home/jojomaverik/.vscode-server/extensions/extensions.json
+2024-10-09 17:44:22.009 [info] Extension installed successfully: github.codespaces file:///home/jojomaverik/.vscode-server/extensions/extensions.json
+2024-10-09 17:44:22.009 [info] Extension installed successfully: howardzuo.vscode-git-tags file:///home/jojomaverik/.vscode-server/extensions/extensions.json
+2024-10-09 17:44:22.009 [info] Extension installed successfully: vinirossa.vscode-gitandgithub-pack file:///home/jojomaverik/.vscode-server/extensions/extensions.json
+2024-10-09 17:44:22.009 [info] Extension installed successfully: adam-bender.commit-message-editor file:///home/jojomaverik/.vscode-server/extensions/extensions.json
+2024-10-09 17:44:22.009 [info] Extension installed successfully: mhutchie.git-graph file:///home/jojomaverik/.vscode-server/extensions/extensions.json
+2024-10-09 17:44:22.009 [info] Extension installed successfully: donjayamanne.githistory file:///home/jojomaverik/.vscode-server/extensions/extensions.json
+2024-10-09 17:44:22.010 [info] Extension installed successfully: ziyasal.vscode-open-in-github file:///home/jojomaverik/.vscode-server/extensions/extensions.json
+2024-10-09 17:44:22.010 [info] Extension installed successfully: ms-vscode.azure-repos file:///home/jojomaverik/.vscode-server/extensions/extensions.json
+2024-10-09 17:44:22.010 [info] Extension installed successfully: ms-vscode.remote-repositories file:///home/jojomaverik/.vscode-server/extensions/extensions.json
+2024-10-09 17:44:22.010 [info] Extension installed successfully: eamodio.gitlens file:///home/jojomaverik/.vscode-server/extensions/extensions.json
+2024-10-09 17:44:25.392 [info] [127.0.0.1][d4bf14e9][ManagementConnection] The client has disconnected gracefully, so the connection will be disposed.
+2024-10-09 17:44:25.505 [info] [127.0.0.1][7aeeef7b][ExtensionHostConnection] <181> Extension Host Process exited with code: 0, signal: null.
+2024-10-09 17:44:27.549 [info] [127.0.0.1][d5e617de][ManagementConnection] New connection established.
+2024-10-09 17:44:27.773 [info] [127.0.0.1][9532a431][ExtensionHostConnection] New connection established.
+2024-10-09 17:44:27.782 [info] [127.0.0.1][9532a431][ExtensionHostConnection] <526> Launched Extension Host Process.
+2024-10-09 17:57:40.460 [info] [127.0.0.1][d5e617de][ManagementConnection] The client has disconnected gracefully, so the connection will be disposed.
+2024-10-09 17:57:40.639 [info] [127.0.0.1][9532a431][ExtensionHostConnection] <526> Extension Host Process exited with code: 0, signal: null.
+2024-10-09 17:57:42.584 [info] [127.0.0.1][b4aed830][ManagementConnection] New connection established.
+2024-10-09 17:57:42.829 [info] [127.0.0.1][50539144][ExtensionHostConnection] New connection established.
+2024-10-09 17:57:42.841 [info] [127.0.0.1][50539144][ExtensionHostConnection] <1752> Launched Extension Host Process.
+2024-10-09 17:59:11.241 [info] [127.0.0.1][b4aed830][ManagementConnection] The client has disconnected gracefully, so the connection will be disposed.
+2024-10-09 17:59:11.397 [info] [127.0.0.1][50539144][ExtensionHostConnection] <1752> Extension Host Process exited with code: 0, signal: null.
