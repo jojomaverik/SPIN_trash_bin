@@ -28,14 +28,14 @@ settable(void)
 
 	trans[5] = (Trans **) emalloc(30*sizeof(Trans *));
 
-	T = trans[ 5][28] = settr(172,2,0,0,0,"ATOMIC", 1, 2, 0);
-	T->nxt	= settr(172,2,1,0,0,"ATOMIC", 1, 2, 0);
-	trans[5][1]	= settr(145,2,18,3,3,"proc = 0", 1, 2, 0);
-	trans[5][19]	= settr(163,2,18,1,0,".(goto)", 1, 2, 0);
-	T = trans[5][18] = settr(162,2,0,0,0,"DO", 1, 2, 0);
-	T = T->nxt	= settr(162,2,2,0,0,"DO", 1, 2, 0);
-	    T->nxt	= settr(162,2,16,0,0,"DO", 1, 2, 0);
-	trans[5][2]	= settr(146,2,14,4,4,"((proc<1))", 1, 2, 0); /* m: 3 -> 14,0 */
+	T = trans[ 5][28] = settr(203,2,0,0,0,"ATOMIC", 1, 2, 0);
+	T->nxt	= settr(203,2,1,0,0,"ATOMIC", 1, 2, 0);
+	trans[5][1]	= settr(176,2,18,3,3,"proc = 0", 1, 2, 0);
+	trans[5][19]	= settr(194,2,18,1,0,".(goto)", 1, 2, 0);
+	T = trans[5][18] = settr(193,2,0,0,0,"DO", 1, 2, 0);
+	T = T->nxt	= settr(193,2,2,0,0,"DO", 1, 2, 0);
+	    T->nxt	= settr(193,2,16,0,0,"DO", 1, 2, 0);
+	trans[5][2]	= settr(177,2,14,4,4,"((proc<1))", 1, 2, 0); /* m: 3 -> 14,0 */
 	reached5[3] = 1;
 	trans[5][3]	= settr(0,0,0,0,0,"bin_status.out_door = 2",0,0,0);
 	trans[5][4]	= settr(0,0,0,0,0,"bin_status.lock_out_door = 2",0,0,0);
@@ -48,86 +48,125 @@ settable(void)
 	trans[5][11]	= settr(0,0,0,0,0,"bin_status.full_capacity = 0",0,0,0);
 	trans[5][12]	= settr(0,0,0,0,0,"bin_status.trap_destroyed = 0",0,0,0);
 	trans[5][13]	= settr(0,0,0,0,0,"max_capacity = 2",0,0,0);
-	trans[5][14]	= settr(158,2,15,5,5,"(run bin(proc))", 1, 2, 0);
-	trans[5][15]	= settr(159,2,18,6,6,"proc = (proc+1)", 1, 2, 0);
-	trans[5][16]	= settr(160,2,24,7,7,"((proc==1))", 1, 2, 0); /* m: 21 -> 24,0 */
+	trans[5][14]	= settr(189,2,15,5,5,"(run bin(proc))", 1, 2, 0);
+	trans[5][15]	= settr(190,2,18,6,6,"proc = (proc+1)", 1, 2, 0);
+	trans[5][16]	= settr(191,2,24,7,7,"((proc==1))", 1, 2, 0); /* m: 21 -> 24,0 */
 	reached5[21] = 1;
-	trans[5][17]	= settr(161,2,21,1,0,"goto :b5", 1, 2, 0); /* m: 21 -> 0,24 */
+	trans[5][17]	= settr(192,2,21,1,0,"goto :b5", 1, 2, 0); /* m: 21 -> 0,24 */
 	reached5[21] = 1;
-	trans[5][20]	= settr(164,2,21,1,0,"break", 1, 2, 0);
-	trans[5][21]	= settr(165,2,24,8,8,"proc = 0", 1, 2, 0); /* m: 22 -> 0,24 */
+	trans[5][20]	= settr(195,2,21,1,0,"break", 1, 2, 0);
+	trans[5][21]	= settr(196,2,24,8,8,"proc = 0", 1, 2, 0); /* m: 22 -> 0,24 */
 	reached5[22] = 1;
 	trans[5][22]	= settr(0,0,0,0,0,"trash_size = 2",0,0,0);
 	trans[5][23]	= settr(0,0,0,0,0,"has_trash = 1",0,0,0);
-	trans[5][24]	= settr(168,2,25,9,9,"(run user(proc,trash_size))", 1, 2, 0);
-	trans[5][25]	= settr(169,2,26,10,10,"(run server())", 1, 2, 0);
-	trans[5][26]	= settr(170,2,27,11,11,"(run truck())", 1, 2, 0);
-	trans[5][27]	= settr(171,0,29,12,12,"(run main_control())", 1, 2, 0);
-	trans[5][29]	= settr(173,0,0,13,13,"-end-", 0, 3500, 0);
+	trans[5][24]	= settr(199,2,25,9,9,"(run user(proc,trash_size))", 1, 2, 0);
+	trans[5][25]	= settr(200,2,26,10,10,"(run server())", 1, 2, 0);
+	trans[5][26]	= settr(201,2,27,11,11,"(run truck())", 1, 2, 0);
+	trans[5][27]	= settr(202,0,29,12,12,"(run main_control())", 1, 2, 0);
+	trans[5][29]	= settr(204,0,0,13,13,"-end-", 0, 3500, 0);
 
 	/* proctype 4: main_control */
 
-	trans[4] = (Trans **) emalloc(7*sizeof(Trans *));
+	trans[4] = (Trans **) emalloc(34*sizeof(Trans *));
 
-	trans[4][4]	= settr(142,0,3,1,0,".(goto)", 0, 2, 0);
-	T = trans[4][3] = settr(141,0,0,0,0,"DO", 0, 2, 0);
-	    T->nxt	= settr(141,0,1,0,0,"DO", 0, 2, 0);
-	trans[4][1]	= settr(139,0,2,14,14,"scan_card_user?user_id", 1, 510, 0);
-	trans[4][2]	= settr(140,0,3,1,0,"(1)", 0, 2, 0);
-	trans[4][5]	= settr(143,0,6,1,0,"break", 0, 2, 0);
-	trans[4][6]	= settr(144,0,0,15,15,"-end-", 0, 3500, 0);
+	trans[4][31]	= settr(173,0,30,1,0,".(goto)", 0, 2, 0);
+	T = trans[4][30] = settr(172,0,0,0,0,"DO", 0, 2, 0);
+	T = T->nxt	= settr(172,0,1,0,0,"DO", 0, 2, 0);
+	T = T->nxt	= settr(172,0,10,0,0,"DO", 0, 2, 0);
+	T = T->nxt	= settr(172,0,13,0,0,"DO", 0, 2, 0);
+	T = T->nxt	= settr(172,0,15,0,0,"DO", 0, 2, 0);
+	T = T->nxt	= settr(172,0,17,0,0,"DO", 0, 2, 0);
+	    T->nxt	= settr(172,0,20,0,0,"DO", 0, 2, 0);
+	trans[4][1]	= settr(143,0,2,14,14,"scan_card_user?user_id", 1, 510, 0);
+	trans[4][2]	= settr(144,0,8,15,15,"user_valid?user_id,1", 1, 513, 0);
+	T = trans[4][8] = settr(150,0,0,0,0,"IF", 0, 2, 0);
+	T = T->nxt	= settr(150,0,3,0,0,"IF", 0, 2, 0);
+	    T->nxt	= settr(150,0,6,0,0,"IF", 0, 2, 0);
+	trans[4][3]	= settr(145,0,4,16,0,"((bin_status.full_capacity==0))", 1, 2, 0);
+	trans[4][4]	= settr(146,0,5,17,17,"can_deposit_trash!user_id,1", 1, 11, 0);
+	trans[4][5]	= settr(147,0,30,18,18,"change_bin!2,1", 1, 3, 0);
+	trans[4][9]	= settr(151,0,30,1,0,".(goto)", 0, 2, 0);
+	trans[4][6]	= settr(148,0,7,2,0,"else", 0, 2, 0);
+	trans[4][7]	= settr(149,0,30,19,19,"can_deposit_trash!user_id,0", 1, 11, 0);
+	trans[4][10]	= settr(152,0,11,20,0,"((bin_status.trash_uncompressed==max_capacity))", 1, 2, 0);
+	trans[4][11]	= settr(153,0,12,21,21,"bin_status.full_capacity = 1", 1, 2, 0);
+	trans[4][12]	= settr(154,0,30,22,22,"request_truck!bin_id", 1, 14, 0);
+	trans[4][13]	= settr(155,0,14,23,23,"change_truck?3,bin_id", 1, 515, 0);
+	trans[4][14]	= settr(156,0,30,24,24,"change_truck!2,bin_id", 1, 15, 0);
+	trans[4][15]	= settr(157,0,16,25,25,"change_truck?1,bin_id", 1, 515, 0);
+	trans[4][16]	= settr(158,0,30,26,26,"bin_status.full_capacity = 0", 1, 2, 0);
+	trans[4][17]	= settr(159,0,18,27,27,"user_closed_outer_door?1", 1, 505, 0);
+	trans[4][18]	= settr(160,0,19,28,28,"change_bin!2,2", 1, 3, 0);
+	trans[4][19]	= settr(161,0,30,29,29,"weigh_trash!1", 1, 6, 0);
+	trans[4][20]	= settr(162,0,29,30,30,"trash_weighted?bin_status.trash_on_trap_door", 1, 507, 0);
+	T = trans[ 4][29] = settr(171,2,0,0,0,"ATOMIC", 1, 2, 0);
+	T->nxt	= settr(171,2,21,0,0,"ATOMIC", 1, 2500, 0);
+	trans[4][21]	= settr(163,2,22,31,31,"change_bin!1,1", 1, 2500, 0);
+	trans[4][22]	= settr(164,2,23,32,32,"bin_changed?1,1", 1, 2500, 0);
+	trans[4][23]	= settr(165,2,24,33,33,"change_ram!1", 1, 2500, 0);
+	trans[4][24]	= settr(166,2,25,34,34,"ram_changed?1", 1, 2500, 0);
+	trans[4][25]	= settr(167,2,26,35,35,"change_ram!2", 1, 2500, 0);
+	trans[4][26]	= settr(168,2,27,36,36,"ram_changed?1", 1, 2500, 0);
+	trans[4][27]	= settr(169,2,28,37,37,"change_bin!2,2", 1, 2500, 0);
+	trans[4][28]	= settr(170,0,30,38,38,"bin_changed?2,1", 1, 2500, 0);
+	trans[4][32]	= settr(174,0,33,1,0,"break", 0, 2, 0);
+	trans[4][33]	= settr(175,0,0,39,39,"-end-", 0, 3500, 0);
 
 	/* proctype 3: user */
 
 	trans[3] = (Trans **) emalloc(27*sizeof(Trans *));
 
-	trans[3][24]	= settr(136,0,23,1,0,".(goto)", 0, 2, 0);
-	T = trans[3][23] = settr(135,0,0,0,0,"DO", 0, 2, 0);
-	T = T->nxt	= settr(135,0,1,0,0,"DO", 0, 2, 0);
-	    T->nxt	= settr(135,0,3,0,0,"DO", 0, 2, 0);
-	trans[3][1]	= settr(113,0,2,16,0,"(!(has_trash))", 1, 2, 0);
-	trans[3][2]	= settr(114,0,23,17,17,"has_trash = 1", 1, 2, 0);
-	trans[3][3]	= settr(115,0,4,18,0,"(has_trash)", 1, 2, 0);
-	trans[3][4]	= settr(116,0,21,19,19,"scan_card_user!user_id", 1, 10, 0);
-	T = trans[3][21] = settr(133,0,0,0,0,"IF", 0, 2, 0);
-	T = T->nxt	= settr(133,0,5,0,0,"IF", 0, 2, 0);
-	    T->nxt	= settr(133,0,19,0,0,"IF", 0, 2, 0);
-	trans[3][5]	= settr(117,0,6,20,20,"can_deposit_trash?user_id,1", 1, 511, 0);
-	trans[3][6]	= settr(118,0,7,21,21,"bin_changed?2,1", 1, 504, 0);
-	trans[3][7]	= settr(119,0,8,22,22,"change_bin!3,1", 1, 3, 0);
-	trans[3][8]	= settr(120,0,16,23,23,"bin_changed?3,1", 1, 504, 0);
-	T = trans[ 3][16] = settr(128,2,0,0,0,"ATOMIC", 1, 2, 0);
-	T->nxt	= settr(128,2,14,0,0,"ATOMIC", 1, 2, 0);
-	T = trans[3][14] = settr(126,2,0,0,0,"IF", 1, 2, 0);
-	T = T->nxt	= settr(126,2,9,0,0,"IF", 1, 2, 0);
-	    T->nxt	= settr(126,2,12,0,0,"IF", 1, 2, 0);
-	trans[3][9]	= settr(121,4,17,24,24,"((bin_status.trash_in_outer_door==0))", 1, 2, 0); /* m: 10 -> 17,0 */
-	reached3[10] = 1;
-	trans[3][10]	= settr(0,0,0,0,0,"bin_status.trash_in_outer_door = trash_size",0,0,0);
-	trans[3][11]	= settr(0,0,0,0,0,"has_trash = 0",0,0,0);
-	trans[3][15]	= settr(127,0,17,25,25,".(goto)", 1, 2, 0);
-	trans[3][12]	= settr(124,2,13,26,0,"((bin_status.trash_in_outer_door>0))", 1, 2, 0);
-	trans[3][13]	= settr(125,4,17,27,27,"(1)", 1, 2, 0); /* m: 15 -> 17,0 */
-	reached3[15] = 1;
-	trans[3][17]	= settr(129,0,18,28,28,"change_bin!3,2", 1, 3, 0);
-	trans[3][18]	= settr(130,0,23,29,29,"bin_changed?3,1", 1, 504, 0);
-	trans[3][22]	= settr(134,0,23,1,0,".(goto)", 0, 2, 0);
-	trans[3][19]	= settr(131,0,20,30,30,"can_deposit_trash?user_id,0", 1, 511, 0);
-	trans[3][20]	= settr(132,0,23,1,0,"(1)", 0, 2, 0);
-	trans[3][25]	= settr(137,0,26,1,0,"break", 0, 2, 0);
-	trans[3][26]	= settr(138,0,0,31,31,"-end-", 0, 3500, 0);
+	trans[3][24]	= settr(140,0,23,1,0,".(goto)", 0, 2, 0);
+	T = trans[3][23] = settr(139,0,0,0,0,"DO", 0, 2, 0);
+	T = T->nxt	= settr(139,0,1,0,0,"DO", 0, 2, 0);
+	    T->nxt	= settr(139,0,3,0,0,"DO", 0, 2, 0);
+	trans[3][1]	= settr(117,0,2,40,0,"(!(has_trash))", 1, 2, 0);
+	trans[3][2]	= settr(118,0,23,41,41,"has_trash = 1", 1, 2, 0);
+	trans[3][3]	= settr(119,0,4,42,0,"(has_trash)", 1, 2, 0);
+	trans[3][4]	= settr(120,0,21,43,43,"scan_card_user!user_id", 1, 10, 0);
+	T = trans[3][21] = settr(137,0,0,0,0,"IF", 0, 2, 0);
+	T = T->nxt	= settr(137,0,5,0,0,"IF", 0, 2, 0);
+	    T->nxt	= settr(137,0,19,0,0,"IF", 0, 2, 0);
+	trans[3][5]	= settr(121,0,6,44,44,"can_deposit_trash?user_id,1", 1, 511, 0);
+	trans[3][6]	= settr(122,0,7,45,45,"bin_changed?2,1", 1, 504, 0);
+	trans[3][7]	= settr(123,0,8,46,46,"change_bin!3,1", 1, 3, 0);
+	trans[3][8]	= settr(124,0,16,47,47,"bin_changed?3,1", 1, 504, 0);
+	T = trans[ 3][16] = settr(132,0,0,0,0,"sub-sequence", 0, 2, 0);
+	T->nxt	= settr(132,0,14,0,0,"sub-sequence", 0, 2, 0);
+	T = trans[3][14] = settr(130,0,0,0,0,"IF", 0, 2, 0);
+	T = T->nxt	= settr(130,0,9,0,0,"IF", 0, 2, 0);
+	    T->nxt	= settr(130,0,12,0,0,"IF", 0, 2, 0);
+	trans[3][9]	= settr(125,0,10,48,0,"((bin_status.trash_in_outer_door==0))", 1, 2, 0);
+	trans[3][10]	= settr(126,0,11,49,49,"bin_status.trash_in_outer_door = trash_size", 1, 2, 0);
+	trans[3][11]	= settr(127,0,17,50,50,"has_trash = 0", 1, 2, 0);
+	trans[3][15]	= settr(131,0,17,1,0,".(goto)", 0, 2, 0);
+	trans[3][12]	= settr(128,0,13,51,0,"((bin_status.trash_in_outer_door>0))", 1, 2, 0);
+	trans[3][13]	= settr(129,0,17,1,0,"(1)", 0, 2, 0);
+	trans[3][17]	= settr(133,0,18,52,52,"change_bin!3,2", 1, 3, 0);
+	trans[3][18]	= settr(134,0,23,53,53,"bin_changed?3,1", 1, 504, 0);
+	trans[3][22]	= settr(138,0,23,1,0,".(goto)", 0, 2, 0);
+	trans[3][19]	= settr(135,0,20,54,54,"can_deposit_trash?user_id,0", 1, 511, 0);
+	trans[3][20]	= settr(136,0,23,1,0,"(1)", 0, 2, 0);
+	trans[3][25]	= settr(141,0,26,1,0,"break", 0, 2, 0);
+	trans[3][26]	= settr(142,0,0,55,55,"-end-", 0, 3500, 0);
 
 	/* proctype 2: truck */
 
-	trans[2] = (Trans **) emalloc(7*sizeof(Trans *));
+	trans[2] = (Trans **) emalloc(11*sizeof(Trans *));
 
-	trans[2][4]	= settr(110,0,3,1,0,".(goto)", 0, 2, 0);
-	T = trans[2][3] = settr(109,0,0,0,0,"DO", 0, 2, 0);
-	    T->nxt	= settr(109,0,1,0,0,"DO", 0, 2, 0);
-	trans[2][1]	= settr(107,0,2,32,32,"request_truck?bin_id", 1, 514, 0);
-	trans[2][2]	= settr(108,0,3,1,0,"(1)", 0, 2, 0);
-	trans[2][5]	= settr(111,0,6,1,0,"break", 0, 2, 0);
-	trans[2][6]	= settr(112,0,0,33,33,"-end-", 0, 3500, 0);
+	trans[2][8]	= settr(114,0,7,1,0,".(goto)", 0, 2, 0);
+	T = trans[2][7] = settr(113,0,0,0,0,"DO", 0, 2, 0);
+	T = T->nxt	= settr(113,0,1,0,0,"DO", 0, 2, 0);
+	T = T->nxt	= settr(113,0,3,0,0,"DO", 0, 2, 0);
+	    T->nxt	= settr(113,0,5,0,0,"DO", 0, 2, 0);
+	trans[2][1]	= settr(107,0,2,56,56,"request_truck?bin_id", 1, 514, 0);
+	trans[2][2]	= settr(108,0,7,57,57,"change_truck!3,bin_id", 1, 15, 0);
+	trans[2][3]	= settr(109,0,4,58,58,"change_truck?2,bin_id", 1, 515, 0);
+	trans[2][4]	= settr(110,0,7,59,59,"empty_bin!1", 1, 16, 0);
+	trans[2][5]	= settr(111,0,6,60,60,"bin_emptied?1", 1, 517, 0);
+	trans[2][6]	= settr(112,0,7,61,61,"change_truck!1,bin_id", 1, 15, 0);
+	trans[2][9]	= settr(115,0,10,1,0,"break", 0, 2, 0);
+	trans[2][10]	= settr(116,0,0,62,62,"-end-", 0, 3500, 0);
 
 	/* proctype 1: server */
 
@@ -136,17 +175,17 @@ settable(void)
 	trans[1][9]	= settr(104,0,8,1,0,".(goto)", 0, 2, 0);
 	T = trans[1][8] = settr(103,0,0,0,0,"DO", 0, 2, 0);
 	    T->nxt	= settr(103,0,1,0,0,"DO", 0, 2, 0);
-	trans[1][1]	= settr(96,0,6,34,34,"check_user?user_id", 1, 512, 0);
+	trans[1][1]	= settr(96,0,6,63,63,"check_user?user_id", 1, 512, 0);
 	T = trans[1][6] = settr(101,0,0,0,0,"IF", 0, 2, 0);
 	T = T->nxt	= settr(101,0,2,0,0,"IF", 0, 2, 0);
 	    T->nxt	= settr(101,0,4,0,0,"IF", 0, 2, 0);
-	trans[1][2]	= settr(97,0,3,35,0,"((user_id!=42))", 0, 2, 0);
-	trans[1][3]	= settr(98,0,8,36,36,"user_valid!user_id,1", 1, 13, 0);
+	trans[1][2]	= settr(97,0,3,64,0,"((user_id!=42))", 0, 2, 0);
+	trans[1][3]	= settr(98,0,8,65,65,"user_valid!user_id,1", 1, 13, 0);
 	trans[1][7]	= settr(102,0,8,1,0,".(goto)", 0, 2, 0);
-	trans[1][4]	= settr(99,0,5,37,0,"((user_id==42))", 0, 2, 0);
-	trans[1][5]	= settr(100,0,8,38,38,"user_valid!user_id,0", 1, 13, 0);
+	trans[1][4]	= settr(99,0,5,66,0,"((user_id==42))", 0, 2, 0);
+	trans[1][5]	= settr(100,0,8,67,67,"user_valid!user_id,0", 1, 13, 0);
 	trans[1][10]	= settr(105,0,11,1,0,"break", 0, 2, 0);
-	trans[1][11]	= settr(106,0,0,39,39,"-end-", 0, 3500, 0);
+	trans[1][11]	= settr(106,0,0,68,68,"-end-", 0, 3500, 0);
 
 	/* proctype 0: bin */
 
@@ -164,130 +203,130 @@ settable(void)
 	T = T->nxt	= settr(92,0,65,0,0,"DO", 0, 2, 0);
 	T = T->nxt	= settr(92,0,79,0,0,"DO", 0, 2, 0);
 	    T->nxt	= settr(92,0,85,0,0,"DO", 0, 2, 0);
-	trans[0][1]	= settr(0,0,6,40,40,"change_bin?3,2", 1, 503, 0);
+	trans[0][1]	= settr(0,0,6,69,69,"change_bin?3,2", 1, 503, 0);
 	T = trans[0][6] = settr(5,0,0,0,0,"IF", 0, 2, 0);
 	    T->nxt	= settr(5,0,2,0,0,"IF", 0, 2, 0);
-	trans[0][2]	= settr(1,0,3,41,0,"((bin_status.out_door==1))", 1, 2, 0);
-	trans[0][3]	= settr(2,0,4,42,42,"bin_status.out_door = 2", 1, 2, 0);
-	trans[0][4]	= settr(3,0,5,43,43,"bin_changed!3,1", 1, 4, 0);
-	trans[0][5]	= settr(4,0,93,44,44,"user_closed_outer_door!1", 1, 5, 0);
+	trans[0][2]	= settr(1,0,3,70,0,"((bin_status.out_door==1))", 1, 2, 0);
+	trans[0][3]	= settr(2,0,4,71,71,"bin_status.out_door = 2", 1, 2, 0);
+	trans[0][4]	= settr(3,0,5,72,72,"bin_changed!3,1", 1, 4, 0);
+	trans[0][5]	= settr(4,0,93,73,73,"user_closed_outer_door!1", 1, 5, 0);
 	trans[0][7]	= settr(6,0,93,1,0,".(goto)", 0, 2, 0);
-	trans[0][8]	= settr(7,0,12,45,45,"change_bin?3,1", 1, 503, 0);
+	trans[0][8]	= settr(7,0,12,74,74,"change_bin?3,1", 1, 503, 0);
 	T = trans[0][12] = settr(11,0,0,0,0,"IF", 0, 2, 0);
 	    T->nxt	= settr(11,0,9,0,0,"IF", 0, 2, 0);
-	trans[0][9]	= settr(8,0,10,46,0,"(((bin_status.out_door==2)&&(bin_status.lock_out_door==1)))", 1, 2, 0);
-	trans[0][10]	= settr(9,0,11,47,47,"bin_status.out_door = 1", 1, 2, 0);
-	trans[0][11]	= settr(10,0,93,48,48,"bin_changed!3,1", 1, 4, 0);
+	trans[0][9]	= settr(8,0,10,75,0,"(((bin_status.out_door==2)&&(bin_status.lock_out_door==1)))", 1, 2, 0);
+	trans[0][10]	= settr(9,0,11,76,76,"bin_status.out_door = 1", 1, 2, 0);
+	trans[0][11]	= settr(10,0,93,77,77,"bin_changed!3,1", 1, 4, 0);
 	trans[0][13]	= settr(12,0,93,1,0,".(goto)", 0, 2, 0);
-	trans[0][14]	= settr(13,0,29,49,49,"change_bin?2,2", 1, 503, 0);
+	trans[0][14]	= settr(13,0,29,78,78,"change_bin?2,2", 1, 503, 0);
 	T = trans[0][29] = settr(28,0,0,0,0,"IF", 0, 2, 0);
 	    T->nxt	= settr(28,0,15,0,0,"IF", 0, 2, 0);
-	trans[0][15]	= settr(14,0,27,50,0,"(((bin_status.lock_out_door==1)&&(bin_status.out_door==2)))", 1, 2, 0);
+	trans[0][15]	= settr(14,0,27,79,0,"(((bin_status.lock_out_door==1)&&(bin_status.out_door==2)))", 1, 2, 0);
 	T = trans[ 0][27] = settr(26,2,0,0,0,"ATOMIC", 1, 2, 0);
 	T->nxt	= settr(26,2,16,0,0,"ATOMIC", 1, 2, 0);
-	trans[0][16]	= settr(15,2,25,51,51,"bin_status.lock_out_door = 2", 1, 2, 0);
+	trans[0][16]	= settr(15,2,25,80,80,"bin_status.lock_out_door = 2", 1, 2, 0);
 	T = trans[0][25] = settr(24,2,0,0,0,"IF", 1, 2, 0);
 	T = T->nxt	= settr(24,2,17,0,0,"IF", 1, 2, 0);
 	T = T->nxt	= settr(24,2,20,0,0,"IF", 1, 2, 0);
 	    T->nxt	= settr(24,2,22,0,0,"IF", 1, 2, 0);
-	trans[0][17]	= settr(16,4,28,52,52,"((((bin_status.trash_in_outer_door>0)&&(bin_status.trap_door==2))&&(bin_status.trash_on_trap_door==0)))", 1, 2, 0); /* m: 18 -> 28,0 */
+	trans[0][17]	= settr(16,4,28,81,81,"((((bin_status.trash_in_outer_door>0)&&(bin_status.trap_door==2))&&(bin_status.trash_on_trap_door==0)))", 1, 2, 0); /* m: 18 -> 28,0 */
 	reached0[18] = 1;
 	trans[0][18]	= settr(0,0,0,0,0,"bin_status.trash_on_trap_door = bin_status.trash_in_outer_door",0,0,0);
 	trans[0][19]	= settr(0,0,0,0,0,"bin_status.trash_in_outer_door = 0",0,0,0);
-	trans[0][26]	= settr(25,0,28,53,53,".(goto)", 1, 2, 0);
-	trans[0][20]	= settr(19,2,21,54,0,"((((bin_status.trash_in_outer_door>0)&&(bin_status.trap_door==2))&&(bin_status.trash_on_trap_door>0)))", 1, 2, 0);
-	trans[0][21]	= settr(20,4,28,55,55,"(1)", 1, 2, 0); /* m: 26 -> 28,0 */
+	trans[0][26]	= settr(25,0,28,82,82,".(goto)", 1, 2, 0);
+	trans[0][20]	= settr(19,2,21,83,0,"((((bin_status.trash_in_outer_door>0)&&(bin_status.trap_door==2))&&(bin_status.trash_on_trap_door>0)))", 1, 2, 0);
+	trans[0][21]	= settr(20,4,28,84,84,"(1)", 1, 2, 0); /* m: 26 -> 28,0 */
 	reached0[26] = 1;
-	trans[0][22]	= settr(21,4,28,56,56,"(((bin_status.trash_in_outer_door>0)&&(bin_status.trap_door==1)))", 1, 2, 0); /* m: 23 -> 28,0 */
+	trans[0][22]	= settr(21,4,28,85,85,"(((bin_status.trash_in_outer_door>0)&&(bin_status.trap_door==1)))", 1, 2, 0); /* m: 23 -> 28,0 */
 	reached0[23] = 1;
 	trans[0][23]	= settr(0,0,0,0,0,"bin_status.trash_uncompressed = (bin_status.trash_uncompressed+bin_status.trash_in_outer_door)",0,0,0);
 	trans[0][24]	= settr(0,0,0,0,0,"bin_status.trash_in_outer_door = 0",0,0,0);
-	trans[0][28]	= settr(27,0,93,57,57,"bin_changed!2,1", 1, 4, 0);
+	trans[0][28]	= settr(27,0,93,86,86,"bin_changed!2,1", 1, 4, 0);
 	trans[0][30]	= settr(29,0,93,1,0,".(goto)", 0, 2, 0);
-	trans[0][31]	= settr(30,0,35,58,58,"change_bin?2,1", 1, 503, 0);
+	trans[0][31]	= settr(30,0,35,87,87,"change_bin?2,1", 1, 503, 0);
 	T = trans[0][35] = settr(34,0,0,0,0,"IF", 0, 2, 0);
 	    T->nxt	= settr(34,0,32,0,0,"IF", 0, 2, 0);
-	trans[0][32]	= settr(31,0,33,59,0,"(((bin_status.lock_out_door==2)&&(bin_status.out_door==2)))", 1, 2, 0);
-	trans[0][33]	= settr(32,0,34,60,60,"bin_status.lock_out_door = 1", 1, 2, 0);
-	trans[0][34]	= settr(33,0,93,61,61,"bin_changed!2,1", 1, 4, 0);
+	trans[0][32]	= settr(31,0,33,88,0,"(((bin_status.lock_out_door==2)&&(bin_status.out_door==2)))", 1, 2, 0);
+	trans[0][33]	= settr(32,0,34,89,89,"bin_status.lock_out_door = 1", 1, 2, 0);
+	trans[0][34]	= settr(33,0,93,90,90,"bin_changed!2,1", 1, 4, 0);
 	trans[0][36]	= settr(35,0,93,1,0,".(goto)", 0, 2, 0);
-	trans[0][37]	= settr(36,0,40,62,62,"weigh_trash?1", 1, 506, 0);
+	trans[0][37]	= settr(36,0,40,91,91,"weigh_trash?1", 1, 506, 0);
 	T = trans[0][40] = settr(39,0,0,0,0,"IF", 0, 2, 0);
 	    T->nxt	= settr(39,0,38,0,0,"IF", 0, 2, 0);
-	trans[0][38]	= settr(37,0,39,63,0,"((bin_status.trap_door==2))", 1, 2, 0);
-	trans[0][39]	= settr(38,0,93,64,64,"trash_weighted!bin_status.trash_on_trap_door", 1, 7, 0);
+	trans[0][38]	= settr(37,0,39,92,0,"((bin_status.trap_door==2))", 1, 2, 0);
+	trans[0][39]	= settr(38,0,93,93,93,"trash_weighted!bin_status.trash_on_trap_door", 1, 7, 0);
 	trans[0][41]	= settr(40,0,93,1,0,".(goto)", 0, 2, 0);
-	trans[0][42]	= settr(41,0,49,65,65,"change_bin?1,2", 1, 503, 0);
+	trans[0][42]	= settr(41,0,49,94,94,"change_bin?1,2", 1, 503, 0);
 	T = trans[0][49] = settr(48,0,0,0,0,"IF", 0, 2, 0);
 	T = T->nxt	= settr(48,0,43,0,0,"IF", 0, 2, 0);
 	    T->nxt	= settr(48,0,46,0,0,"IF", 0, 2, 0);
-	trans[0][43]	= settr(42,0,44,66,0,"(((bin_status.trap_door==1)&&(bin_status.ram==2)))", 1, 2, 0);
-	trans[0][44]	= settr(43,0,45,67,67,"bin_status.trap_door = 2", 1, 2, 0);
-	trans[0][45]	= settr(44,0,93,68,68,"bin_changed!1,1", 1, 4, 0);
+	trans[0][43]	= settr(42,0,44,95,0,"(((bin_status.trap_door==1)&&(bin_status.ram==2)))", 1, 2, 0);
+	trans[0][44]	= settr(43,0,45,96,96,"bin_status.trap_door = 2", 1, 2, 0);
+	trans[0][45]	= settr(44,0,93,97,97,"bin_changed!1,1", 1, 4, 0);
 	trans[0][50]	= settr(49,0,93,1,0,".(goto)", 0, 2, 0);
-	trans[0][46]	= settr(45,0,47,69,0,"(((bin_status.trap_door==1)&&(bin_status.ram==1)))", 1, 2, 0);
-	trans[0][47]	= settr(46,0,48,70,70,"bin_status.trap_destroyed = 1", 1, 2, 0);
-	trans[0][48]	= settr(47,0,93,71,71,"bin_changed!1,0", 1, 4, 0);
-	trans[0][51]	= settr(50,0,63,72,72,"change_bin?1,1", 1, 503, 0);
+	trans[0][46]	= settr(45,0,47,98,0,"(((bin_status.trap_door==1)&&(bin_status.ram==1)))", 1, 2, 0);
+	trans[0][47]	= settr(46,0,48,99,99,"bin_status.trap_destroyed = 1", 1, 2, 0);
+	trans[0][48]	= settr(47,0,93,100,100,"bin_changed!1,0", 1, 4, 0);
+	trans[0][51]	= settr(50,0,63,101,101,"change_bin?1,1", 1, 503, 0);
 	T = trans[0][63] = settr(62,0,0,0,0,"IF", 0, 2, 0);
 	    T->nxt	= settr(62,0,52,0,0,"IF", 0, 2, 0);
-	trans[0][52]	= settr(51,0,61,73,0,"((bin_status.trap_door==2))", 1, 2, 0);
+	trans[0][52]	= settr(51,0,61,102,0,"((bin_status.trap_door==2))", 1, 2, 0);
 	T = trans[ 0][61] = settr(60,2,0,0,0,"ATOMIC", 1, 2, 0);
 	T->nxt	= settr(60,2,53,0,0,"ATOMIC", 1, 2, 0);
-	trans[0][53]	= settr(52,2,59,74,74,"bin_status.trap_door = 1", 1, 2, 0);
+	trans[0][53]	= settr(52,2,59,103,103,"bin_status.trap_door = 1", 1, 2, 0);
 	T = trans[0][59] = settr(58,2,0,0,0,"IF", 1, 2, 0);
 	T = T->nxt	= settr(58,2,54,0,0,"IF", 1, 2, 0);
 	    T->nxt	= settr(58,2,57,0,0,"IF", 1, 2, 0);
-	trans[0][54]	= settr(53,4,62,75,75,"((bin_status.trash_on_trap_door>0))", 1, 2, 0); /* m: 55 -> 62,0 */
+	trans[0][54]	= settr(53,4,62,104,104,"((bin_status.trash_on_trap_door>0))", 1, 2, 0); /* m: 55 -> 62,0 */
 	reached0[55] = 1;
 	trans[0][55]	= settr(0,0,0,0,0,"bin_status.trash_uncompressed = (bin_status.trash_uncompressed+bin_status.trash_on_trap_door)",0,0,0);
 	trans[0][56]	= settr(0,0,0,0,0,"bin_status.trash_on_trap_door = 0",0,0,0);
-	trans[0][60]	= settr(59,0,62,76,76,".(goto)", 1, 2, 0);
+	trans[0][60]	= settr(59,0,62,105,105,".(goto)", 1, 2, 0);
 	trans[0][57]	= settr(56,2,58,2,0,"else", 1, 2, 0);
-	trans[0][58]	= settr(57,4,62,77,77,"(1)", 1, 2, 0); /* m: 60 -> 62,0 */
+	trans[0][58]	= settr(57,4,62,106,106,"(1)", 1, 2, 0); /* m: 60 -> 62,0 */
 	reached0[60] = 1;
-	trans[0][62]	= settr(61,0,93,78,78,"bin_changed!1,1", 1, 4, 0);
+	trans[0][62]	= settr(61,0,93,107,107,"bin_changed!1,1", 1, 4, 0);
 	trans[0][64]	= settr(63,0,93,1,0,".(goto)", 0, 2, 0);
-	trans[0][65]	= settr(64,0,77,79,79,"change_ram?1", 1, 508, 0);
+	trans[0][65]	= settr(64,0,77,108,108,"change_ram?1", 1, 508, 0);
 	T = trans[0][77] = settr(76,0,0,0,0,"IF", 0, 2, 0);
 	    T->nxt	= settr(76,0,66,0,0,"IF", 0, 2, 0);
-	trans[0][66]	= settr(65,0,75,80,0,"((bin_status.ram==2))", 1, 2, 0);
+	trans[0][66]	= settr(65,0,75,109,0,"((bin_status.ram==2))", 1, 2, 0);
 	T = trans[ 0][75] = settr(74,2,0,0,0,"ATOMIC", 1, 2, 0);
 	T->nxt	= settr(74,2,67,0,0,"ATOMIC", 1, 2, 0);
-	trans[0][67]	= settr(66,2,73,81,81,"bin_status.ram = 1", 1, 2, 0);
+	trans[0][67]	= settr(66,2,73,110,110,"bin_status.ram = 1", 1, 2, 0);
 	T = trans[0][73] = settr(72,2,0,0,0,"IF", 1, 2, 0);
 	T = T->nxt	= settr(72,2,68,0,0,"IF", 1, 2, 0);
 	    T->nxt	= settr(72,2,71,0,0,"IF", 1, 2, 0);
-	trans[0][68]	= settr(67,4,76,82,82,"((bin_status.trap_door==1))", 1, 2, 0); /* m: 69 -> 76,0 */
+	trans[0][68]	= settr(67,4,76,111,111,"((bin_status.trap_door==1))", 1, 2, 0); /* m: 69 -> 76,0 */
 	reached0[69] = 1;
 	trans[0][69]	= settr(0,0,0,0,0,"bin_status.trash_compressed = (bin_status.trash_compressed+(bin_status.trash_uncompressed/2))",0,0,0);
 	trans[0][70]	= settr(0,0,0,0,0,"bin_status.trash_uncompressed = 0",0,0,0);
-	trans[0][74]	= settr(73,0,76,83,83,".(goto)", 1, 2, 0);
-	trans[0][71]	= settr(70,4,76,84,84,"((bin_status.trap_door==2))", 1, 2, 0); /* m: 72 -> 76,0 */
+	trans[0][74]	= settr(73,0,76,112,112,".(goto)", 1, 2, 0);
+	trans[0][71]	= settr(70,4,76,113,113,"((bin_status.trap_door==2))", 1, 2, 0); /* m: 72 -> 76,0 */
 	reached0[72] = 1;
 	trans[0][72]	= settr(0,0,0,0,0,"bin_status.trap_destroyed = 1",0,0,0);
-	trans[0][76]	= settr(75,0,93,85,85,"ram_changed!1", 1, 9, 0);
+	trans[0][76]	= settr(75,0,93,114,114,"ram_changed!1", 1, 9, 0);
 	trans[0][78]	= settr(77,0,93,1,0,".(goto)", 0, 2, 0);
-	trans[0][79]	= settr(78,0,83,86,86,"change_ram?2", 1, 508, 0);
+	trans[0][79]	= settr(78,0,83,115,115,"change_ram?2", 1, 508, 0);
 	T = trans[0][83] = settr(82,0,0,0,0,"IF", 0, 2, 0);
 	    T->nxt	= settr(82,0,80,0,0,"IF", 0, 2, 0);
-	trans[0][80]	= settr(79,0,81,87,0,"((bin_status.ram==1))", 1, 2, 0);
-	trans[0][81]	= settr(80,0,82,88,88,"bin_status.ram = 2", 1, 2, 0);
-	trans[0][82]	= settr(81,0,93,89,89,"ram_changed!1", 1, 9, 0);
+	trans[0][80]	= settr(79,0,81,116,0,"((bin_status.ram==1))", 1, 2, 0);
+	trans[0][81]	= settr(80,0,82,117,117,"bin_status.ram = 2", 1, 2, 0);
+	trans[0][82]	= settr(81,0,93,118,118,"ram_changed!1", 1, 9, 0);
 	trans[0][84]	= settr(83,0,93,1,0,".(goto)", 0, 2, 0);
-	trans[0][85]	= settr(84,0,91,90,90,"empty_bin?1", 1, 516, 0);
+	trans[0][85]	= settr(84,0,91,119,119,"empty_bin?1", 1, 516, 0);
 	T = trans[0][91] = settr(90,0,0,0,0,"IF", 0, 2, 0);
 	    T->nxt	= settr(90,0,86,0,0,"IF", 0, 2, 0);
-	trans[0][86]	= settr(85,0,89,91,0,"((((bin_status.out_door==2)&&(bin_status.lock_out_door==2))&&(bin_status.ram==2)))", 1, 2, 0);
+	trans[0][86]	= settr(85,0,89,120,0,"((((bin_status.out_door==2)&&(bin_status.lock_out_door==2))&&(bin_status.ram==2)))", 1, 2, 0);
 	T = trans[ 0][89] = settr(88,2,0,0,0,"ATOMIC", 1, 2, 0);
 	T->nxt	= settr(88,2,87,0,0,"ATOMIC", 1, 2, 0);
-	trans[0][87]	= settr(86,4,90,92,92,"bin_status.trash_compressed = 0", 1, 2, 0); /* m: 88 -> 0,90 */
+	trans[0][87]	= settr(86,4,90,121,121,"bin_status.trash_compressed = 0", 1, 2, 0); /* m: 88 -> 0,90 */
 	reached0[88] = 1;
 	trans[0][88]	= settr(0,0,0,0,0,"bin_status.trash_uncompressed = 0",0,0,0);
-	trans[0][90]	= settr(89,0,93,93,93,"bin_emptied!1", 1, 17, 0);
+	trans[0][90]	= settr(89,0,93,122,122,"bin_emptied!1", 1, 17, 0);
 	trans[0][92]	= settr(91,0,93,1,0,".(goto)", 0, 2, 0);
 	trans[0][95]	= settr(94,0,96,1,0,"break", 0, 2, 0);
-	trans[0][96]	= settr(95,0,0,94,94,"-end-", 0, 3500, 0);
+	trans[0][96]	= settr(95,0,0,123,123,"-end-", 0, 3500, 0);
 	/* np_ demon: */
 	trans[_NP_] = (Trans **) emalloc(3*sizeof(Trans *));
 	T = trans[_NP_][0] = settr(9997,0,1,_T5,0,"(np_)", 1,2,0);

@@ -503,10 +503,10 @@ int _;	/* predefined write-only variable */
 #endif
 
 short src_ln5 [] = {
-	  0, 299, 301, 303, 304, 305, 306, 307, 
-	308, 309, 310, 311, 312, 313, 314, 315, 
-	316, 317, 300, 321, 300, 321, 323, 323, 
-	324, 327, 329, 332, 295, 334,   0, };
+	  0, 342, 344, 346, 347, 348, 349, 350, 
+	351, 352, 353, 354, 355, 356, 357, 358, 
+	359, 360, 343, 364, 343, 364, 366, 366, 
+	367, 370, 372, 375, 338, 377,   0, };
 S_F_MAP src_file5 [] = {
 	{ "-", 0, 0 },
 	{ "trash_bin.pml", 1, 29 },
@@ -520,21 +520,29 @@ uchar reached5 [] = {
 uchar *loopstate5;
 
 short src_ln4 [] = {
-	  0, 286, 287, 285, 289, 285, 289,   0, };
+	  0, 294, 295, 297, 298, 299, 300, 301, 
+	296, 305, 305, 306, 307, 310, 311, 312, 
+	313, 315, 316, 317, 319, 321, 322, 323, 
+	324, 325, 326, 327, 328, 320, 292, 331, 
+	292, 331,   0, };
 S_F_MAP src_file4 [] = {
 	{ "-", 0, 0 },
-	{ "trash_bin.pml", 1, 6 },
-	{ "-", 7, 8 }
+	{ "trash_bin.pml", 1, 33 },
+	{ "-", 34, 35 }
 };
 uchar reached4 [] = {
-	  0,   1,   1,   0,   1,   1,   0,   0, };
+	  0,   1,   0,   1,   0,   0,   1,   0, 
+	  0,   1,   1,   0,   0,   1,   0,   1, 
+	  0,   1,   0,   0,   1,   1,   0,   0, 
+	  0,   0,   0,   0,   0,   0,   0,   1, 
+	  1,   0,   0, };
 uchar *loopstate4;
 
 short src_ln3 [] = {
-	  0, 248, 249, 251, 253, 255, 256, 258, 
-	259, 262, 264, 265, 266, 268, 261, 270, 
-	260, 272, 273, 274, 275, 254, 277, 246, 
-	278, 246, 278,   0, };
+	  0, 252, 253, 255, 257, 259, 260, 262, 
+	263, 267, 269, 270, 271, 273, 266, 275, 
+	265, 277, 278, 279, 280, 258, 282, 250, 
+	283, 250, 283,   0, };
 S_F_MAP src_file3 [] = {
 	{ "-", 0, 0 },
 	{ "trash_bin.pml", 1, 26 },
@@ -542,20 +550,22 @@ S_F_MAP src_file3 [] = {
 };
 uchar reached3 [] = {
 	  0,   1,   0,   1,   0,   1,   0,   0, 
-	  0,   1,   0,   0,   1,   0,   1,   1, 
+	  0,   1,   0,   0,   1,   1,   1,   1, 
 	  0,   0,   0,   1,   1,   0,   1,   0, 
 	  1,   1,   0,   0, };
 uchar *loopstate3;
 
 short src_ln2 [] = {
-	  0, 237, 238, 236, 240, 236, 240,   0, };
+	  0, 237, 238, 239, 240, 241, 242, 236, 
+	244, 236, 244,   0, };
 S_F_MAP src_file2 [] = {
 	{ "-", 0, 0 },
-	{ "trash_bin.pml", 1, 6 },
-	{ "-", 7, 8 }
+	{ "trash_bin.pml", 1, 10 },
+	{ "-", 11, 12 }
 };
 uchar reached2 [] = {
-	  0,   1,   1,   0,   1,   1,   0,   0, };
+	  0,   1,   0,   1,   0,   1,   0,   0, 
+	  1,   1,   0,   0, };
 uchar *loopstate2;
 
 short src_ln1 [] = {
@@ -941,7 +951,7 @@ addproc(int calling_pid, int priority, int n, int par0, int par1)
 		((P5 *)pptr(h))->proc = 0;
 #ifdef VAR_RANGES
 		logval(":init::proc", ((P5 *)pptr(h))->proc);
-		logval(":init::trash_size", ((P5 *)pptr(h))->_26_6_trash_size);
+		logval(":init::trash_size", ((P5 *)pptr(h))->_26_7_trash_size);
 #endif
 #ifdef HAS_CODE
 		locinit5(h);
@@ -949,16 +959,18 @@ addproc(int calling_pid, int priority, int n, int par0, int par1)
 		break;
 	case 4:	/* main_control */
 		((P4 *)pptr(h))->_t = 4;
-		((P4 *)pptr(h))->_p = 3;
+		((P4 *)pptr(h))->_p = 30;
 #ifdef HAS_PRIORITY
 		((P4 *)pptr(h))->_priority = priority; /* was: 1 */
 #endif
-		reached4[3]=1;
+		reached4[30]=1;
 		/* params: */
 		/* locals: */
 		((P4 *)pptr(h))->user_id = 0;
+		((P4 *)pptr(h))->bin_id = 0;
 #ifdef VAR_RANGES
 		logval("main_control:user_id", ((P4 *)pptr(h))->user_id);
+		logval("main_control:bin_id", ((P4 *)pptr(h))->bin_id);
 #endif
 #ifdef HAS_CODE
 		locinit4(h);
@@ -985,11 +997,11 @@ addproc(int calling_pid, int priority, int n, int par0, int par1)
 		break;
 	case 2:	/* truck */
 		((P2 *)pptr(h))->_t = 2;
-		((P2 *)pptr(h))->_p = 3;
+		((P2 *)pptr(h))->_p = 7;
 #ifdef HAS_PRIORITY
 		((P2 *)pptr(h))->_priority = priority; /* was: 1 */
 #endif
-		reached2[3]=1;
+		reached2[7]=1;
 		/* params: */
 		/* locals: */
 		((P2 *)pptr(h))->bin_id = 0;
@@ -12592,7 +12604,7 @@ void
 iniglobals(int calling_pid)
 {
 		now.has_trash = 0;
-		max_capacity = 0;
+		now.max_capacity = 0;
 		now.change_bin = addqueue(calling_pid, 1, 0);
 		now.bin_changed = addqueue(calling_pid, 2, 1);
 		now.user_closed_outer_door = addqueue(calling_pid, 3, 1);
@@ -12620,6 +12632,7 @@ iniglobals(int calling_pid)
 		now.bin_status.trap_destroyed = 0;
 #ifdef VAR_RANGES
 		logval("has_trash", now.has_trash);
+		logval("max_capacity", now.max_capacity);
 		logval("bin_status.out_door", now.bin_status.out_door);
 		logval("bin_status.lock_out_door", now.bin_status.lock_out_door);
 		logval("bin_status.trap_door", now.bin_status.trap_door);
@@ -15122,6 +15135,7 @@ c_globals(void)
 	printf("	byte   trash_uncompressed:	%d\n", now.bin_status.trash_uncompressed);
 	printf("	bit    full_capacity:	%d\n", now.bin_status.full_capacity);
 	printf("	bit    trap_destroyed:	%d\n", now.bin_status.trap_destroyed);
+	printf("	byte   max_capacity:	%d\n", now.max_capacity);
 	printf("	bit    has_trash:	%d\n", now.has_trash);
 	printf("	chan change_bin (=%d):	len %d:\t", now.change_bin, q_len(now.change_bin));
 	c_chandump(now.change_bin);
@@ -15161,11 +15175,12 @@ c_locals(int pid, int tp)
 	case 5:
 		printf("local vars proc %d (:init:):\n", pid);
 	printf("	byte   proc:	%d\n", ((P5 *)pptr(pid))->proc);
-	printf("	byte   trash_size:	%d\n", ((P5 *)pptr(pid))->_26_6_trash_size);
+	printf("	byte   trash_size:	%d\n", ((P5 *)pptr(pid))->_26_7_trash_size);
 		break;
 	case 4:
 		printf("local vars proc %d (main_control):\n", pid);
 	printf("	byte   user_id:	%d\n", ((P4 *)pptr(pid))->user_id);
+	printf("	byte   bin_id:	%d\n", ((P4 *)pptr(pid))->bin_id);
 		break;
 	case 3:
 		printf("local vars proc %d (user):\n", pid);
@@ -15345,7 +15360,7 @@ c_chandump(int from)
 	printf("\n");
 }
 
-Trans *t_id_lkup[174];
+Trans *t_id_lkup[205];
 
 
 #ifdef BFS_PAR

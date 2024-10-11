@@ -133,24 +133,24 @@ typedef struct S_F_MAP {
 } S_F_MAP;
 
 #define _nstates5	30	/* :init: */
-#define minseq5	145
-#define maxseq5	173
+#define minseq5	176
+#define maxseq5	204
 #define _endstate5	29
 
-#define _nstates4	7	/* main_control */
-#define minseq4	139
-#define maxseq4	144
-#define _endstate4	6
+#define _nstates4	34	/* main_control */
+#define minseq4	143
+#define maxseq4	175
+#define _endstate4	33
 
 #define _nstates3	27	/* user */
-#define minseq3	113
-#define maxseq3	138
+#define minseq3	117
+#define maxseq3	142
 #define _endstate3	26
 
-#define _nstates2	7	/* truck */
+#define _nstates2	11	/* truck */
 #define minseq2	107
-#define maxseq2	112
-#define _endstate2	6
+#define maxseq2	116
+#define _endstate2	10
 
 #define _nstates1	12	/* server */
 #define minseq1	96
@@ -176,8 +176,8 @@ extern S_F_MAP src_file1[];
 extern S_F_MAP src_file0[];
 
 #define T_ID	unsigned char
-#define _T5	95
-#define _T2	96
+#define _T5	124
+#define _T2	125
 #define WS		8 /* word size in bytes */
 #define SYNC	10
 #define ASYNC	5
@@ -213,9 +213,9 @@ typedef struct P5 { /* :init: */
 	unsigned _priority : 8; /* 0..255 */
 #endif
 	uchar proc;
-	uchar _26_6_trash_size;
+	uchar _26_7_trash_size;
 } P5;
-#define Air5	(sizeof(P5) - Offsetof(P5, _26_6_trash_size) - 1*sizeof(uchar))
+#define Air5	(sizeof(P5) - Offsetof(P5, _26_7_trash_size) - 1*sizeof(uchar))
 
 #define Pmain_control	((P4 *)_this)
 typedef struct P4 { /* main_control */
@@ -226,8 +226,9 @@ typedef struct P4 { /* main_control */
 	unsigned _priority : 8; /* 0..255 */
 #endif
 	uchar user_id;
+	uchar bin_id;
 } P4;
-#define Air4	(sizeof(P4) - Offsetof(P4, user_id) - 1*sizeof(uchar))
+#define Air4	(sizeof(P4) - Offsetof(P4, bin_id) - 1*sizeof(uchar))
 
 #define Puser	((P3 *)_this)
 typedef struct P3 { /* user */
@@ -479,6 +480,7 @@ typedef struct State {
 	#endif
 #endif
 	unsigned has_trash : 1;
+	uchar max_capacity;
 	uchar change_bin;
 	uchar bin_changed;
 	uchar user_closed_outer_door;
@@ -516,7 +518,6 @@ typedef struct TRIX_v6 {
 #endif
 
 #define HAS_TRACK	0
-/* hidden variable: */	uchar max_capacity;
 #define FORWARD_MOVES	"pan.m"
 #define BACKWARD_MOVES	"pan.b"
 #define TRANSITIONS	"pan.t"
@@ -526,9 +527,9 @@ typedef struct TRIX_v6 {
 
 #define _start6	0 /* np_ */
 #define _start5	28
-#define _start4	3
+#define _start4	30
 #define _start3	23
-#define _start2	3
+#define _start2	7
 #define _start1	8
 #define _start0	93
 #ifdef NP
@@ -1000,7 +1001,7 @@ void qsend(int, int, int, int, int);
 #define GLOBAL	7
 #define BAD	8
 #define ALPHA_F	9
-#define NTRANS	97
+#define NTRANS	126
 #if defined(BFS_PAR) || NCORE>1
 	void e_critical(int);
 	void x_critical(int);
