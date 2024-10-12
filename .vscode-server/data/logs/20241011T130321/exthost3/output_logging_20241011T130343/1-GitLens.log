@@ -1,0 +1,4 @@
+GitLens v15.6.0 activating in Visual Studio Code (1.94.2) on the desktop; language='en', logLevel='warn', defaultDateLocale='null' (caf48abccf64ff64ad272cdeb11608c3377ba69982f06a3c8853835f6e5ec8a4|e2960263-4cc0-4c7f-9f91-ffd8facca5ca1728644620717)
+To enable debug logging, set `"gitlens.outputLevel: "debug"` or run "GitLens: Enable Debug Logging" from the Command Palette[2024-10-11 11:03:51.461] SharedServiceApi.<anonymous>
+SharedServiceProxyError: Service 'eamodio.gitlens.proxy' is not available.[2024-10-11 11:04:05.942] SharedServiceApi.<anonymous>
+SharedServiceProxyError: Service 'eamodio.gitlens.proxy' is not available.

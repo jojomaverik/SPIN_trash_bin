@@ -1,0 +1,54 @@
+2024-10-11 12:40:22.005 [info] [main] Log level: Info
+2024-10-11 12:40:22.005 [info] [main] Validating found git in: "git"
+2024-10-11 12:40:22.005 [info] [main] Using git "2.43.0" from "git"
+2024-10-11 12:40:22.005 [info] [Model][doInitialScan] Initial repository scan started
+2024-10-11 12:40:22.005 [info] > git rev-parse --show-toplevel [5ms]
+2024-10-11 12:40:22.005 [info] > git rev-parse --git-dir --git-common-dir [501ms]
+2024-10-11 12:40:22.005 [info] [Model][openRepository] Opened repository: /home/jojomaverik
+2024-10-11 12:40:22.014 [info] > git rev-parse --show-toplevel [152ms]
+2024-10-11 12:40:22.015 [info] > git config --get commit.template [154ms]
+2024-10-11 12:40:22.028 [info] > git rev-parse --show-toplevel [6ms]
+2024-10-11 12:40:22.032 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/main refs/remotes/main [6ms]
+2024-10-11 12:40:22.087 [info] > git rev-parse --show-toplevel [55ms]
+2024-10-11 12:40:22.112 [info] > git rev-parse --show-toplevel [16ms]
+2024-10-11 12:40:22.114 [info] [Model][doInitialScan] Initial repository scan completed - repositories (1), closed repositories (0), parent repositories (0), unsafe repositories (0)
+2024-10-11 12:40:22.162 [info] > git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname) [40ms]
+2024-10-11 12:40:22.652 [info] > git status -z -uall [533ms]
+2024-10-11 12:40:22.653 [info] > git check-ignore -v -z --stdin [119ms]
+2024-10-11 12:40:22.654 [info] > git show --textconv :trash_bin.pml [8ms]
+2024-10-11 12:40:22.666 [info] > git ls-files --stage -- /home/jojomaverik/trash_bin.pml [18ms]
+2024-10-11 12:40:22.745 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/main refs/remotes/main [68ms]
+2024-10-11 12:40:22.748 [info] > git cat-file -s 02b959a7c867c3a8b53b9e2a108833c780ba6200 [80ms]
+2024-10-11 12:40:22.766 [info] > git config --local branch.main.vscode-merge-base [17ms]
+2024-10-11 12:40:22.766 [warning] [Git][config] git config failed: Failed to execute git
+2024-10-11 12:40:22.769 [info] > git config --get commit.template [82ms]
+2024-10-11 12:40:22.878 [info] > git reflog main --grep-reflog=branch: Created from *. [109ms]
+2024-10-11 12:40:22.889 [info] > git symbolic-ref --short refs/remotes/origin/HEAD [8ms]
+2024-10-11 12:40:22.889 [info] fatal: ref refs/remotes/origin/HEAD is not a symbolic ref
+2024-10-11 12:40:22.890 [warning] [Repository][getDefaultBranch] Failed to get default branch details: Failed to execute git.
+2024-10-11 12:40:22.894 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/main refs/remotes/main [94ms]
+2024-10-11 12:40:22.896 [info] > git merge-base refs/heads/main refs/remotes/origin/main [3ms]
+2024-10-11 12:40:22.907 [info] > git diff --name-status -z --diff-filter=ADMR 903f6b6b4fbcd3f160214c664db70c9ec5a71714...refs/remotes/origin/main [8ms]
+2024-10-11 12:40:22.909 [info] > git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname) [3ms]
+2024-10-11 12:40:23.430 [info] > git status -z -uall [526ms]
+2024-10-11 12:40:23.431 [info] > git config --local branch.main.github-pr-owner-number [201ms]
+2024-10-11 12:40:23.431 [warning] [Git][config] git config failed: Failed to execute git
+2024-10-11 12:40:23.726 [info] > git check-ignore -v -z --stdin [2ms]
+2024-10-11 12:40:58.979 [info] > git config --get commit.template [7ms]
+2024-10-11 12:40:58.981 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/main refs/remotes/main [7ms]
+2024-10-11 12:40:58.983 [info] > git ls-files --stage -- /home/jojomaverik/trash_bin.pml [5ms]
+2024-10-11 12:40:58.993 [info] > git cat-file -s 02b959a7c867c3a8b53b9e2a108833c780ba6200 [7ms]
+2024-10-11 12:40:58.994 [info] > git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname) [1ms]
+2024-10-11 12:40:59.004 [info] > git show --textconv :trash_bin.pml [1ms]
+2024-10-11 12:40:59.414 [info] > git status -z -uall [425ms]
+2024-10-11 12:41:04.425 [info] > git config --get commit.template [2ms]
+2024-10-11 12:41:04.429 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/main refs/remotes/main [1ms]
+2024-10-11 12:41:04.439 [info] > git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname) [2ms]
+2024-10-11 12:41:04.920 [info] > git status -z -uall [486ms]
+2024-10-11 12:52:31.161 [info] > git config --get commit.template [4ms]
+2024-10-11 12:52:31.162 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/main refs/remotes/main [1ms]
+2024-10-11 12:52:31.169 [info] > git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname) [2ms]
+2024-10-11 12:52:31.616 [info] > git status -z -uall [451ms]
+2024-10-11 12:59:49.478 [info] > git config --get commit.template [3ms]
+2024-10-11 12:59:49.478 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/main refs/remotes/main [1ms]
+2024-10-11 12:59:49.486 [info] > git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname) [1ms]

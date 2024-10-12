@@ -503,10 +503,10 @@ int _;	/* predefined write-only variable */
 #endif
 
 short src_ln5 [] = {
-	  0, 342, 344, 346, 347, 348, 349, 350, 
-	351, 352, 353, 354, 355, 356, 357, 358, 
-	359, 360, 343, 364, 343, 364, 366, 366, 
-	367, 370, 372, 375, 338, 377,   0, };
+	  0, 249, 251, 252, 253, 254, 255, 256, 
+	257, 258, 259, 260, 261, 262, 263, 264, 
+	265, 265, 250, 269, 250, 269, 271, 271, 
+	272, 275, 278, 281, 247, 283,   0, };
 S_F_MAP src_file5 [] = {
 	{ "-", 0, 0 },
 	{ "trash_bin.pml", 1, 29 },
@@ -520,100 +520,92 @@ uchar reached5 [] = {
 uchar *loopstate5;
 
 short src_ln4 [] = {
-	  0, 294, 295, 297, 298, 299, 300, 301, 
-	296, 305, 305, 306, 307, 310, 311, 312, 
-	313, 315, 316, 317, 319, 321, 322, 323, 
-	324, 325, 326, 327, 328, 320, 292, 331, 
-	292, 331,   0, };
+	  0, 194, 195, 196, 197, 198, 200, 201, 
+	202, 203, 204, 205, 206, 199, 210, 210, 
+	211, 212, 213, 215, 216, 217, 219, 220, 
+	221, 222, 224, 225, 226, 227, 229, 230, 
+	232, 233, 234, 235, 236, 237, 238, 239, 
+	231, 193, 242, 193, 242,   0, };
 S_F_MAP src_file4 [] = {
 	{ "-", 0, 0 },
-	{ "trash_bin.pml", 1, 33 },
-	{ "-", 34, 35 }
+	{ "trash_bin.pml", 1, 44 },
+	{ "-", 45, 46 }
 };
 uchar reached4 [] = {
-	  0,   1,   0,   1,   0,   0,   1,   0, 
-	  0,   1,   1,   0,   0,   1,   0,   1, 
-	  0,   1,   0,   0,   1,   1,   0,   0, 
-	  0,   0,   0,   0,   0,   0,   0,   1, 
-	  1,   0,   0, };
+	  0,   1,   0,   0,   0,   0,   1,   0, 
+	  0,   0,   1,   0,   0,   0,   1,   1, 
+	  0,   0,   0,   1,   0,   0,   1,   0, 
+	  0,   0,   1,   0,   0,   0,   1,   0, 
+	  1,   0,   0,   0,   0,   0,   0,   0, 
+	  0,   0,   1,   1,   0,   0, };
 uchar *loopstate4;
 
 short src_ln3 [] = {
-	  0, 252, 253, 255, 257, 259, 260, 262, 
-	263, 267, 269, 270, 271, 273, 266, 275, 
-	265, 277, 278, 279, 280, 258, 282, 250, 
-	283, 250, 283,   0, };
+	  0, 156, 157, 158, 159, 160, 162, 163, 
+	164, 165, 166, 169, 170, 171, 172, 173, 
+	174, 175, 168, 178, 178, 179, 180, 181, 
+	182, 183, 161, 185, 155, 186, 155, 186, 
+	  0, };
 S_F_MAP src_file3 [] = {
 	{ "-", 0, 0 },
-	{ "trash_bin.pml", 1, 26 },
-	{ "-", 27, 28 }
+	{ "trash_bin.pml", 1, 31 },
+	{ "-", 32, 33 }
 };
 uchar reached3 [] = {
-	  0,   1,   0,   1,   0,   1,   0,   0, 
-	  0,   1,   0,   0,   1,   1,   1,   1, 
-	  0,   0,   0,   1,   1,   0,   1,   0, 
-	  1,   1,   0,   0, };
+	  0,   1,   0,   1,   0,   0,   1,   0, 
+	  0,   0,   0,   1,   0,   0,   0,   1, 
+	  0,   0,   0,   1,   0,   0,   0,   1, 
+	  0,   1,   0,   1,   0,   1,   1,   0, 
+	  0, };
 uchar *loopstate3;
 
 short src_ln2 [] = {
-	  0, 237, 238, 239, 240, 241, 242, 236, 
-	244, 236, 244,   0, };
+	  0, 141, 142, 143, 144, 145, 146, 147, 
+	148, 149, 140, 151, 140, 151,   0, };
 S_F_MAP src_file2 [] = {
 	{ "-", 0, 0 },
-	{ "trash_bin.pml", 1, 10 },
-	{ "-", 11, 12 }
+	{ "trash_bin.pml", 1, 13 },
+	{ "-", 14, 15 }
 };
 uchar reached2 [] = {
-	  0,   1,   0,   1,   0,   1,   0,   0, 
-	  1,   1,   0,   0, };
+	  0,   1,   0,   0,   1,   0,   0,   1, 
+	  0,   0,   0,   1,   1,   0,   0, };
 uchar *loopstate2;
 
 short src_ln1 [] = {
-	  0, 221, 224, 225, 226, 227, 222, 229, 
-	219, 230, 219, 230,   0, };
+	  0, 124, 125, 127, 128, 129, 130, 131, 
+	132, 126, 134, 123, 135, 123, 135,   0, };
 S_F_MAP src_file1 [] = {
 	{ "-", 0, 0 },
-	{ "trash_bin.pml", 1, 11 },
-	{ "-", 12, 13 }
+	{ "trash_bin.pml", 1, 14 },
+	{ "-", 15, 16 }
 };
 uchar reached1 [] = {
-	  0,   1,   1,   0,   1,   0,   0,   1, 
-	  0,   1,   1,   0,   0, };
+	  0,   1,   0,   1,   0,   0,   1,   0, 
+	  0,   0,   1,   0,   1,   1,   0,   0, };
 uchar *loopstate1;
 
 short src_ln0 [] = {
-	  0, 106, 108, 109, 110, 111, 107, 113, 
-	113, 115, 116, 117, 114, 119, 119, 121, 
-	123, 126, 128, 129, 130, 132, 133, 135, 
-	136, 125, 138, 122, 139, 120, 141, 141, 
-	143, 144, 145, 142, 148, 148, 150, 151, 
-	149, 153, 153, 155, 156, 157, 158, 159, 
-	160, 154, 162, 162, 164, 166, 169, 170, 
-	171, 172, 173, 168, 175, 165, 176, 163, 
-	179, 179, 181, 183, 185, 187, 188, 189, 
-	191, 184, 193, 182, 194, 180, 196, 196, 
-	198, 199, 200, 197, 203, 203, 205, 207, 
-	208, 206, 210, 204, 212, 104, 213, 104, 
-	213,   0, };
+	  0,  57,  59,  60,  61,  62,  63,  58, 
+	 65,  65,  67,  68,  69,  70,  66,  74, 
+	 74,  76,  77,  78,  82,  83,  84,  85, 
+	 81,  88,  88,  75,  92,  92,  94,  95, 
+	 96,  97,  93, 101, 101, 102, 104, 105, 
+	103, 109, 109, 111, 112, 113, 114, 110, 
+	117,  55, 118,  55, 118,   0, };
 S_F_MAP src_file0 [] = {
 	{ "-", 0, 0 },
-	{ "trash_bin.pml", 1, 96 },
-	{ "-", 97, 98 }
+	{ "trash_bin.pml", 1, 52 },
+	{ "-", 53, 54 }
 };
 uchar reached0 [] = {
-	  0,   1,   1,   0,   0,   0,   0,   1, 
-	  1,   1,   0,   0,   0,   1,   1,   1, 
-	  1,   1,   0,   0,   1,   0,   1,   0, 
-	  0,   0,   1,   0,   0,   0,   1,   1, 
-	  1,   0,   0,   0,   1,   1,   1,   0, 
-	  0,   1,   1,   1,   0,   0,   1,   0, 
-	  0,   0,   1,   1,   1,   1,   1,   0, 
-	  0,   1,   0,   0,   1,   0,   0,   0, 
-	  1,   1,   1,   1,   1,   0,   0,   1, 
-	  0,   0,   1,   0,   0,   0,   1,   1, 
-	  1,   0,   0,   0,   1,   1,   1,   1, 
-	  0,   0,   0,   0,   1,   0,   1,   1, 
-	  0,   0, };
+	  0,   1,   1,   0,   0,   0,   0,   0, 
+	  1,   1,   1,   0,   0,   0,   0,   1, 
+	  1,   1,   0,   0,   1,   0,   0,   0, 
+	  0,   1,   0,   0,   1,   1,   1,   0, 
+	  0,   0,   0,   1,   1,   0,   1,   0, 
+	  0,   1,   1,   1,   0,   0,   0,   0, 
+	  1,   0,   1,   1,   0,   0, };
 uchar *loopstate0;
 uchar reached6[3];  /* np_ */
 uchar *loopstate6;  /* np_ */
@@ -951,7 +943,7 @@ addproc(int calling_pid, int priority, int n, int par0, int par1)
 		((P5 *)pptr(h))->proc = 0;
 #ifdef VAR_RANGES
 		logval(":init::proc", ((P5 *)pptr(h))->proc);
-		logval(":init::trash_size", ((P5 *)pptr(h))->_26_7_trash_size);
+		logval(":init::trash_size", ((P5 *)pptr(h))->_26_2_trash_size);
 #endif
 #ifdef HAS_CODE
 		locinit5(h);
@@ -959,11 +951,11 @@ addproc(int calling_pid, int priority, int n, int par0, int par1)
 		break;
 	case 4:	/* main_control */
 		((P4 *)pptr(h))->_t = 4;
-		((P4 *)pptr(h))->_p = 30;
+		((P4 *)pptr(h))->_p = 41;
 #ifdef HAS_PRIORITY
 		((P4 *)pptr(h))->_priority = priority; /* was: 1 */
 #endif
-		reached4[30]=1;
+		reached4[41]=1;
 		/* params: */
 		/* locals: */
 		((P4 *)pptr(h))->user_id = 0;
@@ -978,11 +970,11 @@ addproc(int calling_pid, int priority, int n, int par0, int par1)
 		break;
 	case 3:	/* user */
 		((P3 *)pptr(h))->_t = 3;
-		((P3 *)pptr(h))->_p = 23;
+		((P3 *)pptr(h))->_p = 28;
 #ifdef HAS_PRIORITY
 		((P3 *)pptr(h))->_priority = priority; /* was: 1 */
 #endif
-		reached3[23]=1;
+		reached3[28]=1;
 		/* params: */
 		((P3 *)pptr(h))->user_id = par0;
 		((P3 *)pptr(h))->trash_size = par1;
@@ -997,11 +989,11 @@ addproc(int calling_pid, int priority, int n, int par0, int par1)
 		break;
 	case 2:	/* truck */
 		((P2 *)pptr(h))->_t = 2;
-		((P2 *)pptr(h))->_p = 7;
+		((P2 *)pptr(h))->_p = 10;
 #ifdef HAS_PRIORITY
 		((P2 *)pptr(h))->_priority = priority; /* was: 1 */
 #endif
-		reached2[7]=1;
+		reached2[10]=1;
 		/* params: */
 		/* locals: */
 		((P2 *)pptr(h))->bin_id = 0;
@@ -1014,11 +1006,11 @@ addproc(int calling_pid, int priority, int n, int par0, int par1)
 		break;
 	case 1:	/* server */
 		((P1 *)pptr(h))->_t = 1;
-		((P1 *)pptr(h))->_p = 8;
+		((P1 *)pptr(h))->_p = 11;
 #ifdef HAS_PRIORITY
 		((P1 *)pptr(h))->_priority = priority; /* was: 1 */
 #endif
-		reached1[8]=1;
+		reached1[11]=1;
 		/* params: */
 		/* locals: */
 		((P1 *)pptr(h))->user_id = 0;
@@ -1031,11 +1023,11 @@ addproc(int calling_pid, int priority, int n, int par0, int par1)
 		break;
 	case 0:	/* bin */
 		((P0 *)pptr(h))->_t = 0;
-		((P0 *)pptr(h))->_p = 93;
+		((P0 *)pptr(h))->_p = 49;
 #ifdef HAS_PRIORITY
 		((P0 *)pptr(h))->_priority = priority; /* was: 1 */
 #endif
-		reached0[93]=1;
+		reached0[49]=1;
 		/* params: */
 		((P0 *)pptr(h))->bin_id = par0;
 		/* locals: */
@@ -15175,7 +15167,7 @@ c_locals(int pid, int tp)
 	case 5:
 		printf("local vars proc %d (:init:):\n", pid);
 	printf("	byte   proc:	%d\n", ((P5 *)pptr(pid))->proc);
-	printf("	byte   trash_size:	%d\n", ((P5 *)pptr(pid))->_26_7_trash_size);
+	printf("	byte   trash_size:	%d\n", ((P5 *)pptr(pid))->_26_2_trash_size);
 		break;
 	case 4:
 		printf("local vars proc %d (main_control):\n", pid);
@@ -15360,7 +15352,7 @@ c_chandump(int from)
 	printf("\n");
 }
 
-Trans *t_id_lkup[205];
+Trans *t_id_lkup[183];
 
 
 #ifdef BFS_PAR

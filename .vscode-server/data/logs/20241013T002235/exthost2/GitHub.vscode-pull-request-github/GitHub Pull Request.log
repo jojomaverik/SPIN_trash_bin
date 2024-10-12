@@ -1,0 +1,21 @@
+2024-10-13 00:22:53.239 [warning] /home/jojomaverik/.ssh/config: ENOENT: no such file or directory, open '/home/jojomaverik/.ssh/config'
+2024-10-13 00:22:53.239 [info] Activation> Extension version: 0.98.0
+2024-10-13 00:22:53.626 [info] Looking for git repository
+2024-10-13 00:22:53.626 [info] Found 0 repositories during activation
+2024-10-13 00:22:53.626 [info] Git repository found, initializing review manager and pr tree view.
+2024-10-13 00:22:53.628 [info] Registering git provider
+2024-10-13 00:22:53.628 [info] Review+0> Validate state in progress
+2024-10-13 00:22:53.628 [info] Review+0> Validating state...
+2024-10-13 00:22:53.674 [info] Found GitHub remote for folder /home/jojomaverik
+2024-10-13 00:22:54.029 [info] Trying to use globalState for assignableUsers.
+2024-10-13 00:22:54.142 [info] Review+0> No matching pull request metadata found locally for current branch main
+2024-10-13 00:22:54.186 [info] Using globalState assignableUsers for 1.
+2024-10-13 00:22:54.504 [info] Review+0> No matching pull request metadata found on GitHub for current branch main
+2024-10-13 00:22:56.961 [info] Repo state for file:///home/jojomaverik changed.
+2024-10-13 00:22:56.961 [info] Repo file:///home/jojomaverik has already been setup.
+2024-10-13 00:23:57.750 [info] Review+0> Validate state in progress
+2024-10-13 00:23:57.750 [info] Review+0> Validating state...
+2024-10-13 00:23:58.181 [info] Found GitHub remote for folder /home/jojomaverik
+2024-10-13 00:23:58.182 [info] Using in-memory cached assignable users.
+2024-10-13 00:23:58.194 [info] Review+0> No matching pull request metadata found locally for current branch main
+2024-10-13 00:23:58.760 [info] Review+0> No matching pull request metadata found on GitHub for current branch main

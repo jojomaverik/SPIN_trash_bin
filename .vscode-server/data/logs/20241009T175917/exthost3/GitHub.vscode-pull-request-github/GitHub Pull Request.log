@@ -24,3 +24,33 @@
 2024-10-09 18:28:01.580 [info] Review+0> No matching pull request metadata found locally for current branch master
 2024-10-09 18:28:01.584 [info] Review+0> No matching pull request metadata found on GitHub for current branch master
 2024-10-09 18:28:01.585 [info] GlobalState does not exist for assignableUsers.
+2024-10-09 18:31:26.983 [info] Review+0> Validate state in progress
+2024-10-09 18:31:26.983 [info] Review+0> Validating state...
+2024-10-09 18:31:27.162 [info] Found GitHub remote for folder /home/jojomaverik
+2024-10-09 18:31:27.163 [info] Using in-memory cached assignable users.
+2024-10-09 18:31:27.171 [info] Review+0> No matching pull request metadata found locally for current branch master
+2024-10-09 18:31:27.179 [info] Review+0> No matching pull request metadata found on GitHub for current branch master
+2024-10-09 18:35:45.280 [info] Review+0> Validate state in progress
+2024-10-09 18:35:45.280 [info] Review+0> Validating state...
+2024-10-09 18:35:45.293 [info] Found GitHub remote for folder /home/jojomaverik
+2024-10-09 18:35:45.294 [info] Using in-memory cached assignable users.
+2024-10-09 18:35:45.303 [info] Review+0> No matching pull request metadata found locally for current branch main
+2024-10-09 18:35:45.310 [info] Review+0> No matching pull request metadata found on GitHub for current branch main
+2024-10-09 18:36:14.817 [info] Review+0> Validate state in progress
+2024-10-09 18:36:14.817 [info] Review+0> Validating state...
+2024-10-09 18:36:14.862 [info] Found GitHub remote for folder /home/jojomaverik
+2024-10-09 18:36:14.863 [info] Using in-memory cached assignable users.
+2024-10-09 18:36:14.868 [info] Review+0> No matching pull request metadata found locally for current branch main
+2024-10-09 18:36:15.270 [info] Review+0> No matching pull request metadata found on GitHub for current branch main
+2024-10-09 18:39:41.918 [info] Review+0> Validate state in progress
+2024-10-09 18:39:41.918 [info] Review+0> Validating state...
+2024-10-09 18:39:42.101 [info] Found GitHub remote for folder /home/jojomaverik
+2024-10-09 18:39:42.102 [info] Using in-memory cached assignable users.
+2024-10-09 18:39:42.107 [info] Review+0> No matching pull request metadata found locally for current branch main
+2024-10-09 18:39:42.476 [info] Review+0> No matching pull request metadata found on GitHub for current branch main
+2024-10-09 18:39:48.870 [info] Review+0> Validate state in progress
+2024-10-09 18:39:48.870 [info] Review+0> Validating state...
+2024-10-09 18:39:48.879 [info] Found GitHub remote for folder /home/jojomaverik
+2024-10-09 18:39:48.880 [info] Using in-memory cached assignable users.
+2024-10-09 18:39:48.886 [info] Review+0> No matching pull request metadata found locally for current branch main
+2024-10-09 18:39:49.219 [info] Review+0> No matching pull request metadata found on GitHub for current branch main

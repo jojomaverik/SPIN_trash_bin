@@ -1,0 +1,12 @@
+2024-10-11 13:02:41.998 [info] Extension host with pid 2544 started
+2024-10-11 13:02:42.017 [info] Lock '/home/jojomaverik/.vscode-server/data/User/workspaceStorage/a69f4485117ae8b64539b7ee74c999e1/vscode.lock': Lock acquired.
+2024-10-11 13:02:42.063 [info] ExtensionService#_doActivateExtension ms-vsliveshare.vsliveshare, startup: false, activationEvent: 'onFileSystem:vsls'
+2024-10-11 13:02:42.931 [info] ExtensionService#_doActivateExtension vscode.git-base, startup: true, activationEvent: '*'
+2024-10-11 13:02:42.956 [info] Eager extensions activated
+2024-10-11 13:02:42.957 [info] ExtensionService#_doActivateExtension vscode.merge-conflict, startup: false, activationEvent: 'onStartupFinished'
+2024-10-11 13:02:42.957 [info] ExtensionService#_doActivateExtension eamodio.gitlens, startup: false, activationEvent: 'onStartupFinished'
+2024-10-11 13:02:43.359 [info] ExtensionService#_doActivateExtension GitHub.vscode-pull-request-github, startup: false, activationEvent: 'onStartupFinished'
+2024-10-11 13:02:50.640 [info] ExtensionService#_doActivateExtension vscode.emmet, startup: false, activationEvent: 'onLanguage'
+2024-10-11 13:02:51.475 [info] ExtensionService#_doActivateExtension vscode.configuration-editing, startup: false, activationEvent: 'onLanguage:jsonc'
+2024-10-11 13:02:51.476 [info] ExtensionService#_doActivateExtension vscode.json-language-features, startup: false, activationEvent: 'onLanguage:jsonc'
+2024-10-11 13:02:51.476 [info] ExtensionService#_doActivateExtension vscode.typescript-language-features, startup: false, activationEvent: 'onLanguage:jsonc'

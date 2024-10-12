@@ -17,3 +17,5 @@
 2024-10-09 18:07:51.789 [info] [127.0.0.1][ac4e0b31][ManagementConnection] New connection established.
 2024-10-09 18:07:52.138 [info] [127.0.0.1][409fa171][ExtensionHostConnection] New connection established.
 2024-10-09 18:07:52.145 [info] [127.0.0.1][409fa171][ExtensionHostConnection] <2802> Launched Extension Host Process.
+2024-10-09 19:18:53.465 [info] [127.0.0.1][ac4e0b31][ManagementConnection] The client has disconnected gracefully, so the connection will be disposed.
+2024-10-09 19:18:53.657 [info] [127.0.0.1][409fa171][ExtensionHostConnection] <2802> Extension Host Process exited with code: 0, signal: null.
