@@ -278,44 +278,52 @@ proctype main_control() {
     do
     // Checking the user ID and enabling the user to deposit trash if the bin is not full
     :: scan_card_user?user_id ->
-        user_valid?user_id, true;  // Wait for the server to validate the user
-        if
-        :: bin_status.full_capacity == false ->
-            can_deposit_trash!user_id, true; // Allow the user to deposit trash
-			change_bin!LockOuterDoor, open;
-        :: else ->
-            can_deposit_trash!user_id, false; // Deny the deposit if the bin is full
-        fi
+		if 
+		:: user_valid?user_id, false ->
+			can_deposit_trash!user_id, false;
+		:: user_valid?user_id, true -> 
+			if
+			:: bin_status.full_capacity == false ->
+				can_deposit_trash!user_id, true; // Allow the user to deposit trash
+				change_bin!LockOuterDoor, open;
+			:: else ->
+				can_deposit_trash!user_id, false; 
+				// Deny the deposit if the bin is full
+			fi // Wait for the server to validate the user
+			if
+			::user_closed_outer_door?true ->
+				change_bin!LockOuterDoor, closed;
+				weigh_trash!true;
+			fi
+			if
+			:: trash_weighted?bin_status.trash_on_trap_door ->
+				change_bin!TrapDoor, open;
+				bin_changed?TrapDoor, true;
+				change_ram!compress;
+				ram_changed?true;
+				change_ram!idle;
+				ram_changed?true;
+				change_bin!LockOuterDoor, closed;
+				bin_changed?LockOuterDoor, true;
+			fi
+		fi
+	:: bin_status.trash_uncompressed == max_capacity -> 
+		bin_status.full_capacity = true; // Mark the bin as full
+		request_truck!bin_id;
+		change_truck?arrived, bin_id ->
+		change_truck!start_emptying, bin_id;
+		change_truck?emptied, bin_id ->
+		bin_status.full_capacity = false; // Reset the full status once emptied
+		change_truck!emptied, bin_id; 
+	od   
+        
 
     // Calling the Truck if the bin is full
-    :: bin_status.trash_uncompressed == max_capacity -> 
-        bin_status.full_capacity = true; // Mark the bin as full
-        request_truck!bin_id;
 
-    // Handle the truck arrival and emptying the bin
-    :: change_truck?arrived, bin_id ->
-        change_truck!start_emptying, bin_id;
-
-    :: change_truck?emptied, bin_id ->
-        bin_status.full_capacity = false; // Reset the full status once emptied
-		change_truck!emptied, bin_id; // Notify the truck
+    	// Handle the truck arrival and emptying the bin
+// Notify the truck
     
-    ::user_closed_outer_door?true ->
-		change_bin!LockOuterDoor, closed;
-		weigh_trash!true;
-		
-	:: trash_weighted?bin_status.trash_on_trap_door ->
-	atomic{
-		change_bin!TrapDoor, open;
-		bin_changed?TrapDoor, true;
-		change_ram!compress;
-		ram_changed?true;
-		change_ram!idle;
-		ram_changed?true;
-		change_bin!LockOuterDoor, closed;
-		bin_changed?LockOuterDoor, true;
-	}
-    od
+
 }
 
 // **Truck Process** (Modified)
@@ -325,9 +333,9 @@ proctype truck() {
 	:: request_truck?bin_id ->
 		change_truck!arrived, bin_id;
 	:: change_truck?start_emptying, bin_id ->
-			empty_bin!true;
-	:: bin_emptied?true ->
-			change_truck!emptied, bin_id;
+		empty_bin!true;
+	:: bin_emptied?true;
+		change_truck!emptied, bin_id;
 	od
 }
 
