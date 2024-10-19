@@ -289,6 +289,7 @@ proctype main_control() {
 				change_bin!LockOuterDoor, open;
 			:: else ->
 				can_deposit_trash!user_id, false; 
+
 				// Deny the deposit if the bin is full
 			fi 
 			if // Wait for the server to validate the user
@@ -298,18 +299,19 @@ proctype main_control() {
 				weigh_trash!true;
 				byte weight;
 				trash_weighted?weight;
-				bin_status.trash_in_outer_door = weight;
-				
+				bin_status.trash_in_outer_door = weight;			
 			fi
+			
 			if
 			:: (weight + bin_status.trash_compressed) <= max_capacity ->
-				bin_status.lock_out_door = open;
 				change_bin!TrapDoor, open;
 				bin_changed?TrapDoor, true;
 				change_ram!compress;
 				ram_changed?true;
 				change_ram!idle;
 				ram_changed?true;
+				change_bin!TrapDoor, closed;
+				bin_changed?TrapDoor, true;
 			:: else ->
 				bin_status.full_capacity = true; // Mark the bin as full
 				request_truck!bin_id;
@@ -320,8 +322,6 @@ proctype main_control() {
 				change_truck!emptied, bin_id; 
 			fi
 		fi
-
-
 	od   
         
 
@@ -341,7 +341,7 @@ proctype truck() {
 		change_truck!arrived, bin_id;
 	:: change_truck?start_emptying, bin_id ->
 		empty_bin!true;
-	:: bin_emptied?true;
+ 	:: bin_emptied?true ->
 		change_truck!emptied, bin_id;
 	od
 }
@@ -392,4 +392,3 @@ init {
 		run main_control();
 	}
 }
-
