@@ -315,11 +315,15 @@ proctype main_control() {
 			:: else ->
 				bin_status.full_capacity = true; // Mark the bin as full
 				request_truck!bin_id;
-				change_truck?arrived, bin_id;
-				change_truck!start_emptying, bin_id;
-				change_truck?emptied, bin_id;
-				bin_status.full_capacity = false; // Reset the full status once emptied
-				change_truck!emptied, bin_id; 
+				if
+				::	change_truck?arrived, bin_id ->
+					change_truck!start_emptying, bin_id;
+				fi
+				if 
+				::	change_truck?emptied, bin_id ->
+					bin_status.full_capacity = false;
+				fi
+
 			fi
 		fi
 	od   
